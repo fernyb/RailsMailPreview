@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4EB176A13F5FE9700BFB45C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB176913F5FE9700BFB45C /* Cocoa.framework */; };
+		C4EB176C13F5FE9700BFB45C /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB176B13F5FE9700BFB45C /* MacRuby.framework */; };
+		C4EB177513F5FE9800BFB45C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177313F5FE9800BFB45C /* InfoPlist.strings */; };
+		C4EB177713F5FE9800BFB45C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB177613F5FE9800BFB45C /* main.m */; };
+		C4EB177C13F5FE9800BFB45C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177A13F5FE9800BFB45C /* MainMenu.xib */; };
+		C4EB177F13F5FE9800BFB45C /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177E13F5FE9800BFB45C /* rb_main.rb */; };
+		C4EB178113F5FE9800BFB45C /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB178013F5FE9800BFB45C /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4EB176E13F5FE9700BFB45C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4EB175C13F5FE9700BFB45C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4EB176413F5FE9700BFB45C;
+			remoteInfo = RailsMailPreview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsMailPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EB176913F5FE9700BFB45C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C4EB176B13F5FE9700BFB45C /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		C4EB177213F5FE9700BFB45C /* RailsMailPreview-Info.plist */ = {isa = PBXFileReference; path = "RailsMailPreview-Info.plist"; sourceTree = "<group>"; };
+		C4EB177413F5FE9800BFB45C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C4EB177613F5FE9800BFB45C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4EB177813F5FE9800BFB45C /* RailsMailPreview-Prefix.pch */ = {isa = PBXFileReference; path = "RailsMailPreview-Prefix.pch"; sourceTree = "<group>"; };
+		C4EB177B13F5FE9800BFB45C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C4EB177E13F5FE9800BFB45C /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		C4EB178013F5FE9800BFB45C /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4EB176213F5FE9700BFB45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EB176A13F5FE9700BFB45C /* Cocoa.framework in Frameworks */,
+				C4EB176C13F5FE9700BFB45C /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4EB175A13F5FE9700BFB45C = {
+			isa = PBXGroup;
+			children = (
+				C4EB177013F5FE9700BFB45C /* RailsMailPreview */,
+				C4EB176813F5FE9700BFB45C /* Frameworks */,
+				C4EB176613F5FE9700BFB45C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4EB176613F5FE9700BFB45C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4EB176813F5FE9700BFB45C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB176913F5FE9700BFB45C /* Cocoa.framework */,
+				C4EB176B13F5FE9700BFB45C /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4EB177013F5FE9700BFB45C /* RailsMailPreview */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB178013F5FE9800BFB45C /* AppDelegate.rb */,
+				C4EB177913F5FE9800BFB45C /* Resources */,
+				C4EB177D13F5FE9800BFB45C /* Other Sources */,
+				C4EB177113F5FE9700BFB45C /* Supporting Files */,
+			);
+			path = RailsMailPreview;
+			sourceTree = "<group>";
+		};
+		C4EB177113F5FE9700BFB45C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB177213F5FE9700BFB45C /* RailsMailPreview-Info.plist */,
+				C4EB177313F5FE9800BFB45C /* InfoPlist.strings */,
+				C4EB177613F5FE9800BFB45C /* main.m */,
+				C4EB177813F5FE9800BFB45C /* RailsMailPreview-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4EB177913F5FE9800BFB45C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB177A13F5FE9800BFB45C /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C4EB177D13F5FE9800BFB45C /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB177E13F5FE9800BFB45C /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		C4EB176D13F5FE9700BFB45C /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = C4EB178713F5FE9800BFB45C /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				C4EB176F13F5FE9700BFB45C /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		C4EB176413F5FE9700BFB45C /* RailsMailPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EB178413F5FE9800BFB45C /* Build configuration list for PBXNativeTarget "RailsMailPreview" */;
+			buildPhases = (
+				C4EB176113F5FE9700BFB45C /* Sources */,
+				C4EB176213F5FE9700BFB45C /* Frameworks */,
+				C4EB176313F5FE9700BFB45C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RailsMailPreview;
+			productName = RailsMailPreview;
+			productReference = C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4EB175C13F5FE9700BFB45C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C4EB175F13F5FE9700BFB45C /* Build configuration list for PBXProject "RailsMailPreview" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C4EB175A13F5FE9700BFB45C;
+			productRefGroup = C4EB176613F5FE9700BFB45C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4EB176413F5FE9700BFB45C /* RailsMailPreview */,
+				C4EB176D13F5FE9700BFB45C /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4EB176313F5FE9700BFB45C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EB177513F5FE9800BFB45C /* InfoPlist.strings in Resources */,
+				C4EB177C13F5FE9800BFB45C /* MainMenu.xib in Resources */,
+				C4EB177F13F5FE9800BFB45C /* rb_main.rb in Resources */,
+				C4EB178113F5FE9800BFB45C /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4EB176113F5FE9700BFB45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EB177713F5FE9800BFB45C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4EB176F13F5FE9700BFB45C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4EB176413F5FE9700BFB45C /* RailsMailPreview */;
+			targetProxy = C4EB176E13F5FE9700BFB45C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4EB177313F5FE9800BFB45C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4EB177413F5FE9800BFB45C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C4EB177A13F5FE9800BFB45C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4EB177B13F5FE9800BFB45C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4EB178213F5FE9800BFB45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C4EB178313F5FE9800BFB45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C4EB178513F5FE9800BFB45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
+				INFOPLIST_FILE = "RailsMailPreview/RailsMailPreview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C4EB178613F5FE9800BFB45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
+				INFOPLIST_FILE = "RailsMailPreview/RailsMailPreview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C4EB178813F5FE9800BFB45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C4EB178913F5FE9800BFB45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4EB175F13F5FE9700BFB45C /* Build configuration list for PBXProject "RailsMailPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EB178213F5FE9800BFB45C /* Debug */,
+				C4EB178313F5FE9800BFB45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4EB178413F5FE9800BFB45C /* Build configuration list for PBXNativeTarget "RailsMailPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EB178513F5FE9800BFB45C /* Debug */,
+				C4EB178613F5FE9800BFB45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C4EB178713F5FE9800BFB45C /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EB178813F5FE9800BFB45C /* Debug */,
+				C4EB178913F5FE9800BFB45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4EB175C13F5FE9700BFB45C /* Project object */;
+}
