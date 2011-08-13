@@ -8,12 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		C4EB176A13F5FE9700BFB45C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB176913F5FE9700BFB45C /* Cocoa.framework */; };
-		C4EB176C13F5FE9700BFB45C /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB176B13F5FE9700BFB45C /* MacRuby.framework */; };
 		C4EB177513F5FE9800BFB45C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177313F5FE9800BFB45C /* InfoPlist.strings */; };
 		C4EB177713F5FE9800BFB45C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB177613F5FE9800BFB45C /* main.m */; };
 		C4EB177C13F5FE9800BFB45C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177A13F5FE9800BFB45C /* MainMenu.xib */; };
 		C4EB177F13F5FE9800BFB45C /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177E13F5FE9800BFB45C /* rb_main.rb */; };
 		C4EB178113F5FE9800BFB45C /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB178013F5FE9800BFB45C /* AppDelegate.rb */; };
+		C4EB178F13F6006700BFB45C /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB178E13F6006700BFB45C /* MacRuby.framework */; };
+		C4EB179213F6019000BFB45C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB179113F6019000BFB45C /* WebKit.framework */; };
+		C4EB179413F6034D00BFB45C /* MacRuby.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB178E13F6006700BFB45C /* MacRuby.framework */; };
+		C4EB179613F6046400BFB45C /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB179513F6046400BFB45C /* AppController.rb */; };
+		C4EB179D13F6074C00BFB45C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB179C13F6074C00BFB45C /* AppController.m */; };
+		C4EB17A013F6077000BFB45C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB179F13F6077000BFB45C /* AppDelegate.m */; };
+		C4EB17A313F6089E00BFB45C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB177613F5FE9800BFB45C /* main.m */; };
+		C4EB17A713F6089E00BFB45C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB179113F6019000BFB45C /* WebKit.framework */; };
+		C4EB17A813F6089E00BFB45C /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB178E13F6006700BFB45C /* MacRuby.framework */; };
+		C4EB17A913F6089E00BFB45C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB176913F5FE9700BFB45C /* Cocoa.framework */; };
+		C4EB17AB13F6089E00BFB45C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177313F5FE9800BFB45C /* InfoPlist.strings */; };
+		C4EB17AC13F6089E00BFB45C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177A13F5FE9800BFB45C /* MainMenu.xib */; };
+		C4EB17AD13F6089E00BFB45C /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177E13F5FE9800BFB45C /* rb_main.rb */; };
+		C4EB17AE13F6089E00BFB45C /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB178013F5FE9800BFB45C /* AppDelegate.rb */; };
+		C4EB17AF13F6089E00BFB45C /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB179513F6046400BFB45C /* AppController.rb */; };
+		C4EB17B113F6089E00BFB45C /* MacRuby.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB178E13F6006700BFB45C /* MacRuby.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,17 +41,50 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C4EB179313F6033F00BFB45C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C4EB179413F6034D00BFB45C /* MacRuby.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EB17B013F6089E00BFB45C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C4EB17B113F6089E00BFB45C /* MacRuby.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsMailPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EB176913F5FE9700BFB45C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		C4EB176B13F5FE9700BFB45C /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
-		C4EB177213F5FE9700BFB45C /* RailsMailPreview-Info.plist */ = {isa = PBXFileReference; path = "RailsMailPreview-Info.plist"; sourceTree = "<group>"; };
+		C4EB177213F5FE9700BFB45C /* RailsMailPreview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RailsMailPreview-Info.plist"; sourceTree = "<group>"; };
 		C4EB177413F5FE9800BFB45C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C4EB177613F5FE9800BFB45C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C4EB177813F5FE9800BFB45C /* RailsMailPreview-Prefix.pch */ = {isa = PBXFileReference; path = "RailsMailPreview-Prefix.pch"; sourceTree = "<group>"; };
+		C4EB177813F5FE9800BFB45C /* RailsMailPreview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RailsMailPreview-Prefix.pch"; sourceTree = "<group>"; };
 		C4EB177B13F5FE9800BFB45C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C4EB177E13F5FE9800BFB45C /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		C4EB178013F5FE9800BFB45C /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		C4EB178E13F6006700BFB45C /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		C4EB179113F6019000BFB45C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C4EB179513F6046400BFB45C /* AppController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppController.rb; sourceTree = "<group>"; };
+		C4EB179B13F6074C00BFB45C /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		C4EB179C13F6074C00BFB45C /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		C4EB179E13F6077000BFB45C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4EB179F13F6077000BFB45C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4EB17B513F6089E00BFB45C /* RailsMailPreview copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RailsMailPreview copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EB17B713F6089F00BFB45C /* RailsMailPreview copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RailsMailPreview copy-Info.plist"; path = "/Users/fernyb/cocoa/RailsMailPreview/RailsMailPreview copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +92,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EB179213F6019000BFB45C /* WebKit.framework in Frameworks */,
+				C4EB178F13F6006700BFB45C /* MacRuby.framework in Frameworks */,
 				C4EB176A13F5FE9700BFB45C /* Cocoa.framework in Frameworks */,
-				C4EB176C13F5FE9700BFB45C /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EB17A613F6089E00BFB45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EB17A713F6089E00BFB45C /* WebKit.framework in Frameworks */,
+				C4EB17A813F6089E00BFB45C /* MacRuby.framework in Frameworks */,
+				C4EB17A913F6089E00BFB45C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +114,11 @@
 		C4EB175A13F5FE9700BFB45C = {
 			isa = PBXGroup;
 			children = (
+				C4EB179113F6019000BFB45C /* WebKit.framework */,
 				C4EB177013F5FE9700BFB45C /* RailsMailPreview */,
 				C4EB176813F5FE9700BFB45C /* Frameworks */,
 				C4EB176613F5FE9700BFB45C /* Products */,
+				C4EB17B713F6089F00BFB45C /* RailsMailPreview copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */,
+				C4EB17B513F6089E00BFB45C /* RailsMailPreview copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,8 +134,8 @@
 		C4EB176813F5FE9700BFB45C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4EB178E13F6006700BFB45C /* MacRuby.framework */,
 				C4EB176913F5FE9700BFB45C /* Cocoa.framework */,
-				C4EB176B13F5FE9700BFB45C /* MacRuby.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,7 +143,9 @@
 		C4EB177013F5FE9700BFB45C /* RailsMailPreview */ = {
 			isa = PBXGroup;
 			children = (
+				C4EB179713F6069300BFB45C /* Workaround Files */,
 				C4EB178013F5FE9800BFB45C /* AppDelegate.rb */,
+				C4EB179513F6046400BFB45C /* AppController.rb */,
 				C4EB177913F5FE9800BFB45C /* Resources */,
 				C4EB177D13F5FE9800BFB45C /* Other Sources */,
 				C4EB177113F5FE9700BFB45C /* Supporting Files */,
@@ -116,6 +180,17 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		C4EB179713F6069300BFB45C /* Workaround Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB179B13F6074C00BFB45C /* AppController.h */,
+				C4EB179C13F6074C00BFB45C /* AppController.m */,
+				C4EB179E13F6077000BFB45C /* AppDelegate.h */,
+				C4EB179F13F6077000BFB45C /* AppDelegate.m */,
+			);
+			name = "Workaround Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
@@ -143,6 +218,7 @@
 				C4EB176113F5FE9700BFB45C /* Sources */,
 				C4EB176213F5FE9700BFB45C /* Frameworks */,
 				C4EB176313F5FE9700BFB45C /* Resources */,
+				C4EB179313F6033F00BFB45C /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +227,24 @@
 			name = RailsMailPreview;
 			productName = RailsMailPreview;
 			productReference = C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4EB17A113F6089E00BFB45C /* Workaround */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EB17B213F6089E00BFB45C /* Build configuration list for PBXNativeTarget "Workaround" */;
+			buildPhases = (
+				C4EB17A213F6089E00BFB45C /* Sources */,
+				C4EB17A613F6089E00BFB45C /* Frameworks */,
+				C4EB17AA13F6089E00BFB45C /* Resources */,
+				C4EB17B013F6089E00BFB45C /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Workaround;
+			productName = RailsMailPreview;
+			productReference = C4EB17B513F6089E00BFB45C /* RailsMailPreview copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,6 +266,7 @@
 			targets = (
 				C4EB176413F5FE9700BFB45C /* RailsMailPreview */,
 				C4EB176D13F5FE9700BFB45C /* Deployment */,
+				C4EB17A113F6089E00BFB45C /* Workaround */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +280,19 @@
 				C4EB177C13F5FE9800BFB45C /* MainMenu.xib in Resources */,
 				C4EB177F13F5FE9800BFB45C /* rb_main.rb in Resources */,
 				C4EB178113F5FE9800BFB45C /* AppDelegate.rb in Resources */,
+				C4EB179613F6046400BFB45C /* AppController.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EB17AA13F6089E00BFB45C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EB17AB13F6089E00BFB45C /* InfoPlist.strings in Resources */,
+				C4EB17AC13F6089E00BFB45C /* MainMenu.xib in Resources */,
+				C4EB17AD13F6089E00BFB45C /* rb_main.rb in Resources */,
+				C4EB17AE13F6089E00BFB45C /* AppDelegate.rb in Resources */,
+				C4EB17AF13F6089E00BFB45C /* AppController.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +304,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EB177713F5FE9800BFB45C /* main.m in Sources */,
+				C4EB179D13F6074C00BFB45C /* AppController.m in Sources */,
+				C4EB17A013F6077000BFB45C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EB17A213F6089E00BFB45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EB17A313F6089E00BFB45C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +438,40 @@
 			};
 			name = Release;
 		};
+		C4EB17B313F6089E00BFB45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
+				INFOPLIST_FILE = "RailsMailPreview copy-Info.plist";
+				PRODUCT_NAME = "RailsMailPreview copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C4EB17B413F6089E00BFB45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
+				INFOPLIST_FILE = "RailsMailPreview copy-Info.plist";
+				PRODUCT_NAME = "RailsMailPreview copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +491,7 @@
 				C4EB178613F5FE9800BFB45C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4EB178713F5FE9800BFB45C /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -347,6 +500,16 @@
 				C4EB178913F5FE9800BFB45C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4EB17B213F6089E00BFB45C /* Build configuration list for PBXNativeTarget "Workaround" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EB17B313F6089E00BFB45C /* Debug */,
+				C4EB17B413F6089E00BFB45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

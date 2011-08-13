@@ -3,12 +3,14 @@
 #  RailsMailPreview
 #
 #  Created by Fernando Barajas on 8/12/11.
-#  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+#  Copyright (c) 2011 Fernando Barajas. All rights reserved.
 #
 
 # Loading the Cocoa framework. If you need to load more frameworks, you can
 # do that here too.
 framework 'Cocoa'
+framework 'Webkit'
+
 
 # Loading all the Ruby project files.
 main = File.basename(__FILE__, File.extname(__FILE__))

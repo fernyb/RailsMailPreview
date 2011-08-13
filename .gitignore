@@ -1,0 +1,4 @@
+build
+build/*
+RailsMailPreview.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad
+RailsMailPreview.xcodeproj/xcuserdata/*.xcuserdata*
