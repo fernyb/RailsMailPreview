@@ -9,5 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface FBToolbarViewController : NSViewController
-
+{
+  IBOutlet NSSegmentedControl * segmentControl;
+}
+- (IBAction)segmentedItemSelected:(id)sender;
 @end
