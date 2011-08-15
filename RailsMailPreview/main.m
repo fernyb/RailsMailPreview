@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import <MacRuby/MacRuby.h>
+#import "INAppStoreWindow.h"
+
 
 int main(int argc, char *argv[])
 {

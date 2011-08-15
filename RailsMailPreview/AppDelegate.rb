@@ -9,9 +9,9 @@
 class AppDelegate
   attr_accessor :window
   attr_accessor :controller
-  
+
   def applicationDidFinishLaunching(a_notification)
-    window.setContentBorderThickness(30.0, forEdge:NSMinYEdge)
+    self.controller.didFinishLaunching
   end
 end
 
