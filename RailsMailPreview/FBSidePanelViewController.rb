@@ -21,7 +21,10 @@ class FBSidePanelViewController < NSViewController
   # - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
   def tableView(tableView, viewForTableColumn:tableColumn, row:row)
     cell = tableView.makeViewWithIdentifier(tableColumn.identifier, owner:self)
-    cell.textField.setStringValue("Hello World")
+    cell.from     = "fernyb@fernyb.net"
+    cell.subject  = "Rails Mail Preview"
+    cell.date     = "8/16/11"
+    cell.brief    = "This is one of the best app for a Rails frontend developer"
     cell
   end
 
@@ -33,6 +36,6 @@ class FBSidePanelViewController < NSViewController
 
   # - (CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row
   def tableView(tableView, heightOfRow:row)
-    60
+    64 + 8
   end
 end

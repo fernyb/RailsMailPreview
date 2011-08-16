@@ -271,7 +271,7 @@
 									<object class="NSTextFieldCell" key="NSCell" id="988748893">
 										<int key="NSCellFlags">67239488</int>
 										<int key="NSCellFlags2">272631808</int>
-										<string key="NSContents">Table View Cell</string>
+										<string key="NSContents"/>
 										<reference key="NSSupport" ref="424831325"/>
 										<reference key="NSControlView" ref="181108551"/>
 										<object class="NSColor" key="NSBackgroundColor">
