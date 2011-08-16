@@ -11,14 +11,16 @@ class AppController < NSWindowController
   attr_accessor :splitview
   attr_accessor :bottomViewController
   attr_accessor :toolbarViewController
-  
+  attr_accessor :sidePanelViewController
+
   def didFinishLaunching
     setup_toolbar
     setup_side_views
+    setup_left_panel
     setup_notification
     setup_toolbar
   end
-  
+
   def setup_notification
     center = NSDistributedNotificationCenter.defaultCenter
     center.addObserver(self,
@@ -79,7 +81,16 @@ class AppController < NSWindowController
 
   def setup_toolbar
     self.window.setTitleBarHeight(40.0)
-    toolbarViewController = FBToolbarViewController.alloc.init                                                                     
+    toolbarViewController = FBToolbarViewController.alloc.init
     self.window.setTitleBarView(toolbarViewController.view)
+  end
+
+  def setup_left_panel
+    @sidePanelViewController = FBSidePanelViewController.alloc.init
+    if @splitview.subviews.count == 2
+      @splitview.addSubview(@sidePanelViewController.view,
+                            positioned: NSWindowBelow,
+                            relativeTo: @splitview.subviews.first)
+    end
   end
 end

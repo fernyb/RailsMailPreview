@@ -1346,7 +1346,7 @@
 										<object class="NSCustomView" id="536944649">
 											<reference key="NSNextResponder" ref="348257336"/>
 											<int key="NSvFlags">4096</int>
-											<string key="NSFrameSize">{431, 480}</string>
+											<string key="NSFrameSize">{425, 480}</string>
 											<reference key="NSSuperview" ref="348257336"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="266547833"/>
@@ -1356,7 +1356,7 @@
 										<object class="NSCustomView" id="266547833">
 											<reference key="NSNextResponder" ref="348257336"/>
 											<int key="NSvFlags">4096</int>
-											<string key="NSFrame">{{432, 0}, {418, 480}}</string>
+											<string key="NSFrame">{{426, 0}, {424, 480}}</string>
 											<reference key="NSSuperview" ref="348257336"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView"/>

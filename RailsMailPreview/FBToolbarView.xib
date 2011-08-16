@@ -47,7 +47,7 @@
 					<object class="NSSegmentedControl" id="44768624">
 						<reference key="NSNextResponder" ref="1005"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{69, 7}, {104, 25}}</string>
+						<string key="NSFrame">{{71, 7}, {100, 25}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
@@ -96,7 +96,7 @@
 							</object>
 							<int key="NSSelectedSegment">1</int>
 							<int key="NSTrackingMode">1</int>
-							<int key="NSSegmentStyle">2</int>
+							<int key="NSSegmentStyle">4</int>
 						</object>
 					</object>
 				</object>
@@ -196,6 +196,7 @@
 					<string>-3.IBPluginDependency</string>
 					<string>1.IBPluginDependency</string>
 					<string>3.IBPluginDependency</string>
+					<string>3.userInterfaceItemIdentifier</string>
 					<string>4.IBNSSegmentedControlInspectorSelectedSegmentMetadataKey</string>
 					<string>4.IBPluginDependency</string>
 				</object>
@@ -206,6 +207,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>segment_control_id</string>
 					<integer value="2"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>

@@ -10,6 +10,20 @@
 		C40EA95E13F82CCF0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
 		C40EA96513F8465B0049534A /* FRBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA96413F8465B0049534A /* FRBWindow.m */; };
 		C40EA97613F86CEB0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
+		C441F9F413FAB9310061C923 /* FBSidePanelTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C441F9F313FAB9310061C923 /* FBSidePanelTableRowView.m */; };
+		C441F9F813FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */; };
+		C441F9F913FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */; };
+		C46BD8E113F972B400C75497 /* FBSidePanelViewController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8E013F972B400C75497 /* FBSidePanelViewController.rb */; };
+		C46BD8E213F972B400C75497 /* FBSidePanelViewController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8E013F972B400C75497 /* FBSidePanelViewController.rb */; };
+		C46BD8E513F9732200C75497 /* FBSidePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8E413F9732200C75497 /* FBSidePanelView.xib */; };
+		C46BD8E613F9732200C75497 /* FBSidePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8E413F9732200C75497 /* FBSidePanelView.xib */; };
+		C46BD8EA13F9737700C75497 /* FBSidePanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BD8E813F9737700C75497 /* FBSidePanelViewController.m */; };
+		C46BD8F013F973D900C75497 /* FBSidePanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BD8EF13F973D900C75497 /* FBSidePanelView.m */; };
+		C46BD8F313F973FC00C75497 /* FBSidePanelView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8F213F973FC00C75497 /* FBSidePanelView.rb */; };
+		C46BD8F413F973FC00C75497 /* FBSidePanelView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8F213F973FC00C75497 /* FBSidePanelView.rb */; };
+		C46BD8F613F97CE900C75497 /* FBSidePanelTableCellView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */; };
+		C46BD8F713F97CE900C75497 /* FBSidePanelTableCellView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */; };
+		C46BD8FA13F97D2700C75497 /* FBSidePanelTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BD8F913F97D2700C75497 /* FBSidePanelTableCellView.m */; };
 		C4A92C0113F8773800B6F4F4 /* FBToolbarView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4A92C0013F8773800B6F4F4 /* FBToolbarView.rb */; };
 		C4A92C0213F8773800B6F4F4 /* FBToolbarView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4A92C0013F8773800B6F4F4 /* FBToolbarView.rb */; };
 		C4A92C0613F8BACA00B6F4F4 /* FBToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A92C0513F8BACA00B6F4F4 /* FBToolbarView.m */; };
@@ -86,6 +100,19 @@
 		C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
 		C40EA96313F8465B0049534A /* FRBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBWindow.h; sourceTree = "<group>"; };
 		C40EA96413F8465B0049534A /* FRBWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBWindow.m; sourceTree = "<group>"; };
+		C441F9F213FAB9300061C923 /* FBSidePanelTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSidePanelTableRowView.h; sourceTree = "<group>"; };
+		C441F9F313FAB9310061C923 /* FBSidePanelTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSidePanelTableRowView.m; sourceTree = "<group>"; };
+		C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSidePanelTableRowView.rb; sourceTree = "<group>"; };
+		C46BD8E013F972B400C75497 /* FBSidePanelViewController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSidePanelViewController.rb; sourceTree = "<group>"; };
+		C46BD8E413F9732200C75497 /* FBSidePanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBSidePanelView.xib; sourceTree = "<group>"; };
+		C46BD8E713F9737700C75497 /* FBSidePanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSidePanelViewController.h; sourceTree = "<group>"; };
+		C46BD8E813F9737700C75497 /* FBSidePanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSidePanelViewController.m; sourceTree = "<group>"; };
+		C46BD8EE13F973D900C75497 /* FBSidePanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSidePanelView.h; sourceTree = "<group>"; };
+		C46BD8EF13F973D900C75497 /* FBSidePanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSidePanelView.m; sourceTree = "<group>"; };
+		C46BD8F213F973FC00C75497 /* FBSidePanelView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSidePanelView.rb; sourceTree = "<group>"; };
+		C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSidePanelTableCellView.rb; sourceTree = "<group>"; };
+		C46BD8F813F97D2700C75497 /* FBSidePanelTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSidePanelTableCellView.h; sourceTree = "<group>"; };
+		C46BD8F913F97D2700C75497 /* FBSidePanelTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSidePanelTableCellView.m; sourceTree = "<group>"; };
 		C4A92C0013F8773800B6F4F4 /* FBToolbarView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBToolbarView.rb; sourceTree = "<group>"; };
 		C4A92C0413F8BACA00B6F4F4 /* FBToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBToolbarView.h; sourceTree = "<group>"; };
 		C4A92C0513F8BACA00B6F4F4 /* FBToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBToolbarView.m; sourceTree = "<group>"; };
@@ -188,9 +215,13 @@
 				C4EB179713F6069300BFB45C /* Workaround Files */,
 				C4EB178013F5FE9800BFB45C /* AppDelegate.rb */,
 				C4EB179513F6046400BFB45C /* AppController.rb */,
+				C4D73B5513F6DAC7004D623E /* FRBSideView.rb */,
 				C4A92C1213F8BBA000B6F4F4 /* FBToolbarViewController.rb */,
 				C4A92C0013F8773800B6F4F4 /* FBToolbarView.rb */,
-				C4D73B5513F6DAC7004D623E /* FRBSideView.rb */,
+				C46BD8E013F972B400C75497 /* FBSidePanelViewController.rb */,
+				C46BD8F213F973FC00C75497 /* FBSidePanelView.rb */,
+				C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */,
+				C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */,
 				C4EB177913F5FE9800BFB45C /* Resources */,
 				C4EB177D13F5FE9800BFB45C /* Other Sources */,
 				C4EB177113F5FE9700BFB45C /* Supporting Files */,
@@ -215,6 +246,7 @@
 				C4A92C1513F8CB3200B6F4F4 /* icons */,
 				C4EB177A13F5FE9800BFB45C /* MainMenu.xib */,
 				C4A92C0813F8BAEF00B6F4F4 /* FBToolbarView.xib */,
+				C46BD8E413F9732200C75497 /* FBSidePanelView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -240,6 +272,14 @@
 				C4A92C0513F8BACA00B6F4F4 /* FBToolbarView.m */,
 				C4A92C0B13F8BB1C00B6F4F4 /* FBToolbarViewController.h */,
 				C4A92C0C13F8BB1C00B6F4F4 /* FBToolbarViewController.m */,
+				C46BD8E713F9737700C75497 /* FBSidePanelViewController.h */,
+				C46BD8E813F9737700C75497 /* FBSidePanelViewController.m */,
+				C46BD8EE13F973D900C75497 /* FBSidePanelView.h */,
+				C46BD8EF13F973D900C75497 /* FBSidePanelView.m */,
+				C46BD8F813F97D2700C75497 /* FBSidePanelTableCellView.h */,
+				C46BD8F913F97D2700C75497 /* FBSidePanelTableCellView.m */,
+				C441F9F213FAB9300061C923 /* FBSidePanelTableRowView.h */,
+				C441F9F313FAB9310061C923 /* FBSidePanelTableRowView.m */,
 			);
 			name = "Workaround Files";
 			sourceTree = "<group>";
@@ -344,6 +384,11 @@
 				C4A92C1713F8CB4900B6F4F4 /* rotate_splitview_icon.tiff in Resources */,
 				C4A92C1A13F8CB5B00B6F4F4 /* show_horizontal_split.tiff in Resources */,
 				C4A92C1D13F8CB9F00B6F4F4 /* show_left_panel.png in Resources */,
+				C46BD8E113F972B400C75497 /* FBSidePanelViewController.rb in Resources */,
+				C46BD8E513F9732200C75497 /* FBSidePanelView.xib in Resources */,
+				C46BD8F313F973FC00C75497 /* FBSidePanelView.rb in Resources */,
+				C46BD8F613F97CE900C75497 /* FBSidePanelTableCellView.rb in Resources */,
+				C441F9F813FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +408,11 @@
 				C4A92C1813F8CB4900B6F4F4 /* rotate_splitview_icon.tiff in Resources */,
 				C4A92C1B13F8CB5B00B6F4F4 /* show_horizontal_split.tiff in Resources */,
 				C4A92C1E13F8CB9F00B6F4F4 /* show_left_panel.png in Resources */,
+				C46BD8E213F972B400C75497 /* FBSidePanelViewController.rb in Resources */,
+				C46BD8E613F9732200C75497 /* FBSidePanelView.xib in Resources */,
+				C46BD8F413F973FC00C75497 /* FBSidePanelView.rb in Resources */,
+				C46BD8F713F97CE900C75497 /* FBSidePanelTableCellView.rb in Resources */,
+				C441F9F913FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +430,10 @@
 				C40EA96513F8465B0049534A /* FRBWindow.m in Sources */,
 				C4A92C0613F8BACA00B6F4F4 /* FBToolbarView.m in Sources */,
 				C4A92C0E13F8BB1C00B6F4F4 /* FBToolbarViewController.m in Sources */,
+				C46BD8EA13F9737700C75497 /* FBSidePanelViewController.m in Sources */,
+				C46BD8F013F973D900C75497 /* FBSidePanelView.m in Sources */,
+				C46BD8FA13F97D2700C75497 /* FBSidePanelTableCellView.m in Sources */,
+				C441F9F413FAB9310061C923 /* FBSidePanelTableRowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
