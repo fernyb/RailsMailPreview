@@ -12,6 +12,7 @@ class AppController < NSWindowController
   attr_accessor :bottomViewController
   attr_accessor :toolbarViewController
   attr_accessor :sidePanelViewController
+  attr_accessor :contentSplitView
 
   def didFinishLaunching
     setup_toolbar
@@ -87,24 +88,21 @@ class AppController < NSWindowController
   end
 
   def toggle_left_panel
-    if @splitview.subviews.count == 3
-      leftview = @splitview.subviews.first
-      if CGRectGetWidth(leftview.frame) <= 1
-        leftview.setFrame([0,0, 300, 300])
-      else
-        leftview.setFrame(CGRectZero)
-      end
+    panelview = @contentSplitView.subviews.first
+    if CGRectGetWidth(panelview.frame) <= 1
+      panelview.setFrame([0,0, 300, 300])
+    else
+      panelview.setFrame(CGRectZero)
     end
   end
 
   def setup_left_panel
     if @sidePanelViewController.nil?
       @sidePanelViewController = FBSidePanelViewController.alloc.init
-      if @splitview.subviews.count == 2
-        @splitview.addSubview(@sidePanelViewController.view,
+      @contentSplitView.subviews.first.removeFromSuperview
+      @contentSplitView.addSubview(@sidePanelViewController.view,
                               positioned: NSWindowBelow,
-                              relativeTo: @splitview.subviews.first)
-      end
+                              relativeTo: @contentSplitView.subviews.first)
     end
   end
 end
