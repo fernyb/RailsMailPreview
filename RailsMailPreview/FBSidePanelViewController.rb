@@ -30,12 +30,40 @@ class FBSidePanelViewController < NSViewController
 
   # - (NSTableRowView *)tableView:(NSTableView *)tableView rowViewForRow:(NSInteger)row
   def tableView(tableView, rowViewForRow:row)
-    rowView = FBSidePanelTableRowView.alloc.initWithFrame(CGRectZero)
+    rowView = tableView.rowViewAtRow(row, makeIfNecessary:YES)
+    if rowView.nil?
+      rowView = FBSidePanelTableRowView.alloc.initWithFrame(CGRectZero)
+    end
     rowView
   end
 
   # - (CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row
   def tableView(tableView, heightOfRow:row)
     64 + 8
+  end
+
+  # - (void)tableViewSelectionDidChange:(NSNotification *)aNotification
+  def tableViewSelectionDidChange(aNotification)
+    row = @table.selectedRow
+    return if row == NSNotFound
+  end
+
+  # - (BOOL)tableView:(NSTableView *)aTableView shouldSelectRow:(NSInteger)rowIndex
+  def tableView(tableView, shouldSelectRow:row)
+    selected_row = tableView.selectedRow
+    if selected_row >= 0
+      rowView = tableView.viewAtColumn(0, row:selected_row, makeIfNecessary:YES)
+      rowView.selected = false
+      rowView.setNeedsDisplay(YES)
+    end
+
+    if row >= 0
+      rowView = tableView.viewAtColumn(0, row:row, makeIfNecessary:YES)
+      rowView.selected = true
+      rowView.setNeedsDisplay(YES)
+      YES
+    else
+      NO
+    end
   end
 end
