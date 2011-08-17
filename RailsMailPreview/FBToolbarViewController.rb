@@ -35,9 +35,11 @@ class FBToolbarViewController < NSViewController
   end
 
   def selectRotateAction(sender)
+    @parentController.toggle_rotate_view
   end
 
   def selectHorizontalAction(sender)
+    @parentController.toggle_horizontal_view
   end
 
   def selectLeftPanelAction(sender)

@@ -13,13 +13,14 @@ class AppController < NSWindowController
   attr_accessor :toolbarViewController
   attr_accessor :sidePanelViewController
   attr_accessor :contentSplitView
+  attr_accessor :htmlview
+  attr_accessor :plainview
 
   def didFinishLaunching
     setup_toolbar
     setup_side_views
     setup_left_panel
     setup_notification
-    setup_toolbar
   end
 
   def setup_notification
@@ -46,19 +47,23 @@ class AppController < NSWindowController
   def setup_side_views
     # Setup the left view
     currentLeftView = self.splitview.subviews[0]
-    leftView = FRBSideView.alloc.initWithFrame(
+    @htmlview = FRBSideView.alloc.initWithFrame(
       NSMakeRect(0,0, CGRectGetWidth(currentLeftView.frame), CGRectGetHeight(currentLeftView.frame))
     )
-    leftView.view_type = :html
-    currentLeftView.addSubview(leftView)
+    @htmlview.view_type = :html
 
     # Setup the right view
     currentRightView = self.splitview.subviews[1]
-    rightView = FRBSideView.alloc.initWithFrame(
+    @plainview = FRBSideView.alloc.initWithFrame(
       NSMakeRect(0,0, CGRectGetWidth(currentRightView.frame), CGRectGetHeight(currentRightView.frame))
     )
-    rightView.view_type = :text
-    currentRightView.addSubview(rightView)
+    @plainview.view_type = :text
+
+    self.splitview.subviews.first.removeFromSuperview
+    self.splitview.subviews.last.removeFromSuperview
+
+    self.splitview.addSubview(@htmlview)
+    self.splitview.addSubview(@plainview)
   end
 
   def html_sideview
@@ -104,5 +109,31 @@ class AppController < NSWindowController
                               positioned: NSWindowBelow,
                               relativeTo: @contentSplitView.subviews.first)
     end
+  end
+
+  def toggle_rotate_view
+    leftview = @splitview.subviews.first
+
+    @splitview.subviews.first.removeFromSuperview
+    @splitview.subviews.last.removeFromSuperview
+
+    if leftview.view_type == :html
+      @splitview.addSubview(@plainview)
+      @splitview.addSubview(@htmlview)
+    else
+      @splitview.addSubview(@htmlview)
+      @splitview.addSubview(@plainview)
+    end
+    @splitview.adjustSubviews
+  end
+
+  def toggle_horizontal_view
+    if @splitview.isVertical
+      @splitview.setVertical(NO)
+    else
+      @splitview.setVertical(YES)
+    end
+    @splitview.setNeedsDisplay(YES)
+    @splitview.adjustSubviews
   end
 end
