@@ -40,8 +40,8 @@ class AppController < NSWindowController
   end
 
   def set_mail_message(mail)
-    self.html_sideview.loadHTMLString(mail.html_part.body.to_s)
-    self.text_sideview.loadHTMLString(mail.text_part.body.to_s)
+    @htmlview.loadHTMLString(mail.html_part.body.to_s)
+    @plainview.loadHTMLString(mail.text_part.body.to_s)
   end
 
   def setup_side_views
@@ -76,10 +76,8 @@ class AppController < NSWindowController
 
   def subview_type(type)
     self.splitview.subviews.each do |v|
-      v.subviews.each do |sv|
-        if sv.respond_to?(:view_type) && sv.view_type == type
-          return sv
-        end
+      if v.respond_to?(:view_type) && v.view_type == type
+        return sv
       end
     end
     nil
