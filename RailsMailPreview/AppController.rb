@@ -128,11 +128,7 @@ class AppController < NSWindowController
   end
 
   def toggle_horizontal_view
-    if @splitview.isVertical
-      @splitview.setVertical(NO)
-    else
-      @splitview.setVertical(YES)
-    end
+    @splitview.setVertical(!@splitview.isVertical)
     @splitview.setNeedsDisplay(YES)
     @splitview.adjustSubviews
   end
