@@ -9,6 +9,7 @@
 
 class FBToolbarViewController < NSViewController
   attr_accessor :segmentControl
+  attr_accessor :parentController
 
   def init
     self.initWithNibName("FBToolbarView", bundle:NSBundle.mainBundle)
@@ -18,6 +19,7 @@ class FBToolbarViewController < NSViewController
   def awakeFromNib
     0.upto(@segmentControl.segmentCount - 1) do |i|
       @segmentControl.imageForSegment(i).setTemplate(YES)
+      @segmentControl.setSelected(NO, forSegment:i)
     end
   end
 
@@ -39,5 +41,6 @@ class FBToolbarViewController < NSViewController
   end
 
   def selectLeftPanelAction(sender)
+    @parentController.toggle_left_panel
   end
 end

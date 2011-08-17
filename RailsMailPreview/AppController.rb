@@ -81,16 +81,30 @@ class AppController < NSWindowController
 
   def setup_toolbar
     self.window.setTitleBarHeight(40.0)
-    toolbarViewController = FBToolbarViewController.alloc.init
-    self.window.setTitleBarView(toolbarViewController.view)
+    @toolbarViewController = FBToolbarViewController.alloc.init
+    @toolbarViewController.parentController = self
+    self.window.setTitleBarView(@toolbarViewController.view)
+  end
+
+  def toggle_left_panel
+    if @splitview.subviews.count == 3
+      leftview = @splitview.subviews.first
+      if CGRectGetWidth(leftview.frame) <= 1
+        leftview.setFrame([0,0, 300, 300])
+      else
+        leftview.setFrame(CGRectZero)
+      end
+    end
   end
 
   def setup_left_panel
-    @sidePanelViewController = FBSidePanelViewController.alloc.init
-    if @splitview.subviews.count == 2
-      @splitview.addSubview(@sidePanelViewController.view,
-                            positioned: NSWindowBelow,
-                            relativeTo: @splitview.subviews.first)
+    if @sidePanelViewController.nil?
+      @sidePanelViewController = FBSidePanelViewController.alloc.init
+      if @splitview.subviews.count == 2
+        @splitview.addSubview(@sidePanelViewController.view,
+                              positioned: NSWindowBelow,
+                              relativeTo: @splitview.subviews.first)
+      end
     end
   end
 end
