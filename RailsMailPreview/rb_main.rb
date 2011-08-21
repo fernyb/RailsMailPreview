@@ -13,6 +13,8 @@ framework 'Webkit'
 
 require 'rubygems'
 require 'mail'
+require 'sqlite3'
+require 'cgi'
 
 YES = true
 NO  = false
@@ -25,6 +27,8 @@ Dir.glob(File.join(dir_path, '*.{rb,rbo}')).map { |x| File.basename(x, File.extn
     require(path)
   end
 end
+
+FBDatabaseBase.create_support_path
 
 # Starting the Cocoa main loop.
 NSApplicationMain(0, nil)

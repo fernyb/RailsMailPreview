@@ -35,6 +35,11 @@ class AppController < NSWindowController
     NSLog("Notification Received")
     msg = aNotification.object
     mail = Mail.new(msg)
+
+    message = Message.new
+    message.setMessage(mail)
+    message.save
+
     set_mail_message(mail)
     NSLog("Notification Ended...")
   end

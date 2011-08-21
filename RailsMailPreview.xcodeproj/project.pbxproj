@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40CBF21140017BB0062B2DF /* FBDatabaseBase.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */; };
+		C40CBF22140017BB0062B2DF /* FBDatabaseBase.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */; };
+		C40CBF2614001D700062B2DF /* Message.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF2514001D700062B2DF /* Message.rb */; };
+		C40CBF2714001D700062B2DF /* Message.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF2514001D700062B2DF /* Message.rb */; };
+		C40CBF2914003BDB0062B2DF /* create_message_table.sql in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF2814003BDB0062B2DF /* create_message_table.sql */; };
+		C40CBF2A14003BDB0062B2DF /* create_message_table.sql in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF2814003BDB0062B2DF /* create_message_table.sql */; };
 		C40EA95E13F82CCF0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
 		C40EA96513F8465B0049534A /* FRBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA96413F8465B0049534A /* FRBWindow.m */; };
 		C40EA97613F86CEB0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
@@ -96,6 +102,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBDatabaseBase.rb; sourceTree = "<group>"; };
+		C40CBF2514001D700062B2DF /* Message.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Message.rb; sourceTree = "<group>"; };
+		C40CBF2814003BDB0062B2DF /* create_message_table.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_message_table.sql; sourceTree = "<group>"; };
 		C40EA95C13F82CCF0049534A /* INAppStoreWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindow.h; sourceTree = "<group>"; };
 		C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
 		C40EA96313F8465B0049534A /* FRBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBWindow.h; sourceTree = "<group>"; };
@@ -140,7 +149,7 @@
 		C4EB179C13F6074C00BFB45C /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		C4EB179E13F6077000BFB45C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4EB179F13F6077000BFB45C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C4EB17B513F6089E00BFB45C /* RailsMailPreview copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RailsMailPreview copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EB17B513F6089E00BFB45C /* RailsMailPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsMailPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EB17B713F6089F00BFB45C /* RailsMailPreview copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RailsMailPreview copy-Info.plist"; path = "/Users/fernyb/cocoa/RailsMailPreview/RailsMailPreview copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */,
-				C4EB17B513F6089E00BFB45C /* RailsMailPreview copy.app */,
+				C4EB17B513F6089E00BFB45C /* RailsMailPreview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +234,8 @@
 				C4EB177913F5FE9800BFB45C /* Resources */,
 				C4EB177D13F5FE9800BFB45C /* Other Sources */,
 				C4EB177113F5FE9700BFB45C /* Supporting Files */,
+				C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */,
+				C40CBF2514001D700062B2DF /* Message.rb */,
 			);
 			path = RailsMailPreview;
 			sourceTree = "<group>";
@@ -247,6 +258,7 @@
 				C4EB177A13F5FE9800BFB45C /* MainMenu.xib */,
 				C4A92C0813F8BAEF00B6F4F4 /* FBToolbarView.xib */,
 				C46BD8E413F9732200C75497 /* FBSidePanelView.xib */,
+				C40CBF2814003BDB0062B2DF /* create_message_table.sql */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -337,7 +349,7 @@
 			);
 			name = Workaround;
 			productName = RailsMailPreview;
-			productReference = C4EB17B513F6089E00BFB45C /* RailsMailPreview copy.app */;
+			productReference = C4EB17B513F6089E00BFB45C /* RailsMailPreview.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -389,6 +401,9 @@
 				C46BD8F313F973FC00C75497 /* FBSidePanelView.rb in Resources */,
 				C46BD8F613F97CE900C75497 /* FBSidePanelTableCellView.rb in Resources */,
 				C441F9F813FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */,
+				C40CBF21140017BB0062B2DF /* FBDatabaseBase.rb in Resources */,
+				C40CBF2614001D700062B2DF /* Message.rb in Resources */,
+				C40CBF2914003BDB0062B2DF /* create_message_table.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +428,9 @@
 				C46BD8F413F973FC00C75497 /* FBSidePanelView.rb in Resources */,
 				C46BD8F713F97CE900C75497 /* FBSidePanelTableCellView.rb in Resources */,
 				C441F9F913FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */,
+				C40CBF22140017BB0062B2DF /* FBDatabaseBase.rb in Resources */,
+				C40CBF2714001D700062B2DF /* Message.rb in Resources */,
+				C40CBF2A14003BDB0062B2DF /* create_message_table.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +516,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = RailsMailPreview;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -517,6 +536,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = RailsMailPreview;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -579,7 +599,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreview copy-Info.plist";
-				PRODUCT_NAME = "RailsMailPreview copy";
+				PRODUCT_NAME = RailsMailPreview;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -596,7 +616,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreview copy-Info.plist";
-				PRODUCT_NAME = "RailsMailPreview copy";
+				PRODUCT_NAME = RailsMailPreview;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
