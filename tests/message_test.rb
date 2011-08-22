@@ -38,4 +38,18 @@ describe Message do
     end
   end
 
+  describe :first do
+    it "returns the first record" do
+      result = Message.first
+      result.class.name.must_equal "Message"
+    end
+  end
+
+  describe :find_by_id do
+    it "returns record for id" do
+      result = Message.find_by_id(2)
+      result.id.must_equal 2
+    end
+  end
+
 end

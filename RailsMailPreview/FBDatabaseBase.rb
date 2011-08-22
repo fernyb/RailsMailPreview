@@ -153,22 +153,42 @@ class FBDatabaseBase
     self.id.to_s =~ /^([0-9]+)$/ ? true : false
   end
 
-  def self.all
-    results = db.execute("PRAGMA table_info(#{table_name})")
-    fields = results.map {|r| r[1] }
+  def self.columns
+    if @columns.nil?
+      results  = db.execute("PRAGMA table_info(#{table_name})")
+      @columns = results.map {|r| r[1] }
+    end
+    @columns
+  end
 
-    results = db.execute("SELECT * FROM `#{table_name}`")
+  def self.map_results(results)
+    fields = columns
     results.map {|r|
       mapped_fields = Hash[*fields.zip(r).flatten]
 
-      message = Message.new
+      item = new
       mapped_fields.keys.each do |k|
-        if message.respond_to?("#{k}=")
-          message.send("#{k}=", mapped_fields[k])
+        if item.respond_to?("#{k}=")
+          item.send("#{k}=", mapped_fields[k])
         end
       end
-      message
+      item
     }
+  end
+
+  def self.all
+    results = db.execute("SELECT * FROM `#{table_name}`")
+    map_results(results)
+  end
+
+  def self.first
+    results = db.execute("SELECT * FROM `#{table_name}` LIMIT 1")
+    map_results(results).first
+  end
+
+  def self.find_by_id(id)
+    results = db.execute("SELECT * FROM `#{table_name}` WHERE id = #{id} LIMIT 1")
+    map_results(results).first
   end
 
   def initialize
