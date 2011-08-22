@@ -153,6 +153,24 @@ class FBDatabaseBase
     self.id.to_s =~ /^([0-9]+)$/ ? true : false
   end
 
+  def self.all
+    results = db.execute("PRAGMA table_info(#{table_name})")
+    fields = results.map {|r| r[1] }
+
+    results = db.execute("SELECT * FROM `#{table_name}`")
+    results.map {|r|
+      mapped_fields = Hash[*fields.zip(r).flatten]
+
+      message = Message.new
+      mapped_fields.keys.each do |k|
+        if message.respond_to?("#{k}=")
+          message.send("#{k}=", mapped_fields[k])
+        end
+      end
+      message
+    }
+  end
+
   def initialize
   end
 end

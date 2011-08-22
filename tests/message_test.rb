@@ -31,4 +31,11 @@ describe Message do
     end
   end
 
+  describe :all do
+    it "returns results" do
+      results = Message.all
+      results.first.class.name.must_equal "Message"
+    end
+  end
+
 end
