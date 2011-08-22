@@ -8,7 +8,8 @@
 
 class FBDatabaseBase
   def self.support_path
-    bundleName = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleName")
+    # bundleName = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleName")
+    bundleName = "RailsMailPreview"
     databasePath = "~/Library/Application Support/#{bundleName}".stringByExpandingTildeInPath
   end
 
@@ -41,12 +42,11 @@ class FBDatabaseBase
   end
 
   def self.load_default_sql
-    sql_path = NSBundle.mainBundle.pathForResource("create_message_table", ofType:"sql")
+    sql_path = "#{RESOURCE_PATH}/create_message_table.sql"
     error = Pointer.new("@")
     sql = NSString.stringWithContentsOfFile(sql_path, encoding:NSUTF8StringEncoding, error:error)
     if error[0].nil?
-      puts sql
-      @db.execute(sql)
+      @db.execute_batch(sql)
     else
       NSLog("*** Error trying to get contents of file: #{sql_path}")
     end
@@ -65,7 +65,7 @@ class FBDatabaseBase
   end
 
   def self.field(name, options={})
-    code = %Q{
+    class_eval(%Q{
       def #{name.to_s}=(val)
         instance_variable_set("@_#{name.to_s}_field".to_sym, val)
       end
@@ -73,8 +73,30 @@ class FBDatabaseBase
       def #{name.to_s}
         instance_variable_get("@_#{name.to_s}_field".to_sym)
       end
-    }
-    class_eval(code)
+
+      instance_variable_set("@_#{name.to_s}_opts".to_sym, #{options})
+    })
+  end
+
+  def self.has_many(name)
+    class_eval(%Q{
+      def #{name.to_s}
+        var = instance_variable_get("@_#{name.to_s}_has_many".to_sym)
+        if var.nil?
+          instance_variable_set("@_#{name.to_s}_has_many".to_sym, [])
+          instance_variable_get("@_#{name.to_s}_has_many".to_sym)
+        else
+          var
+        end
+      end
+    })
+  end
+
+  def self.belongs_to(name)
+    class_eval(%Q{
+      def #{name.to_s}
+      end
+    })
   end
 
   def fields
@@ -86,13 +108,49 @@ class FBDatabaseBase
 
   def insert_sql
    keys = fields.keys
-   values = keys.map {|k| "'#{CGI.escape(fields[k])}'" }
-   keys   = keys.map {|k| "`#{k}`" }
-   "INSERT INTO `#{self.class.table_name}` (#{keys.join(', ')}) VALUES (#{values.join(', ')})"
+   values = keys.map do |k| 
+     v = fields[k]
+
+     opts = self.class.instance_variable_get("@_#{k}_opts".to_sym)
+     if opts
+       if opts[:on_save]
+         v = self.send(opts[:on_save])
+       end
+       if opts[:type] != 'Integer'
+         v = v.to_s
+       end
+     end
+     v
+   end
+
+   keys = keys.map {|k| "`#{k}`" }
+   placehoders = ("?, " * values.size).to_s[0..-3]
+
+    sql = "INSERT INTO `#{self.class.table_name}` (#{keys.join(', ')}) VALUES (#{placehoders})"
+    self.class.db.execute(sql, *values)
+  end
+
+  def save_insert_sql
+    self.insert_sql
+    results = self.class.db.execute("SELECT last_insert_rowid() FROM `#{self.class.table_name}` LIMIT 1")
+    self.id = results.flatten.first
+  end
+
+  def save_has_many
+     instance_variables.select {|ivar| ivar =~ /_has_many$/ }.each do |var|
+       var =~ /_([a-z_]+)_has_many$/i
+        items = instance_variable_get(var)
+        items.each do |item|
+          item.send("#{self.class.table_name[0..-2]}_id=", self.id)
+          item.save
+        end
+     end
   end
 
   def save
-    self.class.db.execute(insert_sql)
+    save_insert_sql
+    save_has_many
+    self.id.to_s =~ /^([0-9]+)$/ ? true : false
   end
 
   def initialize

@@ -5,9 +5,10 @@
 #  Created by Fernando Barajas on 8/20/11.
 #  Copyright 2011 Fernando Barajas. All rights reserved.
 #
+require 'base64'
 
 class Message < FBDatabaseBase
-  field :id
+  field :id,  :type => 'Integer'
   field :from
   field :subject
   field :date
@@ -16,6 +17,8 @@ class Message < FBDatabaseBase
   field :reply_to
   field :html
   field :text
+  field :timestamp
+  has_many :attachments
 
   def setMessage(mail)
     self.from    = mail.from.to_a.join(" ,")
@@ -25,5 +28,13 @@ class Message < FBDatabaseBase
     self.date    = mail.date.to_s
     self.html    = mail.html_part.body.to_s
     self.text    = mail.text_part.body.to_s
+
+    mail.attachments.each do |attch|
+      attachment = Attachment.new
+      attachment.filename  = attch.filename
+      attachment.mime_type = attch.mime_type
+      attachment.data      = attch.body.to_s
+      self.attachments << attachment
+    end
   end
 end

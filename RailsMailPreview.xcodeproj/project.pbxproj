@@ -13,6 +13,8 @@
 		C40CBF2714001D700062B2DF /* Message.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF2514001D700062B2DF /* Message.rb */; };
 		C40CBF2914003BDB0062B2DF /* create_message_table.sql in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF2814003BDB0062B2DF /* create_message_table.sql */; };
 		C40CBF2A14003BDB0062B2DF /* create_message_table.sql in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF2814003BDB0062B2DF /* create_message_table.sql */; };
+		C40CBF2C1400BB530062B2DF /* Attachment.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF2B1400BB530062B2DF /* Attachment.rb */; };
+		C40CBF2D1400BB530062B2DF /* Attachment.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF2B1400BB530062B2DF /* Attachment.rb */; };
 		C40EA95E13F82CCF0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
 		C40EA96513F8465B0049534A /* FRBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA96413F8465B0049534A /* FRBWindow.m */; };
 		C40EA97613F86CEB0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
@@ -105,6 +107,7 @@
 		C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBDatabaseBase.rb; sourceTree = "<group>"; };
 		C40CBF2514001D700062B2DF /* Message.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Message.rb; sourceTree = "<group>"; };
 		C40CBF2814003BDB0062B2DF /* create_message_table.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_message_table.sql; sourceTree = "<group>"; };
+		C40CBF2B1400BB530062B2DF /* Attachment.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Attachment.rb; sourceTree = "<group>"; };
 		C40EA95C13F82CCF0049534A /* INAppStoreWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindow.h; sourceTree = "<group>"; };
 		C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
 		C40EA96313F8465B0049534A /* FRBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBWindow.h; sourceTree = "<group>"; };
@@ -236,6 +239,7 @@
 				C4EB177113F5FE9700BFB45C /* Supporting Files */,
 				C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */,
 				C40CBF2514001D700062B2DF /* Message.rb */,
+				C40CBF2B1400BB530062B2DF /* Attachment.rb */,
 			);
 			path = RailsMailPreview;
 			sourceTree = "<group>";
@@ -404,6 +408,7 @@
 				C40CBF21140017BB0062B2DF /* FBDatabaseBase.rb in Resources */,
 				C40CBF2614001D700062B2DF /* Message.rb in Resources */,
 				C40CBF2914003BDB0062B2DF /* create_message_table.sql in Resources */,
+				C40CBF2C1400BB530062B2DF /* Attachment.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +436,7 @@
 				C40CBF22140017BB0062B2DF /* FBDatabaseBase.rb in Resources */,
 				C40CBF2714001D700062B2DF /* Message.rb in Resources */,
 				C40CBF2A14003BDB0062B2DF /* create_message_table.sql in Resources */,
+				C40CBF2D1400BB530062B2DF /* Attachment.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
