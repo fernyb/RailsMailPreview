@@ -14,7 +14,8 @@ framework 'Webkit'
 require 'rubygems'
 require 'mail'
 require 'sqlite3'
-require 'Base64'
+require 'erb'
+require 'base64'
 
 YES = true
 NO  = false

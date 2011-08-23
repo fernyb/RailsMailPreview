@@ -32,6 +32,12 @@
 		C46BD8F613F97CE900C75497 /* FBSidePanelTableCellView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */; };
 		C46BD8F713F97CE900C75497 /* FBSidePanelTableCellView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */; };
 		C46BD8FA13F97D2700C75497 /* FBSidePanelTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BD8F913F97D2700C75497 /* FBSidePanelTableCellView.m */; };
+		C480C43314036E050048F2C2 /* message.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C43214036E040048F2C2 /* message.html.erb */; };
+		C480C43414036E050048F2C2 /* message.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C43214036E040048F2C2 /* message.html.erb */; };
+		C480C43614036E1F0048F2C2 /* message.text.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C43514036E1F0048F2C2 /* message.text.erb */; };
+		C480C43714036E1F0048F2C2 /* message.text.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C43514036E1F0048F2C2 /* message.text.erb */; };
+		C480C439140375490048F2C2 /* _header.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C438140375490048F2C2 /* _header.html.erb */; };
+		C480C43A140375490048F2C2 /* _header.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C438140375490048F2C2 /* _header.html.erb */; };
 		C4A92C0113F8773800B6F4F4 /* FBToolbarView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4A92C0013F8773800B6F4F4 /* FBToolbarView.rb */; };
 		C4A92C0213F8773800B6F4F4 /* FBToolbarView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4A92C0013F8773800B6F4F4 /* FBToolbarView.rb */; };
 		C4A92C0613F8BACA00B6F4F4 /* FBToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A92C0513F8BACA00B6F4F4 /* FBToolbarView.m */; };
@@ -125,6 +131,9 @@
 		C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSidePanelTableCellView.rb; sourceTree = "<group>"; };
 		C46BD8F813F97D2700C75497 /* FBSidePanelTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSidePanelTableCellView.h; sourceTree = "<group>"; };
 		C46BD8F913F97D2700C75497 /* FBSidePanelTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSidePanelTableCellView.m; sourceTree = "<group>"; };
+		C480C43214036E040048F2C2 /* message.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = message.html.erb; sourceTree = "<group>"; };
+		C480C43514036E1F0048F2C2 /* message.text.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = message.text.erb; sourceTree = "<group>"; };
+		C480C438140375490048F2C2 /* _header.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _header.html.erb; sourceTree = "<group>"; };
 		C4A92C0013F8773800B6F4F4 /* FBToolbarView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBToolbarView.rb; sourceTree = "<group>"; };
 		C4A92C0413F8BACA00B6F4F4 /* FBToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBToolbarView.h; sourceTree = "<group>"; };
 		C4A92C0513F8BACA00B6F4F4 /* FBToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBToolbarView.m; sourceTree = "<group>"; };
@@ -263,6 +272,9 @@
 				C4A92C0813F8BAEF00B6F4F4 /* FBToolbarView.xib */,
 				C46BD8E413F9732200C75497 /* FBSidePanelView.xib */,
 				C40CBF2814003BDB0062B2DF /* create_message_table.sql */,
+				C480C43214036E040048F2C2 /* message.html.erb */,
+				C480C43514036E1F0048F2C2 /* message.text.erb */,
+				C480C438140375490048F2C2 /* _header.html.erb */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -409,6 +421,9 @@
 				C40CBF2614001D700062B2DF /* Message.rb in Resources */,
 				C40CBF2914003BDB0062B2DF /* create_message_table.sql in Resources */,
 				C40CBF2C1400BB530062B2DF /* Attachment.rb in Resources */,
+				C480C43314036E050048F2C2 /* message.html.erb in Resources */,
+				C480C43614036E1F0048F2C2 /* message.text.erb in Resources */,
+				C480C439140375490048F2C2 /* _header.html.erb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +452,9 @@
 				C40CBF2714001D700062B2DF /* Message.rb in Resources */,
 				C40CBF2A14003BDB0062B2DF /* create_message_table.sql in Resources */,
 				C40CBF2D1400BB530062B2DF /* Attachment.rb in Resources */,
+				C480C43414036E050048F2C2 /* message.html.erb in Resources */,
+				C480C43714036E1F0048F2C2 /* message.text.erb in Resources */,
+				C480C43A140375490048F2C2 /* _header.html.erb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

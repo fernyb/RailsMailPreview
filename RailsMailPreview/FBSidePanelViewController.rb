@@ -60,9 +60,27 @@ class FBSidePanelViewController < NSViewController
     row = self.table.selectedRow
     if row >= 0
       item = self.items.objectAtIndex(row)
-      self.htmlview.loadHTMLString(item.html)
-      self.plainview.loadHTMLString(item.text)
+      self.htmlview.loadHTMLString(generate_html_template(item))
+      self.plainview.loadHTMLString(generate_text_template(item))
     end
   end
 
+  def generate_html_template(item)
+    self.generateTemplate("message.html", withItem:item)
+  end
+
+  def generate_text_template(item)
+    self.generateTemplate("message.text", withItem:item)
+  end
+
+  def render_header(item)
+    self.generateTemplate("_header.html", withItem:item)
+  end
+
+  def generateTemplate(template_name, withItem:item)
+    template_path = NSBundle.mainBundle.pathForResource(template_name, ofType:"erb")
+    template = File.open(template_path) {|f| f.read }
+    rhtml = ERB.new(template)
+    rhtml.result(binding)
+  end
 end
