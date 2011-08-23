@@ -35,18 +35,12 @@ class AppController < NSWindowController
     NSLog("Notification Received")
     msg = aNotification.object
     mail = Mail.new(msg)
-
-    message = Message.new
-    message.setMessage(mail)
-    message.save
-
     set_mail_message(mail)
     NSLog("Notification Ended...")
   end
 
   def set_mail_message(mail)
-    @htmlview.loadHTMLString(mail.html_part.body.to_s)
-    @plainview.loadHTMLString(mail.text_part.body.to_s)
+    @sidePanelViewController.saveNewMessage(mail)
   end
 
   def setup_side_views
@@ -107,6 +101,8 @@ class AppController < NSWindowController
   def setup_left_panel
     if @sidePanelViewController.nil?
       @sidePanelViewController = FBSidePanelViewController.alloc.init
+      @sidePanelViewController.htmlview = @htmlview
+      @sidePanelViewController.plainview = @plainview
       @contentSplitView.subviews.first.removeFromSuperview
       @contentSplitView.addSubview(@sidePanelViewController.view,
                               positioned: NSWindowBelow,

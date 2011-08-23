@@ -93,7 +93,9 @@ class FBSidePanelTableCellView < NSTableCellView
   end
 
   def selected=(b)
-    @selected = b
-    b ? self.make_white_text : self.make_default_text
+    if @selected != b
+      @selected = b
+      b ? self.make_white_text : self.make_default_text
+    end
   end
 end

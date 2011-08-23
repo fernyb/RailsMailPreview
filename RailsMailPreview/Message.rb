@@ -5,7 +5,6 @@
 #  Created by Fernando Barajas on 8/20/11.
 #  Copyright 2011 Fernando Barajas. All rights reserved.
 #
-require 'base64'
 
 class Message < FBDatabaseBase
   field :id,  :type => 'Integer'
@@ -36,5 +35,9 @@ class Message < FBDatabaseBase
       attachment.data      = attch.body.to_s
       self.attachments << attachment
     end
+  end
+
+  def brief
+    "A brief description of the email here..."
   end
 end
