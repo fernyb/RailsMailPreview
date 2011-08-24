@@ -106,4 +106,28 @@ class FBSidePanelViewController < NSViewController
   def nl2br(text)
     text.to_s.gsub(/\n|\r/, "<br />")
   end
+
+  def attachments(item)
+    list = Attachment.where(["message_id = ?", item.id])
+    tiles = list.map {|attachment| 
+      filename = "rails_logo.jpg"
+      uti = filename.fileType.objectForKey("uti")
+      iconImage = NSWorkspace.sharedWorkspace.iconForFileType(uti)
+      imageData64 = iconImage.resizeTo([32.0, 32.0]).TIFFRepresentation.base64
+
+      %Q{
+        <div class="attachment_tile">
+          <div>
+          <a href="#" onclick="return false;">
+            <img src="data:image/icns;base64,#{imageData64}" class="attachment_icon" />
+          </a>
+          </div>
+          <div>Filename.jpg</div>
+        </div>
+      }
+    }.join("")
+    if tiles != ""
+      %Q{<div id="attachments">#{tiles}</div>}
+    end
+  end
 end

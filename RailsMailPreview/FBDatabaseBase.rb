@@ -191,6 +191,15 @@ class FBDatabaseBase
     map_results(results).first
   end
 
+  def self.where(conditions)
+    if conditions
+      where = conditions.shift
+      puts conditions.inspect
+      results = db.execute("SELECT * FROM `#{table_name}` WHERE #{where}", *conditions)
+      map_results(results)
+    end
+  end
+
   def initialize
   end
 end

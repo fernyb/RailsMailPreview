@@ -13,6 +13,7 @@ class Attachment < FBDatabaseBase
   field :filename
   field :mime_type
   field :data,      :on_save => :on_save
+  field :disposition
   field :timestamp
   belongs_to :message
 

@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS attachments (
   `message_id` INTEGER,
   `filename` TEXT,
   `mime_type` TEXT,
+  `disposition` TEXT,
   `data` TEXT,
   `timestamp` TIMESTAMP
    DEFAULT CURRENT_TIMESTAMP
