@@ -79,3 +79,70 @@ body {
 #message_content * {
   white-space: normal;
 }
+
+body > #attachments {
+  margin: 6px;
+  font-family: "Lucida Grade", Helvetica;
+  font-size: 12px;
+}
+
+body > #attachments .attachment_tile {
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px;
+  padding: 4px;
+  min-width: 60px;
+  float: left;
+}
+
+body > #attachments .attachment_tile_selected {
+  border: 1px solid #6d95e0;
+  -webkit-border-radius: 4px;
+  padding: 4px;
+  background-color: #bbcef1;
+  min-width: 60px;
+  float: left;
+}
+
+body > #attachments img ~ div {
+  margin: 0px auto 0px auto;
+  text-align: center;
+}
+
+body > #attachments  img {
+  margin: 0px auto 0px auto;
+  display: block;
+}
+
+body > #attachments img:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+body > #attachments a {
+  color: #3b6ec2;
+  min-width: 32px;
+  display: block;
+}
+
+body > #attachments a:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+body > #attachments a:focus {
+  outline: none;
+}
+
+body > #attachments a:active {
+  color: #3b6ec2;
+}
+
+body > #attachments a:visited {
+  color: #3b6ec2;
+}

@@ -60,6 +60,7 @@ class FBSidePanelViewController < NSViewController
     row = self.table.selectedRow
     if row >= 0
       item = self.items.objectAtIndex(row)
+
       self.htmlview.loadHTMLString(generate_html_template(item))
       self.plainview.loadHTMLString(generate_text_template(item))
     end
@@ -76,6 +77,13 @@ class FBSidePanelViewController < NSViewController
   def render_stylesheet
     css_path = NSBundle.mainBundle.pathForResource("style", ofType:"css")
     %Q{<link href="file://#{css_path}" rel="stylesheet" type="text/css">}
+  end
+
+  def render_javascript
+    %W(jquery application).map {|name|
+      js_path = NSBundle.mainBundle.pathForResource(name, ofType:"js")
+      %Q{<script src="file://#{js_path}" type="text/javascript"></script>}
+    }.join("\n")
   end
 
   def render_header(item)
@@ -109,20 +117,19 @@ class FBSidePanelViewController < NSViewController
 
   def attachments(item)
     list = Attachment.where(["message_id = ?", item.id])
-    tiles = list.map {|attachment| 
-      filename = "rails_logo.jpg"
-      uti = filename.fileType.objectForKey("uti")
+    tiles = list.map {|attachment|
+      uti = attachment.filename.fileType.objectForKey("uti")
       iconImage = NSWorkspace.sharedWorkspace.iconForFileType(uti)
       imageData64 = iconImage.resizeTo([32.0, 32.0]).TIFFRepresentation.base64
 
       %Q{
         <div class="attachment_tile">
           <div>
-          <a href="#" onclick="return false;">
-            <img src="data:image/icns;base64,#{imageData64}" class="attachment_icon" />
-          </a>
+            <a href="#" onclick="return false;">
+              <img src="data:image/icns;base64,#{imageData64}" class="attachment_icon" />
+              <div>#{attachment.filename}</div>
+            </a>
           </div>
-          <div>Filename.jpg</div>
         </div>
       }
     }.join("")

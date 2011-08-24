@@ -52,6 +52,10 @@
 		C4A92C1B13F8CB5B00B6F4F4 /* show_horizontal_split.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C4A92C1913F8CB5B00B6F4F4 /* show_horizontal_split.tiff */; };
 		C4A92C1D13F8CB9F00B6F4F4 /* show_left_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A92C1C13F8CB9F00B6F4F4 /* show_left_panel.png */; };
 		C4A92C1E13F8CB9F00B6F4F4 /* show_left_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A92C1C13F8CB9F00B6F4F4 /* show_left_panel.png */; };
+		C4ADAAFC1405490200A43D2F /* jquery.js in Sources */ = {isa = PBXBuildFile; fileRef = C4ADAAFB1405490200A43D2F /* jquery.js */; };
+		C4ADAB00140549AB00A43D2F /* application.js in Sources */ = {isa = PBXBuildFile; fileRef = C4ADAAFF140549AB00A43D2F /* application.js */; };
+		C4ADAB051405610800A43D2F /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = C4ADAAFB1405490200A43D2F /* jquery.js */; };
+		C4ADAB061405610800A43D2F /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = C4ADAAFF140549AB00A43D2F /* application.js */; };
 		C4CCC3FC1404031C006EB689 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C4CCC3FB1404031C006EB689 /* style.css */; };
 		C4CCC3FD1404031C006EB689 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C4CCC3FB1404031C006EB689 /* style.css */; };
 		C4CCC40314041429006EB689 /* defaultdesktop.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CCC40214041429006EB689 /* defaultdesktop.png */; };
@@ -156,6 +160,8 @@
 		C4A92C1613F8CB4900B6F4F4 /* rotate_splitview_icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = rotate_splitview_icon.tiff; path = images/rotate_splitview_icon.tiff; sourceTree = "<group>"; };
 		C4A92C1913F8CB5B00B6F4F4 /* show_horizontal_split.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = show_horizontal_split.tiff; path = images/show_horizontal_split.tiff; sourceTree = "<group>"; };
 		C4A92C1C13F8CB9F00B6F4F4 /* show_left_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = show_left_panel.png; path = images/show_left_panel.png; sourceTree = "<group>"; };
+		C4ADAAFB1405490200A43D2F /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		C4ADAAFF140549AB00A43D2F /* application.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
 		C4CCC3FB1404031C006EB689 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		C4CCC40214041429006EB689 /* defaultdesktop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = defaultdesktop.png; path = images/defaultdesktop.png; sourceTree = "<group>"; };
 		C4CCC4051404C27B006EB689 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
@@ -315,6 +321,8 @@
 				C480C43514036E1F0048F2C2 /* message.text.erb */,
 				C480C438140375490048F2C2 /* _header.html.erb */,
 				C4CCC3FB1404031C006EB689 /* style.css */,
+				C4ADAAFB1405490200A43D2F /* jquery.js */,
+				C4ADAAFF140549AB00A43D2F /* application.js */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -473,6 +481,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4ADAB051405610800A43D2F /* jquery.js in Resources */,
+				C4ADAB061405610800A43D2F /* application.js in Resources */,
 				C4EB17AB13F6089E00BFB45C /* InfoPlist.strings in Resources */,
 				C4EB17AC13F6089E00BFB45C /* MainMenu.xib in Resources */,
 				C4EB17AD13F6089E00BFB45C /* rb_main.rb in Resources */,
@@ -524,6 +534,8 @@
 				C4CCC40B1404C645006EB689 /* NSData+Additions.m in Sources */,
 				C4CCC40F1404C737006EB689 /* Base64Transcoder.c in Sources */,
 				C4CCC4151404C889006EB689 /* NSImage+Additions.m in Sources */,
+				C4ADAAFC1405490200A43D2F /* jquery.js in Sources */,
+				C4ADAB00140549AB00A43D2F /* application.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

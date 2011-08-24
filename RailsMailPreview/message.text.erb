@@ -1,6 +1,7 @@
 <html>
 <head>
   <%= render_stylesheet %>
+  <%= render_javascript %>
 </head>
 <body>
   <div id="header">
@@ -9,5 +10,6 @@
   <div id="message_content">
   <%= nl2br(item.text) %>
   </div>
+  <%= attachments(item) %>
 </body>
 </html>
