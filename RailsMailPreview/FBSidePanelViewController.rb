@@ -73,6 +73,11 @@ class FBSidePanelViewController < NSViewController
     self.generateTemplate("message.text", withItem:item)
   end
 
+  def render_stylesheet
+    css_path = NSBundle.mainBundle.pathForResource("style", ofType:"css")
+    %Q{<link href="file://#{css_path}" rel="stylesheet" type="text/css">}
+  end
+
   def render_header(item)
     self.generateTemplate("_header.html", withItem:item)
   end
@@ -82,5 +87,23 @@ class FBSidePanelViewController < NSViewController
     template = File.open(template_path) {|f| f.read }
     rhtml = ERB.new(template)
     rhtml.result(binding)
+  end
+
+  def collect_emails(addresses)
+    emails = addresses.to_s.split(",").map {|addr|
+      %Q{<span class="email">#{addr.strip}</span>}
+    }.join(",")
+    %Q{<span class="email-address">#{emails}</span>}
+  end
+
+  def tidyup(html)
+    doc = NSXMLDocument.alloc.initWithXMLString(html, options:NSXMLDocumentTidyHTML, error:nil)
+    doc.setDocumentContentKind(NSXMLDocumentHTMLKind)
+    nodes = doc.nodesForXPath("//body/*", error:nil)
+    nodes.map {|node| node.XMLString }.join("")
+  end
+
+  def nl2br(text)
+    text.to_s.gsub(/\n|\r/, "<br />")
   end
 end

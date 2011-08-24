@@ -52,6 +52,10 @@
 		C4A92C1B13F8CB5B00B6F4F4 /* show_horizontal_split.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C4A92C1913F8CB5B00B6F4F4 /* show_horizontal_split.tiff */; };
 		C4A92C1D13F8CB9F00B6F4F4 /* show_left_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A92C1C13F8CB9F00B6F4F4 /* show_left_panel.png */; };
 		C4A92C1E13F8CB9F00B6F4F4 /* show_left_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A92C1C13F8CB9F00B6F4F4 /* show_left_panel.png */; };
+		C4CCC3FC1404031C006EB689 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C4CCC3FB1404031C006EB689 /* style.css */; };
+		C4CCC3FD1404031C006EB689 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C4CCC3FB1404031C006EB689 /* style.css */; };
+		C4CCC40314041429006EB689 /* defaultdesktop.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CCC40214041429006EB689 /* defaultdesktop.png */; };
+		C4CCC40414041429006EB689 /* defaultdesktop.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CCC40214041429006EB689 /* defaultdesktop.png */; };
 		C4D73B5613F6DAC7004D623E /* FRBSideView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4D73B5513F6DAC7004D623E /* FRBSideView.rb */; };
 		C4D73B5713F6DAC7004D623E /* FRBSideView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4D73B5513F6DAC7004D623E /* FRBSideView.rb */; };
 		C4EB176A13F5FE9700BFB45C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB176913F5FE9700BFB45C /* Cocoa.framework */; };
@@ -144,6 +148,8 @@
 		C4A92C1613F8CB4900B6F4F4 /* rotate_splitview_icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = rotate_splitview_icon.tiff; path = images/rotate_splitview_icon.tiff; sourceTree = "<group>"; };
 		C4A92C1913F8CB5B00B6F4F4 /* show_horizontal_split.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = show_horizontal_split.tiff; path = images/show_horizontal_split.tiff; sourceTree = "<group>"; };
 		C4A92C1C13F8CB9F00B6F4F4 /* show_left_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = show_left_panel.png; path = images/show_left_panel.png; sourceTree = "<group>"; };
+		C4CCC3FB1404031C006EB689 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		C4CCC40214041429006EB689 /* defaultdesktop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = defaultdesktop.png; path = images/defaultdesktop.png; sourceTree = "<group>"; };
 		C4D73B5513F6DAC7004D623E /* FRBSideView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FRBSideView.rb; sourceTree = "<group>"; };
 		C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsMailPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EB176913F5FE9700BFB45C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -267,6 +273,7 @@
 		C4EB177913F5FE9800BFB45C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C4CCC40214041429006EB689 /* defaultdesktop.png */,
 				C4A92C1513F8CB3200B6F4F4 /* icons */,
 				C4EB177A13F5FE9800BFB45C /* MainMenu.xib */,
 				C4A92C0813F8BAEF00B6F4F4 /* FBToolbarView.xib */,
@@ -275,6 +282,7 @@
 				C480C43214036E040048F2C2 /* message.html.erb */,
 				C480C43514036E1F0048F2C2 /* message.text.erb */,
 				C480C438140375490048F2C2 /* _header.html.erb */,
+				C4CCC3FB1404031C006EB689 /* style.css */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -424,6 +432,8 @@
 				C480C43314036E050048F2C2 /* message.html.erb in Resources */,
 				C480C43614036E1F0048F2C2 /* message.text.erb in Resources */,
 				C480C439140375490048F2C2 /* _header.html.erb in Resources */,
+				C4CCC3FC1404031C006EB689 /* style.css in Resources */,
+				C4CCC40314041429006EB689 /* defaultdesktop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +465,8 @@
 				C480C43414036E050048F2C2 /* message.html.erb in Resources */,
 				C480C43714036E1F0048F2C2 /* message.text.erb in Resources */,
 				C480C43A140375490048F2C2 /* _header.html.erb in Resources */,
+				C4CCC3FD1404031C006EB689 /* style.css in Resources */,
+				C4CCC40414041429006EB689 /* defaultdesktop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,8 @@ class FRBSideView < NSView
 
   def after_init(rect)
     @webview = WebView.alloc.initWithFrame(rect)
+    @webview.setDrawsBackground(NO)
+
     self.addSubview(@webview)
     self.setAutoresizingMask(self.resizeMask)
   end
@@ -29,11 +31,16 @@ class FRBSideView < NSView
   end
 
   def loadHTMLString(html)
-    url = NSURL.URLWithString("http://localhost/")
-    @webview.mainFrame.loadHTMLString(html, baseURL:url)
+    base_url = NSURL.URLWithString("file://localhost/")
+    @webview.mainFrame.loadHTMLString(html, baseURL:base_url)
   end
 
   def resizeMask
     NSViewMaxYMargin | NSViewMaxYMargin | NSViewHeightSizable | NSViewWidthSizable
+  end
+
+  def drawRect(rect)
+    NSColor.colorWithPatternImage(NSImage.imageNamed("defaultdesktop.png")).set
+    NSRectFill(rect)
   end
 end

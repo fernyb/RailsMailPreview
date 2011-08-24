@@ -1,10 +1,13 @@
 <html>
-  <body>
-    <header>
-      <%= render_header item %>
-    </header>
-    <div id="message_content">
-      <%= item.text %>
-    </div>
-  </body>
+<head>
+  <%= render_stylesheet %>
+</head>
+<body>
+  <div id="header">
+    <%= render_header item %>
+  </div>
+  <div id="message_content">
+  <%= nl2br(item.text) %>
+  </div>
+</body>
 </html>

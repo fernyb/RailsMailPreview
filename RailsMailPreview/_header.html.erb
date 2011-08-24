@@ -1,0 +1,24 @@
+<div id="from">
+  <span>From:</span> 
+  <%= collect_emails(item.from) %>
+</div>
+
+<div id="subject">
+  <span>Subject:</span>
+  <span><%= item.subject %></span>
+</div>
+
+<div id="date">
+  <span>Date:</span>
+  <span><%= item.date %></span>
+</div>
+
+<div id="to">
+  <span>To:</span>
+  <%= collect_emails(item.to) %>
+</div>
+
+<div id="reply_to">
+  <span>Reply-To:</span>
+  <%= collect_emails(item.reply_to) %>
+</div>
