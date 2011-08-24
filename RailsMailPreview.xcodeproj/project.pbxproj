@@ -291,12 +291,12 @@
 				C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */,
 				C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */,
 				C4ADAB071405740900A43D2F /* FBWebViewDelegate.rb */,
-				C4EB177913F5FE9800BFB45C /* Resources */,
-				C4EB177D13F5FE9800BFB45C /* Other Sources */,
-				C4EB177113F5FE9700BFB45C /* Supporting Files */,
 				C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */,
 				C40CBF2514001D700062B2DF /* Message.rb */,
 				C40CBF2B1400BB530062B2DF /* Attachment.rb */,
+				C4EB177913F5FE9800BFB45C /* Resources */,
+				C4EB177D13F5FE9800BFB45C /* Other Sources */,
+				C4EB177113F5FE9700BFB45C /* Supporting Files */,
 			);
 			path = RailsMailPreview;
 			sourceTree = "<group>";
