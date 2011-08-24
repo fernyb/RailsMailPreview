@@ -10,6 +10,7 @@ class FRBSideView < NSView
   attr_accessor :webview
   attr_accessor :side
   attr_accessor :view_type
+  attr_accessor :webviewDelegate
 
   def initWithFrame(rect)
     super(rect)
@@ -19,6 +20,11 @@ class FRBSideView < NSView
 
   def after_init(rect)
     @webview = WebView.alloc.initWithFrame(rect)
+    @webviewDelegate = FBWebViewDelegate.alloc.init
+
+    @webview.setFrameLoadDelegate(@webviewDelegate)
+    @webview.setUIDelegate(@webviewDelegate)
+    @webview.setPolicyDelegate(@webviewDelegate)
     @webview.setDrawsBackground(NO)
 
     self.addSubview(@webview)

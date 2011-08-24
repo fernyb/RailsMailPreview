@@ -56,6 +56,8 @@
 		C4ADAB00140549AB00A43D2F /* application.js in Sources */ = {isa = PBXBuildFile; fileRef = C4ADAAFF140549AB00A43D2F /* application.js */; };
 		C4ADAB051405610800A43D2F /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = C4ADAAFB1405490200A43D2F /* jquery.js */; };
 		C4ADAB061405610800A43D2F /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = C4ADAAFF140549AB00A43D2F /* application.js */; };
+		C4ADAB081405740900A43D2F /* FBWebViewDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4ADAB071405740900A43D2F /* FBWebViewDelegate.rb */; };
+		C4ADAB091405740900A43D2F /* FBWebViewDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4ADAB071405740900A43D2F /* FBWebViewDelegate.rb */; };
 		C4CCC3FC1404031C006EB689 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C4CCC3FB1404031C006EB689 /* style.css */; };
 		C4CCC3FD1404031C006EB689 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C4CCC3FB1404031C006EB689 /* style.css */; };
 		C4CCC40314041429006EB689 /* defaultdesktop.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CCC40214041429006EB689 /* defaultdesktop.png */; };
@@ -162,6 +164,7 @@
 		C4A92C1C13F8CB9F00B6F4F4 /* show_left_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = show_left_panel.png; path = images/show_left_panel.png; sourceTree = "<group>"; };
 		C4ADAAFB1405490200A43D2F /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
 		C4ADAAFF140549AB00A43D2F /* application.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
+		C4ADAB071405740900A43D2F /* FBWebViewDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBWebViewDelegate.rb; sourceTree = "<group>"; };
 		C4CCC3FB1404031C006EB689 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		C4CCC40214041429006EB689 /* defaultdesktop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = defaultdesktop.png; path = images/defaultdesktop.png; sourceTree = "<group>"; };
 		C4CCC4051404C27B006EB689 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
@@ -287,6 +290,7 @@
 				C46BD8F213F973FC00C75497 /* FBSidePanelView.rb */,
 				C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */,
 				C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */,
+				C4ADAB071405740900A43D2F /* FBWebViewDelegate.rb */,
 				C4EB177913F5FE9800BFB45C /* Resources */,
 				C4EB177D13F5FE9800BFB45C /* Other Sources */,
 				C4EB177113F5FE9700BFB45C /* Supporting Files */,
@@ -474,6 +478,7 @@
 				C480C439140375490048F2C2 /* _header.html.erb in Resources */,
 				C4CCC3FC1404031C006EB689 /* style.css in Resources */,
 				C4CCC40314041429006EB689 /* defaultdesktop.png in Resources */,
+				C4ADAB081405740900A43D2F /* FBWebViewDelegate.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +514,7 @@
 				C480C43A140375490048F2C2 /* _header.html.erb in Resources */,
 				C4CCC3FD1404031C006EB689 /* style.css in Resources */,
 				C4CCC40414041429006EB689 /* defaultdesktop.png in Resources */,
+				C4ADAB091405740900A43D2F /* FBWebViewDelegate.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
