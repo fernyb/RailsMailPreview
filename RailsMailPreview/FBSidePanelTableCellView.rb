@@ -25,21 +25,25 @@ class FBSidePanelTableCellView < NSTableCellView
   end
 
   def awakeFromNib
-    @from_field = NSTextField.alloc.initWithFrame([0, 3, self.width - 101, 16])
+    date_field_width = 62
+    @from_field = NSTextField.alloc.initWithFrame([0, 3, CGRectGetMaxX(self.bounds) - date_field_width, 16])
     @from_field.setBezeled(NO)
     @from_field.setEditable(NO)
     @from_field.setFont(self.defaultFont(bold:true))
     @from_field.setBackgroundColor(NSColor.clearColor)
+    @from_field.cell.setLineBreakMode(NSLineBreakByTruncatingTail)
+    @from_field.setAutoresizingMask(NSViewMaxXMargin | NSViewWidthSizable)
     DEFAULT_TEXT_COLORS.merge!(from: @from_field.textColor)
     self.addSubview(@from_field)
 
-    @date_field = NSTextField.alloc.initWithFrame([1 + CGRectGetMaxX(@from_field.frame), 3, 56, 16])
+    @date_field = NSTextField.alloc.initWithFrame([CGRectGetMaxX(self.bounds) - date_field_width, 3, date_field_width, 16])
     @date_field.setBezeled(NO)
     @date_field.setEditable(NO)
     @date_field.setFont(self.defaultFont)
     @date_field.setAlignment(NSRightTextAlignment)
     @date_field.setTextColor(NSColor.colorWithCalibratedRed(0.069, green:0.326, blue:0.901, alpha:1.00))
     @date_field.setBackgroundColor(NSColor.clearColor)
+    @date_field.setAutoresizingMask(NSViewMinXMargin)
     DEFAULT_TEXT_COLORS.merge!(date: @date_field.textColor)
     self.addSubview(@date_field)
 
@@ -48,15 +52,18 @@ class FBSidePanelTableCellView < NSTableCellView
     @subject_field.setEditable(NO)
     @subject_field.setFont(self.defaultFont)
     @subject_field.setBackgroundColor(NSColor.clearColor)
+    @subject_field.setAutoresizingMask(NSViewMaxXMargin)
     DEFAULT_TEXT_COLORS.merge!(subject: @subject_field.textColor)
     self.addSubview(@subject_field)
 
-    @brief_field = NSTextField.alloc.initWithFrame([0, 1 + CGRectGetMaxY(@subject_field.frame), self.width, 32])
+    @brief_field = NSTextField.alloc.initWithFrame([0, 1 + CGRectGetMaxY(@subject_field.frame), self.width, 30])
     @brief_field.setBezeled(NO)
     @brief_field.setEditable(NO)
     @brief_field.setFont(self.defaultFont)
     @brief_field.setBackgroundColor(NSColor.clearColor)
     @brief_field.setTextColor(NSColor.colorWithCalibratedWhite(0.298, alpha:1.00))
+    @brief_field.cell.setLineBreakMode(NSLineBreakByCharWrapping)
+    @brief_field.setAutoresizingMask(NSViewMaxXMargin | NSViewWidthSizable)
     DEFAULT_TEXT_COLORS.merge!(brief: @brief_field.textColor)
     self.addSubview(@brief_field)
   end
@@ -71,6 +78,11 @@ class FBSidePanelTableCellView < NSTableCellView
       var = instance_variable_get("@#{f}_field")
       var.stringValue unless var.nil?
     end
+  end
+
+  def date=(d)
+    var = @date_field
+    var.setStringValue(Time.parse(d).strftime("%D"))
   end
 
   def make_white_text

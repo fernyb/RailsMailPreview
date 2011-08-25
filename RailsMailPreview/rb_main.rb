@@ -16,6 +16,7 @@ require 'mail'
 require 'sqlite3'
 require 'erb'
 require 'base64'
+require 'time'
 
 YES = true
 NO  = false
