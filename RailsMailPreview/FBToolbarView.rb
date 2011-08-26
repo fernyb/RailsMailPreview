@@ -8,5 +8,13 @@
 
 
 class FBToolbarView < INTitlebarView
+  attr_accessor :segmentControl
   
+  def drawRect(rect)
+    @segmentControl.setFrameOrigin([
+      (CGRectGetWidth(self.frame) / 2) - (CGRectGetWidth(@segmentControl.frame) / 2),
+      @segmentControl.frame.origin.y
+    ])
+    super(rect)
+  end
 end

@@ -17,10 +17,18 @@ class FBToolbarViewController < NSViewController
   end
 
   def awakeFromNib
+    self.view.segmentControl = @segmentControl
+
     0.upto(@segmentControl.segmentCount - 1) do |i|
       @segmentControl.imageForSegment(i).setTemplate(YES)
       @segmentControl.setSelected(NO, forSegment:i)
     end
+
+    window_width = CGRectGetWidth(@parentController.window.frame)
+    @segmentControl.setFrameOrigin([
+      (window_width / 2) - (CGRectGetWidth(@segmentControl.frame) / 2),
+      @segmentControl.frame.origin.y
+    ])
   end
 
   def segmentedItemSelected(sender)
