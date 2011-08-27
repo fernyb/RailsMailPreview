@@ -2,7 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1060</int>
-		<string key="IBDocument.SystemVersion">11A511</string>
+		<string key="IBDocument.SystemVersion">11B26</string>
 		<string key="IBDocument.InterfaceBuilderVersion">1617</string>
 		<string key="IBDocument.AppKitVersion">1138</string>
 		<string key="IBDocument.HIToolboxVersion">566.00</string>
@@ -1349,6 +1349,7 @@
 											<string key="NSFrameSize">{231, 478}</string>
 											<reference key="NSSuperview" ref="419503999"/>
 											<reference key="NSWindow"/>
+											<reference key="NSNextKeyView" ref="354960376"/>
 											<string key="NSReuseIdentifierKey">_NS:599</string>
 											<string key="NSClassName">NSView</string>
 										</object>
@@ -1395,6 +1396,7 @@
 											<string key="NSFrame">{{232, 0}, {618, 478}}</string>
 											<reference key="NSSuperview" ref="419503999"/>
 											<reference key="NSWindow"/>
+											<reference key="NSNextKeyView" ref="348257336"/>
 											<string key="NSReuseIdentifierKey">_NS:601</string>
 											<string key="NSClassName">NSView</string>
 										</object>
@@ -1402,6 +1404,7 @@
 									<string key="NSFrameSize">{850, 478}</string>
 									<reference key="NSSuperview" ref="669831151"/>
 									<reference key="NSWindow"/>
+									<reference key="NSNextKeyView" ref="816054608"/>
 									<string key="NSReuseIdentifierKey">_NS:597</string>
 									<bool key="NSIsVertical">YES</bool>
 									<int key="NSDividerStyle">2</int>
@@ -1410,7 +1413,7 @@
 							<string key="NSFrameSize">{850, 478}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="348257336"/>
+							<reference key="NSNextKeyView" ref="419503999"/>
 							<string key="NSReuseIdentifierKey">_NS:499</string>
 							<string key="NSClassName">NSView</string>
 						</object>
@@ -3414,6 +3417,7 @@
 					<string>543.IBPluginDependency</string>
 					<string>56.IBPluginDependency</string>
 					<string>563.IBPluginDependency</string>
+					<string>563.userInterfaceItemIdentifier</string>
 					<string>564.IBPluginDependency</string>
 					<string>565.IBPluginDependency</string>
 					<string>57.IBPluginDependency</string>
@@ -3579,6 +3583,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>contentSplitView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>

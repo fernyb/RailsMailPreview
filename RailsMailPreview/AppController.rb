@@ -107,6 +107,7 @@ class AppController < NSWindowController
       @contentSplitView.addSubview(@sidePanelViewController.view,
                               positioned: NSWindowBelow,
                               relativeTo: @contentSplitView.subviews.first)
+      @contentSplitView.setDelegate(self)
     end
   end
 
@@ -130,5 +131,28 @@ class AppController < NSWindowController
     @splitview.setVertical(!@splitview.isVertical)
     @splitview.setNeedsDisplay(YES)
     @splitview.adjustSubviews
+  end
+
+  # - (CGFloat)splitView:(NSSplitView *)splitView constrainMaxCoordinate:(CGFloat)proposedMax ofSubviewAt:(NSInteger)dividerIndex
+  def splitView(aSplitView, constrainMaxCoordinate:proposedMax, ofSubviewAt:dividerIndex)
+    if dividerIndex == 0
+      350
+    else
+      proposedMax
+    end
+  end
+
+  # - (CGFloat)splitView:(NSSplitView *)splitView constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)dividerIndex
+  def splitView(aSplitView, constrainMinCoordinate:proposedMin, ofSubviewAt:dividerIndex)
+    if dividerIndex == 0
+      150
+    else
+      proposedMin
+    end
+  end
+
+  # - (BOOL)splitView:(NSSplitView *)splitView shouldAdjustSizeOfSubview:(NSView *)subview
+  def splitView(aSplitView, shouldAdjustSizeOfSubview:subview)
+   subview.className != "FBSidePanelView"
   end
 end
