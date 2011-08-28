@@ -89,12 +89,27 @@ class AppController < NSWindowController
     self.window.setTitleBarView(@toolbarViewController.view)
   end
 
+  def animationDuration
+    0.16
+  end
+
   def toggle_left_panel
     panelview = @contentSplitView.subviews.first
     if CGRectGetWidth(panelview.frame) <= 1
-      panelview.setFrame([0,0, 300, 300])
+      NSAnimationContext.beginGrouping
+      NSAnimationContext.currentContext.setDuration(self.animationDuration)
+      if @prevContentSplitViewFrame
+        panelview.animator.setFrame(@prevContentSplitViewFrame)
+      else
+        panelview.animator.setFrame([0,0, 300, CGRectGetHeight(panelview.frame)])
+      end
+      NSAnimationContext.endGrouping
     else
-      panelview.setFrame(CGRectZero)
+      @prevContentSplitViewFrame = panelview.frame
+      NSAnimationContext.beginGrouping
+      NSAnimationContext.currentContext.setDuration(self.animationDuration)
+      panelview.animator.setFrameSize([0.0, CGRectGetHeight(panelview.frame)])
+      NSAnimationContext.endGrouping
     end
   end
 

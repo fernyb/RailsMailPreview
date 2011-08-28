@@ -15,7 +15,11 @@ class FBSidePanelViewController < NSViewController
   def saveNewMessage(mail)
     message = Message.new
     message.setMessage(mail)
-    message.save
+    if message.save
+      NSLog("*** Message Saved")
+    else
+      NSLog("*** Message did not save")
+    end
 
     self.items = Message.all
     self.table.reloadData
