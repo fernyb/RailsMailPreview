@@ -9,16 +9,22 @@
 require "#{RESOURCE_PATH}/FRBSideView.rb"
 
 class FBStartupView < FRBSideView
-  def after_init(rect)
-    super(rect)
-    load_startup_html
-  end
+  attr_accessor :message
 
   def load_startup_html
     template_path = NSBundle.mainBundle.pathForResource("startup.html", ofType:"erb")
     template = File.open(template_path) {|f| f.read }
     rhtml = ERB.new(template)
     self.loadHTMLString(rhtml.result(binding))
+  end
+
+  def render
+    self.load_startup_html
+    self
+  end
+
+  def render_message
+    self.message
   end
 
   def render_stylesheet

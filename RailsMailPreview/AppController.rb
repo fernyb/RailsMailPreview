@@ -18,8 +18,8 @@ class AppController < NSWindowController
 
   def didFinishLaunching
     setup_toolbar
-    setup_side_views
     setup_left_panel
+    setup_side_views
     setup_notification
   end
 
@@ -55,11 +55,22 @@ class AppController < NSWindowController
     end
   end
 
-  def setup_side_views
+  def setup_startup_view
     self.splitview.setHidden(YES)
 
     @startup_view = FBStartupView.alloc.initWithFrame([0,0, CGRectGetWidth(self.splitview.superview.frame), CGRectGetHeight(self.splitview.superview.frame)])
-    self.splitview.superview.addSubview(@startup_view)
+    if !Message.first
+      self.hide_left_panel(animate:NO)
+      @startup_view.message = "No Messages Available"
+    else
+      @startup_view.message = "No Message Selected"
+    end
+
+    self.splitview.superview.addSubview(@startup_view.render)
+  end
+
+  def setup_side_views
+    self.setup_startup_view
 
     # Setup the left view
     currentLeftView = self.splitview.subviews[0]
@@ -122,7 +133,16 @@ class AppController < NSWindowController
       end
       NSAnimationContext.endGrouping
     else
-      @prevContentSplitViewFrame = panelview.frame
+      self.hide_left_panel
+    end
+  end
+
+  def hide_left_panel(opts={})
+    panelview = @contentSplitView.subviews.first
+    @prevContentSplitViewFrame = panelview.frame
+    if opts[:animate] == NO
+      panelview.setFrameSize([0.0, CGRectGetHeight(panelview.frame)])
+    else
       NSAnimationContext.beginGrouping
       NSAnimationContext.currentContext.setDuration(self.animationDuration)
       panelview.animator.setFrameSize([0.0, CGRectGetHeight(panelview.frame)])
