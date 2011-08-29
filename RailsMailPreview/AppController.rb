@@ -18,8 +18,8 @@ class AppController < NSWindowController
 
   def didFinishLaunching
     setup_toolbar
-    setup_left_panel
     setup_side_views
+    setup_left_panel
     setup_notification
   end
 
@@ -34,6 +34,11 @@ class AppController < NSWindowController
                                                    selector: :"receiveDidLoadHTMLString:",
                                                    name: "loadHTMLString",
                                                    object: nil)
+
+    NSNotificationCenter.defaultCenter.addObserver(self,
+                                                   selector: :"receiveSaveNewMessage:",
+                                                   name: "saveNewMessage",
+                                                   object: nil)
   end
 
   def receiveNotification(aNotification)
@@ -46,6 +51,11 @@ class AppController < NSWindowController
 
   def set_mail_message(mail)
     @sidePanelViewController.saveNewMessage(mail)
+  end
+
+  def receiveSaveNewMessage(notification)
+    self.receiveDidLoadHTMLString(notification)
+    self.show_left_panel
   end
 
   def receiveDidLoadHTMLString(notification)
@@ -70,8 +80,6 @@ class AppController < NSWindowController
   end
 
   def setup_side_views
-    self.setup_startup_view
-
     # Setup the left view
     currentLeftView = self.splitview.subviews[0]
     @htmlview = FRBSideView.alloc.initWithFrame(
@@ -124,6 +132,15 @@ class AppController < NSWindowController
   def toggle_left_panel
     panelview = @contentSplitView.subviews.first
     if CGRectGetWidth(panelview.frame) <= 1
+      self.show_left_panel
+    else
+      self.hide_left_panel
+    end
+  end
+
+  def show_left_panel
+    panelview = @contentSplitView.subviews.first
+    if CGRectGetWidth(panelview.frame) <= 1
       NSAnimationContext.beginGrouping
       NSAnimationContext.currentContext.setDuration(self.animationDuration)
       if @prevContentSplitViewFrame
@@ -132,8 +149,6 @@ class AppController < NSWindowController
         panelview.animator.setFrame([0,0, 300, CGRectGetHeight(panelview.frame)])
       end
       NSAnimationContext.endGrouping
-    else
-      self.hide_left_panel
     end
   end
 
@@ -160,6 +175,7 @@ class AppController < NSWindowController
                               positioned: NSWindowBelow,
                               relativeTo: @contentSplitView.subviews.first)
       @contentSplitView.setDelegate(self)
+      self.setup_startup_view
     end
   end
 

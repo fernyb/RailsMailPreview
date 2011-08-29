@@ -23,6 +23,8 @@ class FBSidePanelViewController < NSViewController
 
     self.items = Message.all
     self.table.reloadData
+
+    NSNotificationCenter.defaultCenter.postNotificationName("saveNewMessage", object:nil)
   end
 
   def items
