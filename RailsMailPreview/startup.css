@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+  background: rgb(245, 246, 247) url(backgroundTile.png) top center repeat-x;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: bold;
+	color: rgb(126, 132, 136);
+}
+
+* {
+	cursor: default;
+	-webkit-user-select: none;
+}
+
+.text {
+	color: rgba(0, 0, 0, .35);
+	text-shadow: 0px 1px 0px white;
+}
+
+p {
+  text-align: center;
+  margin-top: 25%;
+  font-size: 30px;
+}

@@ -18,6 +18,14 @@
 		C40EA95E13F82CCF0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
 		C40EA96513F8465B0049534A /* FRBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA96413F8465B0049534A /* FRBWindow.m */; };
 		C40EA97613F86CEB0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
+		C428A542140AC482006DE6A1 /* FBStartupView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428A541140AC482006DE6A1 /* FBStartupView.rb */; };
+		C428A543140AC482006DE6A1 /* FBStartupView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C428A541140AC482006DE6A1 /* FBStartupView.rb */; };
+		C428A545140AC557006DE6A1 /* startup.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = C428A544140AC557006DE6A1 /* startup.html.erb */; };
+		C428A546140AC557006DE6A1 /* startup.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = C428A544140AC557006DE6A1 /* startup.html.erb */; };
+		C428A548140AC6CB006DE6A1 /* startup.css in Resources */ = {isa = PBXBuildFile; fileRef = C428A547140AC6CB006DE6A1 /* startup.css */; };
+		C428A549140AC6CB006DE6A1 /* startup.css in Resources */ = {isa = PBXBuildFile; fileRef = C428A547140AC6CB006DE6A1 /* startup.css */; };
+		C428A54B140ACA5E006DE6A1 /* backgroundTile.png in Resources */ = {isa = PBXBuildFile; fileRef = C428A54A140ACA5E006DE6A1 /* backgroundTile.png */; };
+		C428A54C140ACA5E006DE6A1 /* backgroundTile.png in Resources */ = {isa = PBXBuildFile; fileRef = C428A54A140ACA5E006DE6A1 /* backgroundTile.png */; };
 		C441F9F413FAB9310061C923 /* FBSidePanelTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C441F9F313FAB9310061C923 /* FBSidePanelTableRowView.m */; };
 		C441F9F813FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */; };
 		C441F9F913FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */; };
@@ -136,6 +144,10 @@
 		C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
 		C40EA96313F8465B0049534A /* FRBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBWindow.h; sourceTree = "<group>"; };
 		C40EA96413F8465B0049534A /* FRBWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBWindow.m; sourceTree = "<group>"; };
+		C428A541140AC482006DE6A1 /* FBStartupView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBStartupView.rb; sourceTree = "<group>"; };
+		C428A544140AC557006DE6A1 /* startup.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = startup.html.erb; sourceTree = "<group>"; };
+		C428A547140AC6CB006DE6A1 /* startup.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = startup.css; sourceTree = "<group>"; };
+		C428A54A140ACA5E006DE6A1 /* backgroundTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundTile.png; path = images/backgroundTile.png; sourceTree = "<group>"; };
 		C441F9F213FAB9300061C923 /* FBSidePanelTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSidePanelTableRowView.h; sourceTree = "<group>"; };
 		C441F9F313FAB9310061C923 /* FBSidePanelTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSidePanelTableRowView.m; sourceTree = "<group>"; };
 		C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSidePanelTableRowView.rb; sourceTree = "<group>"; };
@@ -284,6 +296,7 @@
 				C4EB178013F5FE9800BFB45C /* AppDelegate.rb */,
 				C4EB179513F6046400BFB45C /* AppController.rb */,
 				C4D73B5513F6DAC7004D623E /* FRBSideView.rb */,
+				C428A541140AC482006DE6A1 /* FBStartupView.rb */,
 				C4A92C1213F8BBA000B6F4F4 /* FBToolbarViewController.rb */,
 				C4A92C0013F8773800B6F4F4 /* FBToolbarView.rb */,
 				C46BD8E013F972B400C75497 /* FBSidePanelViewController.rb */,
@@ -315,6 +328,7 @@
 		C4EB177913F5FE9800BFB45C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C428A54A140ACA5E006DE6A1 /* backgroundTile.png */,
 				C4CCC40214041429006EB689 /* defaultdesktop.png */,
 				C4A92C1513F8CB3200B6F4F4 /* icons */,
 				C4EB177A13F5FE9800BFB45C /* MainMenu.xib */,
@@ -327,6 +341,8 @@
 				C4CCC3FB1404031C006EB689 /* style.css */,
 				C4ADAAFB1405490200A43D2F /* jquery.js */,
 				C4ADAAFF140549AB00A43D2F /* application.js */,
+				C428A544140AC557006DE6A1 /* startup.html.erb */,
+				C428A547140AC6CB006DE6A1 /* startup.css */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -479,6 +495,10 @@
 				C4CCC3FC1404031C006EB689 /* style.css in Resources */,
 				C4CCC40314041429006EB689 /* defaultdesktop.png in Resources */,
 				C4ADAB081405740900A43D2F /* FBWebViewDelegate.rb in Resources */,
+				C428A542140AC482006DE6A1 /* FBStartupView.rb in Resources */,
+				C428A545140AC557006DE6A1 /* startup.html.erb in Resources */,
+				C428A548140AC6CB006DE6A1 /* startup.css in Resources */,
+				C428A54B140ACA5E006DE6A1 /* backgroundTile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +535,10 @@
 				C4CCC3FD1404031C006EB689 /* style.css in Resources */,
 				C4CCC40414041429006EB689 /* defaultdesktop.png in Resources */,
 				C4ADAB091405740900A43D2F /* FBWebViewDelegate.rb in Resources */,
+				C428A543140AC482006DE6A1 /* FBStartupView.rb in Resources */,
+				C428A546140AC557006DE6A1 /* startup.html.erb in Resources */,
+				C428A549140AC6CB006DE6A1 /* startup.css in Resources */,
+				C428A54C140ACA5E006DE6A1 /* backgroundTile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

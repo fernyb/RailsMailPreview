@@ -29,6 +29,11 @@ class AppController < NSWindowController
                        selector: :"receiveNotification:",
                        name: "RailsMailPreview.email",
                        object: nil)
+
+    NSNotificationCenter.defaultCenter.addObserver(self,
+                                                   selector: :"receiveDidLoadHTMLString:",
+                                                   name: "loadHTMLString",
+                                                   object: nil)
   end
 
   def receiveNotification(aNotification)
@@ -43,7 +48,19 @@ class AppController < NSWindowController
     @sidePanelViewController.saveNewMessage(mail)
   end
 
+  def receiveDidLoadHTMLString(notification)
+    if self.splitview.isHidden
+      @startup_view.setHidden(YES) if @startup_view
+      self.splitview.setHidden(NO)
+    end
+  end
+
   def setup_side_views
+    self.splitview.setHidden(YES)
+
+    @startup_view = FBStartupView.alloc.initWithFrame([0,0, CGRectGetWidth(self.splitview.superview.frame), CGRectGetHeight(self.splitview.superview.frame)])
+    self.splitview.superview.addSubview(@startup_view)
+
     # Setup the left view
     currentLeftView = self.splitview.subviews[0]
     @htmlview = FRBSideView.alloc.initWithFrame(

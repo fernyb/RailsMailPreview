@@ -67,6 +67,7 @@ class FBSidePanelViewController < NSViewController
 
       self.htmlview.loadHTMLString(generate_html_template(item))
       self.plainview.loadHTMLString(generate_text_template(item))
+      NSNotificationCenter.defaultCenter.postNotificationName("loadHTMLString", object:nil)
     end
   end
 
