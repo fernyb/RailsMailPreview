@@ -9,5 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface FBProgressWindowController : NSWindowController
-
+{
+  IBOutlet NSProgressIndicator * progressbar;
+}
 @end
