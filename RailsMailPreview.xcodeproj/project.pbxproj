@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40A8790140C3FF400F41FFF /* FBProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */; };
+		C40A8791140C3FF400F41FFF /* FBProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */; };
+		C40A8793140C403500F41FFF /* ProgressWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40A8792140C403500F41FFF /* ProgressWindow.xib */; };
+		C40A8794140C403500F41FFF /* ProgressWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40A8792140C403500F41FFF /* ProgressWindow.xib */; };
+		C40A8797140C427700F41FFF /* FBProgressWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40A8796140C427700F41FFF /* FBProgressWindowController.m */; };
 		C40CBF21140017BB0062B2DF /* FBDatabaseBase.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */; };
 		C40CBF22140017BB0062B2DF /* FBDatabaseBase.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */; };
 		C40CBF2614001D700062B2DF /* Message.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40CBF2514001D700062B2DF /* Message.rb */; };
@@ -136,6 +141,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBProgressWindowController.rb; sourceTree = "<group>"; };
+		C40A8792140C403500F41FFF /* ProgressWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressWindow.xib; sourceTree = "<group>"; };
+		C40A8795140C427700F41FFF /* FBProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBProgressWindowController.h; sourceTree = "<group>"; };
+		C40A8796140C427700F41FFF /* FBProgressWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBProgressWindowController.m; sourceTree = "<group>"; };
 		C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBDatabaseBase.rb; sourceTree = "<group>"; };
 		C40CBF2514001D700062B2DF /* Message.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Message.rb; sourceTree = "<group>"; };
 		C40CBF2814003BDB0062B2DF /* create_message_table.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_message_table.sql; sourceTree = "<group>"; };
@@ -307,6 +316,7 @@
 				C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */,
 				C40CBF2514001D700062B2DF /* Message.rb */,
 				C40CBF2B1400BB530062B2DF /* Attachment.rb */,
+				C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */,
 				C4EB177913F5FE9800BFB45C /* Resources */,
 				C4EB177D13F5FE9800BFB45C /* Other Sources */,
 				C4EB177113F5FE9700BFB45C /* Supporting Files */,
@@ -334,6 +344,7 @@
 				C4EB177A13F5FE9800BFB45C /* MainMenu.xib */,
 				C4A92C0813F8BAEF00B6F4F4 /* FBToolbarView.xib */,
 				C46BD8E413F9732200C75497 /* FBSidePanelView.xib */,
+				C40A8792140C403500F41FFF /* ProgressWindow.xib */,
 				C40CBF2814003BDB0062B2DF /* create_message_table.sql */,
 				C480C43214036E040048F2C2 /* message.html.erb */,
 				C480C43514036E1F0048F2C2 /* message.text.erb */,
@@ -376,6 +387,8 @@
 				C46BD8F913F97D2700C75497 /* FBSidePanelTableCellView.m */,
 				C441F9F213FAB9300061C923 /* FBSidePanelTableRowView.h */,
 				C441F9F313FAB9310061C923 /* FBSidePanelTableRowView.m */,
+				C40A8795140C427700F41FFF /* FBProgressWindowController.h */,
+				C40A8796140C427700F41FFF /* FBProgressWindowController.m */,
 			);
 			name = "Workaround Files";
 			sourceTree = "<group>";
@@ -499,6 +512,8 @@
 				C428A545140AC557006DE6A1 /* startup.html.erb in Resources */,
 				C428A548140AC6CB006DE6A1 /* startup.css in Resources */,
 				C428A54B140ACA5E006DE6A1 /* backgroundTile.png in Resources */,
+				C40A8790140C3FF400F41FFF /* FBProgressWindowController.rb in Resources */,
+				C40A8793140C403500F41FFF /* ProgressWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +554,8 @@
 				C428A546140AC557006DE6A1 /* startup.html.erb in Resources */,
 				C428A549140AC6CB006DE6A1 /* startup.css in Resources */,
 				C428A54C140ACA5E006DE6A1 /* backgroundTile.png in Resources */,
+				C40A8791140C3FF400F41FFF /* FBProgressWindowController.rb in Resources */,
+				C40A8794140C403500F41FFF /* ProgressWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +583,7 @@
 				C4CCC4151404C889006EB689 /* NSImage+Additions.m in Sources */,
 				C4ADAAFC1405490200A43D2F /* jquery.js in Sources */,
 				C4ADAB00140549AB00A43D2F /* application.js in Sources */,
+				C40A8797140C427700F41FFF /* FBProgressWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

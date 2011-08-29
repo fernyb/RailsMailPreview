@@ -23,6 +23,12 @@ class AppController < NSWindowController
     setup_notification
   end
 
+  def window(aWindow, willPositionSheet:sheet, usingRect:rect)
+    newRect = rect
+    newRect.origin.y -= 18.0
+    newRect
+  end
+
   def setup_notification
     center = NSDistributedNotificationCenter.defaultCenter
     center.addObserver(self,
@@ -41,17 +47,28 @@ class AppController < NSWindowController
                                                    object: nil)
   end
 
-  def receiveNotification(aNotification)
-    NSLog("Notification Received")
+  def didReceiveNewMessage
+    @progressWindow ||= FBProgressWindowController.alloc.init
+    NSApplication.sharedApplication.beginSheet(@progressWindow.window,
+                                              modalForWindow: self.window,
+                                              modalDelegate: self,
+                                              didEndSelector: nil,
+                                              contextInfo: nil)
+  end
 
+  def didFinishReceivingNewMessage
+    NSApplication.sharedApplication.endSheet(@progressWindow.window)
+    @progressWindow.window.orderOut(self)
+  end
+
+  def receiveNotification(aNotification)
+    self.didReceiveNewMessage
     queue = Dispatch::Queue.new('net.fernyb.RailsMailPreview.gcd')
     queue.async do
       msg = aNotification.object
       mail = Mail.new(msg)
-      self.performSelectorOnMainThread(:"set_mail_message", withObject:mail, waitUntilDone:YES)
+      self.performSelectorOnMainThread(:"set_mail_message:", withObject:mail, waitUntilDone:YES)
     end
-
-    NSLog("Notification Ended...")
   end
 
   def set_mail_message(mail)
@@ -59,6 +76,7 @@ class AppController < NSWindowController
   end
 
   def receiveSaveNewMessage(notification)
+    self.didFinishReceivingNewMessage
     self.receiveDidLoadHTMLString(notification)
     self.show_left_panel
   end
