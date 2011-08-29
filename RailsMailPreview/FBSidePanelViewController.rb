@@ -22,7 +22,12 @@ class FBSidePanelViewController < NSViewController
     end
 
     self.items = Message.all
-    self.table.reloadData
+    self.table.window.makeFirstResponder(self.table)
+
+    self.table.beginUpdates
+    self.table.insertRowsAtIndexes(NSIndexSet.indexSetWithIndex(0), withAnimation:NSTableViewAnimationSlideDown | NSTableViewAnimationEffectGap)
+    self.table.selectRowIndexes(NSIndexSet.indexSetWithIndex(0), byExtendingSelection:NO)
+    self.table.endUpdates
 
     NSNotificationCenter.defaultCenter.postNotificationName("saveNewMessage", object:nil)
   end

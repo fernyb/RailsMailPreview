@@ -177,7 +177,7 @@ class FBDatabaseBase
   end
 
   def self.all
-    results = db.execute("SELECT * FROM `#{table_name}`")
+    results = db.execute("SELECT * FROM `#{table_name}` ORDER BY id DESC")
     map_results(results)
   end
 
