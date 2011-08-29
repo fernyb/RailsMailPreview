@@ -43,9 +43,14 @@ class AppController < NSWindowController
 
   def receiveNotification(aNotification)
     NSLog("Notification Received")
-    msg = aNotification.object
-    mail = Mail.new(msg)
-    set_mail_message(mail)
+
+    queue = Dispatch::Queue.new('net.fernyb.RailsMailPreview.gcd')
+    queue.async do
+      msg = aNotification.object
+      mail = Mail.new(msg)
+      self.performSelectorOnMainThread(:"set_mail_message", withObject:mail, waitUntilDone:YES)
+    end
+
     NSLog("Notification Ended...")
   end
 
