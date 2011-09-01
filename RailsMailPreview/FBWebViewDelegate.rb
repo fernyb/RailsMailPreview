@@ -7,10 +7,10 @@
 #
 
 class FBWebViewDelegate
-
   # - (NSArray *)webView:(WebView *)sender contextMenuItemsForElement:(NSDictionary *)element defaultMenuItems:(NSArray *)defaultMenuItems
   def webView(webview, contextMenuItemsForElement:items, defaultMenuItems:defaultItems)
-    return NSArray.array
+    NSArray.array
+    # defaultItems
   end
 
   def webView(webview, createWebViewWithRequest:request)
@@ -37,5 +37,23 @@ class FBWebViewDelegate
       webFrame.stopLoading
       NSWorkspace.sharedWorkspace.openURL(requrl)
     end
+  end
+
+  #- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame
+  def webView(webview, didFinishLoadForFrame:webFrame)
+    if @webScriptObjectBlock
+      @webScriptObjectBlock.call(webview.windowScriptObject, webFrame)
+    end
+  end
+
+  # - (void)webView:(WebView *)sender didClearWindowObject:(WebScriptObject *)windowObject forFrame:(WebFrame *)frame
+  def webView(webview, didClearWindowObject:webScriptObject, forFrame:webFrame)
+    if @webScriptObjectBlock
+      @webScriptObjectBlock.call(webScriptObject, webFrame)
+    end
+  end
+
+  def setWebScriptObjectWithBlock(block)
+    @webScriptObjectBlock = block
   end
 end

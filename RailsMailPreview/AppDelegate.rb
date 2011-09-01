@@ -11,6 +11,8 @@ class AppDelegate
   attr_accessor :controller
 
   def applicationDidFinishLaunching(a_notification)
+    NSUserDefaults.standardUserDefaults.setBool(YES, forKey:"WebKitDeveloperExtras")
+    NSUserDefaults.standardUserDefaults.synchronize
     self.controller.didFinishLaunching
   end
 end

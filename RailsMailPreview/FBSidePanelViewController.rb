@@ -67,6 +67,112 @@ class FBSidePanelViewController < NSViewController
     64 + 8
   end
 
+  def htmlview=(v)
+    @htmlview = v
+    @htmlview.setWebScriptObjectWithBlock(self.webScriptObjectBlock)
+  end
+
+  def plainview=(v)
+    @plainview = v
+    @plainview.setWebScriptObjectWithBlock(self.webScriptObjectBlock)
+  end
+
+  def webScriptObjectBlock
+    lambda {|webScriptObject, webFrame|
+      webScriptObject.setValue(self, forKey: "controller")
+      self.respondsToSelector("onRightClickAttachment:type:")
+      self.respondsToSelector("setMousePosition:posY:")
+    }
+  end
+
+  attr_accessor :mouse_position
+  attr_accessor :setMousePosition
+  def setMousePosition(x, posY:y)
+    self.mouse_position = [x, y]
+  end
+
+  attr_accessor :onRightClickAttachment
+  def onRightClickAttachment(selectedRid, type:type)
+    @selected_rid = selectedRid
+
+    menu = NSMenu.alloc.init
+    menuItem = NSMenuItem.alloc.init
+    menuItem.setTitle("Open Selected Attachment")
+    menuItem.setTarget(self)
+    menuItem.setAction(:"openAttachmentAction:")
+    menu.addItem(menuItem)
+
+    menuItem = NSMenuItem.alloc.init
+    menuItem.setTitle("Quick Look Selected Attachment")
+    menuItem.setTarget(self)
+    menuItem.setAction(:"openAttachmentInQuickLook:")
+    menu.addItem(menuItem)
+
+    theWebView = type == "html" ? @htmlview.webview : @plainview.webview
+    mouseLocation = theWebView.superview.convertPoint(self.mouse_position, toView:nil)
+
+    event = NSEvent.mouseEventWithType(NSRightMouseDown,
+                                            location: mouseLocation,
+                                       modifierFlags: 0,
+                                           timestamp: NSDate.date.timeIntervalSince1970,
+                                        windowNumber: theWebView.window.windowNumber,
+                                             context: NSGraphicsContext.currentContext,
+                                         eventNumber: 1,
+                                          clickCount: 1,
+                                            pressure: 0.0)
+
+    NSMenu.popUpContextMenu(menu, withEvent:event, forView:nil)
+  end
+
+  def self.isSelectorExcludedFromWebScript(selector)
+    false
+  end
+
+  def create_attachments_directory_if_needed
+    if !File.exists?(ATTACHMENTS_DIR)
+      fm = NSFileManager.defaultManager
+      error = Pointer.new("@")
+      fm.createDirectoryAtPath("#{ATTACHMENTS_DIR}", withIntermediateDirectories:YES, attributes:nil, error:error)
+      if !error[0].nil?
+        NSLog("Error trying to create attachments directory")
+        abort()
+      end
+    end
+  end
+
+  def openAttachmentInQuickLook(sender)
+    self.view.window.contentView.quickLookDataSource = self
+    QLPreviewPanel.sharedPreviewPanel.setNextResponder(self.view.window.contentView)
+
+    if QLPreviewPanel.sharedPreviewPanel.isVisible
+      QLPreviewPanel.sharedPreviewPanel.orderOut(nil)
+    end
+
+    attachment = Attachment.find_by_id(@selected_rid)
+    mime_type = attachment.mime_type
+    attachment_data = attachment.data.decode64
+    create_attachments_directory_if_needed
+
+    filePathURL = NSURL.fileURLWithPath("#{ATTACHMENTS_DIR}/#{attachment.filename}", isDirectory:NO)
+    attachment_data.writeToURL(filePathURL, atomically:YES)
+
+    @previewItem = Struct.new(:previewItemURL).new(filePathURL)
+
+    QLPreviewPanel.sharedPreviewPanel.makeKeyAndOrderFront(self)
+  end
+
+  def openAttachmentAction(sender)
+    attachment = Attachment.find_by_id(@selected_rid)
+    mime_type = attachment.mime_type
+    attachment_data = attachment.data.decode64
+    create_attachments_directory_if_needed
+
+    filePathURL = NSURL.fileURLWithPath("#{ATTACHMENTS_DIR}/#{attachment.filename}", isDirectory:NO)
+
+    attachment_data.writeToURL(filePathURL, atomically:YES)
+    NSWorkspace.sharedWorkspace.openURL(filePathURL)
+  end
+
   def tableViewSelectionDidChange(notification)
     row = self.table.selectedRow
     if row >= 0
@@ -127,7 +233,7 @@ class FBSidePanelViewController < NSViewController
     text.to_s.gsub(/\n|\r/, "<br />")
   end
 
-  def attachments(item)
+  def attachments(item, type)
     list = Attachment.where(["message_id = ?", item.id])
     tiles = list.map {|attachment|
       uti = attachment.filename.fileType.objectForKey("uti")
@@ -136,9 +242,9 @@ class FBSidePanelViewController < NSViewController
 
       %Q{
         <div class="attachment_tile">
-          <div>
+          <div data-type="#{type}" data-rid="#{attachment.id}">
             <a href="#" onclick="return false;">
-              <img src="data:image/icns;base64,#{imageData64}" class="attachment_icon" />
+              <img src="data:image/tiff;base64,#{imageData64}" class="attachment_icon" />
               <div>#{attachment.filename}</div>
             </a>
           </div>
@@ -147,6 +253,19 @@ class FBSidePanelViewController < NSViewController
     }.join("")
     if tiles != ""
       %Q{<div id="attachments">#{tiles}</div>}
+    end
+  end
+
+  # QuickLook Data Source Methods
+  def numberOfPreviewItemsInPreviewPanel(panel)
+    @previewItem ? 1 : 0
+  end
+
+  def previewPanel(panel, previewItemAtIndex:idx)
+    if idx == 0
+      @previewItem
+    else
+      nil
     end
   end
 end

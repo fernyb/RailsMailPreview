@@ -31,6 +31,10 @@ class FRBSideView < NSView
     self.setAutoresizingMask(self.resizeMask)
   end
 
+  def setWebScriptObjectWithBlock(block)
+    @webviewDelegate.setWebScriptObjectWithBlock(block)
+  end
+
   def setAutoresizingMask(mask)
     super(mask)
     @webview.setAutoresizingMask(mask)
@@ -43,6 +47,10 @@ class FRBSideView < NSView
 
   def resizeMask
     NSViewMaxYMargin | NSViewMaxYMargin | NSViewHeightSizable | NSViewWidthSizable
+  end
+
+  def isFlipped
+    YES
   end
 
   def drawRect(rect)

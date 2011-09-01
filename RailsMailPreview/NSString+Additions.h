@@ -11,5 +11,6 @@
 @interface NSString (NSString_Additions)
 
 - (NSDictionary *)fileType;
+- (NSData *)decode64;
 
 @end

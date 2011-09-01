@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <MacRuby/MacRuby.h>
+#import <QuickLook/QuickLook.h>
 #import "INAppStoreWindow.h"
 #import "NSData+Additions.h"
 #import "NSString+Additions.h"
