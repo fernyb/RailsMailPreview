@@ -350,7 +350,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{441, 437}, {850, 478}}</string>
+				<string key="NSWindowRect">{{441, 437}, {1092, 536}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">Rails Mail Preview</string>
 				<string key="NSWindowClass">INAppStoreWindow</string>
@@ -375,7 +375,7 @@
 										<object class="NSCustomView" id="816054608">
 											<reference key="NSNextResponder" ref="419503999"/>
 											<int key="NSvFlags">256</int>
-											<string key="NSFrameSize">{231, 478}</string>
+											<string key="NSFrameSize">{221, 536}</string>
 											<reference key="NSSuperview" ref="419503999"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="354960376"/>
@@ -395,7 +395,7 @@
 														<object class="NSCustomView" id="536944649">
 															<reference key="NSNextResponder" ref="348257336"/>
 															<int key="NSvFlags">4096</int>
-															<string key="NSFrameSize">{290, 478}</string>
+															<string key="NSFrameSize">{407, 536}</string>
 															<reference key="NSSuperview" ref="348257336"/>
 															<reference key="NSWindow"/>
 															<reference key="NSNextKeyView" ref="266547833"/>
@@ -405,7 +405,7 @@
 														<object class="NSCustomView" id="266547833">
 															<reference key="NSNextResponder" ref="348257336"/>
 															<int key="NSvFlags">4096</int>
-															<string key="NSFrame">{{291, 0}, {327, 478}}</string>
+															<string key="NSFrame">{{408, 0}, {462, 536}}</string>
 															<reference key="NSSuperview" ref="348257336"/>
 															<reference key="NSWindow"/>
 															<reference key="NSNextKeyView"/>
@@ -413,7 +413,7 @@
 															<string key="NSClassName">NSView</string>
 														</object>
 													</object>
-													<string key="NSFrameSize">{618, 478}</string>
+													<string key="NSFrameSize">{870, 536}</string>
 													<reference key="NSSuperview" ref="354960376"/>
 													<reference key="NSWindow"/>
 													<reference key="NSNextKeyView" ref="536944649"/>
@@ -422,7 +422,7 @@
 													<int key="NSDividerStyle">2</int>
 												</object>
 											</object>
-											<string key="NSFrame">{{232, 0}, {618, 478}}</string>
+											<string key="NSFrame">{{222, 0}, {870, 536}}</string>
 											<reference key="NSSuperview" ref="419503999"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="348257336"/>
@@ -430,7 +430,7 @@
 											<string key="NSClassName">NSView</string>
 										</object>
 									</object>
-									<string key="NSFrameSize">{850, 478}</string>
+									<string key="NSFrameSize">{1092, 536}</string>
 									<reference key="NSSuperview" ref="669831151"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="816054608"/>
@@ -439,7 +439,7 @@
 									<int key="NSDividerStyle">2</int>
 								</object>
 							</object>
-							<string key="NSFrameSize">{850, 478}</string>
+							<string key="NSFrameSize">{1092, 536}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="419503999"/>
@@ -447,7 +447,7 @@
 							<string key="NSClassName">NSView</string>
 						</object>
 					</object>
-					<string key="NSFrameSize">{850, 478}</string>
+					<string key="NSFrameSize">{1092, 536}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="669831151"/>
@@ -1013,6 +1013,8 @@
 					<string>150.IBPluginDependency</string>
 					<string>236.IBPluginDependency</string>
 					<string>29.IBPluginDependency</string>
+					<string>371.IBNSWindowAutoPositionCentersHorizontal</string>
+					<string>371.IBNSWindowAutoPositionCentersVertical</string>
 					<string>371.IBPluginDependency</string>
 					<string>371.IBWindowTemplateEditedContentRect</string>
 					<string>371.NSWindowTemplate.visibleAtLaunch</string>
@@ -1068,6 +1070,8 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<boolean value="YES"/>
+					<boolean value="NO"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{380, 496}, {480, 360}}</string>
 					<integer value="1"/>

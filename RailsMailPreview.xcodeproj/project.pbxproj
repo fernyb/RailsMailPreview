@@ -91,6 +91,8 @@
 		C4CCC4161404C889006EB689 /* NSImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CCC4141404C889006EB689 /* NSImage+Additions.m */; };
 		C4D73B5613F6DAC7004D623E /* FRBSideView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4D73B5513F6DAC7004D623E /* FRBSideView.rb */; };
 		C4D73B5713F6DAC7004D623E /* FRBSideView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4D73B5513F6DAC7004D623E /* FRBSideView.rb */; };
+		C4E964E914108C3300A9CE21 /* FBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964E814108C3300A9CE21 /* FBApplication.m */; };
+		C4E964EB14108C7700A9CE21 /* FBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964E814108C3300A9CE21 /* FBApplication.m */; };
 		C4EB176A13F5FE9700BFB45C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB176913F5FE9700BFB45C /* Cocoa.framework */; };
 		C4EB177513F5FE9800BFB45C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177313F5FE9800BFB45C /* InfoPlist.strings */; };
 		C4EB177713F5FE9800BFB45C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB177613F5FE9800BFB45C /* main.m */; };
@@ -208,6 +210,8 @@
 		C4CCC4131404C889006EB689 /* NSImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Additions.h"; sourceTree = "<group>"; };
 		C4CCC4141404C889006EB689 /* NSImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Additions.m"; sourceTree = "<group>"; };
 		C4D73B5513F6DAC7004D623E /* FRBSideView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FRBSideView.rb; sourceTree = "<group>"; };
+		C4E964E714108C3300A9CE21 /* FBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBApplication.h; sourceTree = "<group>"; };
+		C4E964E814108C3300A9CE21 /* FBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBApplication.m; sourceTree = "<group>"; };
 		C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsMailPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EB176913F5FE9700BFB45C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C4EB177213F5FE9700BFB45C /* RailsMailPreview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RailsMailPreview-Info.plist"; sourceTree = "<group>"; };
@@ -406,6 +410,8 @@
 				C40A8796140C427700F41FFF /* FBProgressWindowController.m */,
 				C4A6253514101EE600EA7B51 /* FBMainContentView.h */,
 				C4A6253614101EE600EA7B51 /* FBMainContentView.m */,
+				C4E964E714108C3300A9CE21 /* FBApplication.h */,
+				C4E964E814108C3300A9CE21 /* FBApplication.m */,
 			);
 			name = "Workaround Files";
 			sourceTree = "<group>";
@@ -606,6 +612,7 @@
 				C4ADAB00140549AB00A43D2F /* application.js in Sources */,
 				C40A8797140C427700F41FFF /* FBProgressWindowController.m in Sources */,
 				C4A6253714101EE600EA7B51 /* FBMainContentView.m in Sources */,
+				C4E964E914108C3300A9CE21 /* FBApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +626,7 @@
 				C4CCC40C1404C645006EB689 /* NSData+Additions.m in Sources */,
 				C4CCC4101404C737006EB689 /* Base64Transcoder.c in Sources */,
 				C4CCC4161404C889006EB689 /* NSImage+Additions.m in Sources */,
+				C4E964EB14108C7700A9CE21 /* FBApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

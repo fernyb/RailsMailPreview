@@ -48,6 +48,7 @@ class AppController < NSWindowController
   end
 
   def didReceiveNewMessage
+    NSApplication.sharedApplication.setSupressNextAttention(YES)
     @progressWindow ||= FBProgressWindowController.alloc.init
     NSApplication.sharedApplication.beginSheet(@progressWindow.window,
                                               modalForWindow: self.window,
