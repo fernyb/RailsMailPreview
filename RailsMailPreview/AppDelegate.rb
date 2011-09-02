@@ -15,5 +15,8 @@ class AppDelegate
     NSUserDefaults.standardUserDefaults.synchronize
     self.controller.didFinishLaunching
   end
-end
 
+  def self.development?
+    YES
+  end
+end

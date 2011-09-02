@@ -9,8 +9,11 @@
 class FBWebViewDelegate
   # - (NSArray *)webView:(WebView *)sender contextMenuItemsForElement:(NSDictionary *)element defaultMenuItems:(NSArray *)defaultMenuItems
   def webView(webview, contextMenuItemsForElement:items, defaultMenuItems:defaultItems)
-    NSArray.array
-    # defaultItems
+    if AppDelegate.development?
+     defaultItems
+    else
+      nil
+    end
   end
 
   def webView(webview, createWebViewWithRequest:request)
