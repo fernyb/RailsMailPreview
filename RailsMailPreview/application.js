@@ -21,7 +21,7 @@ function mousePositionForEvent(e) {
       if (element) {
         var file = $(element).closest(".attachment_tile");
         if (file.length == 0) {
-          file.removeClass("attachment_tile_selected");
+          $(".attachment_tile").removeClass("attachment_tile_selected");
         }
       }
     });
