@@ -100,8 +100,8 @@
     NSRectFill(newBottomRect);
   }
   else {
-    [bottomColor set];
-    NSRectFill(bottomRect);
+    //[bottomColor set];
+    //NSRectFill(bottomRect);
   }
 }
 

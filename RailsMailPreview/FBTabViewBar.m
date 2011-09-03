@@ -65,13 +65,15 @@
   NSInteger i = 0;
   while(aview = [e nextObject] ) {
     if ([[aview className] isEqualToString:@"FBTabViewItem"]) {
-      [aview setFrameSize:NSMakeSize((CGRectGetWidth([self frame]) / 2), CGRectGetHeight([self frame]))];
+      CGFloat sizeWidth = [[NSString stringWithFormat:@"%0.0f", (CGRectGetWidth([self frame]) / 2)] floatValue];
+      
+      [aview setFrameSize:NSMakeSize(sizeWidth, CGRectGetHeight([self frame]))];
       
       if (i == 0) {
         [aview setFrameOrigin:NSMakePoint(CGRectGetMinX([self frame]), 0)];
       } 
       else if (i == 1) {
-        [aview setFrameOrigin:NSMakePoint((CGRectGetWidth([self frame]) / 2) - 18.0, 0)];
+        [aview setFrameOrigin:NSMakePoint(sizeWidth - 18.0, 0)];
       }
       i += 1;
     }
