@@ -31,6 +31,12 @@
 		C428A549140AC6CB006DE6A1 /* startup.css in Resources */ = {isa = PBXBuildFile; fileRef = C428A547140AC6CB006DE6A1 /* startup.css */; };
 		C428A54B140ACA5E006DE6A1 /* backgroundTile.png in Resources */ = {isa = PBXBuildFile; fileRef = C428A54A140ACA5E006DE6A1 /* backgroundTile.png */; };
 		C428A54C140ACA5E006DE6A1 /* backgroundTile.png in Resources */ = {isa = PBXBuildFile; fileRef = C428A54A140ACA5E006DE6A1 /* backgroundTile.png */; };
+		C42DC2E01412CC2B008345B9 /* tabCenterInActive.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2DD1412CC2B008345B9 /* tabCenterInActive.png */; };
+		C42DC2E11412CC2B008345B9 /* tabCenterInActive.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2DD1412CC2B008345B9 /* tabCenterInActive.png */; };
+		C42DC2E21412CC2B008345B9 /* tabLeftCapInActive.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2DE1412CC2B008345B9 /* tabLeftCapInActive.png */; };
+		C42DC2E31412CC2B008345B9 /* tabLeftCapInActive.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2DE1412CC2B008345B9 /* tabLeftCapInActive.png */; };
+		C42DC2E41412CC2B008345B9 /* tabRightCapInActive.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2DF1412CC2B008345B9 /* tabRightCapInActive.png */; };
+		C42DC2E51412CC2B008345B9 /* tabRightCapInActive.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2DF1412CC2B008345B9 /* tabRightCapInActive.png */; };
 		C441F9F413FAB9310061C923 /* FBSidePanelTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C441F9F313FAB9310061C923 /* FBSidePanelTableRowView.m */; };
 		C441F9F813FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */; };
 		C441F9F913FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */; };
@@ -45,6 +51,16 @@
 		C46BD8F613F97CE900C75497 /* FBSidePanelTableCellView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */; };
 		C46BD8F713F97CE900C75497 /* FBSidePanelTableCellView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */; };
 		C46BD8FA13F97D2700C75497 /* FBSidePanelTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46BD8F913F97D2700C75497 /* FBSidePanelTableCellView.m */; };
+		C46DCDE31411ECD00005DB31 /* FBTabViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C46DCDE21411ECD00005DB31 /* FBTabViewBar.m */; };
+		C46DCDE41411ECD00005DB31 /* FBTabViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C46DCDE21411ECD00005DB31 /* FBTabViewBar.m */; };
+		C46DCDF51411F6000005DB31 /* tabCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDF21411F6000005DB31 /* tabCenter.png */; };
+		C46DCDF61411F6000005DB31 /* tabCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDF21411F6000005DB31 /* tabCenter.png */; };
+		C46DCDF71411F6000005DB31 /* tabLeftCap.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDF31411F6000005DB31 /* tabLeftCap.png */; };
+		C46DCDF81411F6000005DB31 /* tabLeftCap.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDF31411F6000005DB31 /* tabLeftCap.png */; };
+		C46DCDF91411F6000005DB31 /* tabRightCap.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDF41411F6000005DB31 /* tabRightCap.png */; };
+		C46DCDFA1411F6000005DB31 /* tabRightCap.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDF41411F6000005DB31 /* tabRightCap.png */; };
+		C46DCDFC1411F6170005DB31 /* tabTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDFB1411F6170005DB31 /* tabTrack.png */; };
+		C46DCDFD1411F6170005DB31 /* tabTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDFB1411F6170005DB31 /* tabTrack.png */; };
 		C480C43314036E050048F2C2 /* message.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C43214036E040048F2C2 /* message.html.erb */; };
 		C480C43414036E050048F2C2 /* message.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C43214036E040048F2C2 /* message.html.erb */; };
 		C480C43614036E1F0048F2C2 /* message.text.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C43514036E1F0048F2C2 /* message.text.erb */; };
@@ -93,6 +109,14 @@
 		C4D73B5713F6DAC7004D623E /* FRBSideView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4D73B5513F6DAC7004D623E /* FRBSideView.rb */; };
 		C4E964E914108C3300A9CE21 /* FBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964E814108C3300A9CE21 /* FBApplication.m */; };
 		C4E964EB14108C7700A9CE21 /* FBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964E814108C3300A9CE21 /* FBApplication.m */; };
+		C4E964ED14109D9D00A9CE21 /* MyTabs.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E964EC14109D9D00A9CE21 /* MyTabs.xib */; };
+		C4E964EE14109D9D00A9CE21 /* MyTabs.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E964EC14109D9D00A9CE21 /* MyTabs.xib */; };
+		C4E964F114109DF000A9CE21 /* MyTabWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964F014109DF000A9CE21 /* MyTabWindowController.m */; };
+		C4E964F214109DF000A9CE21 /* MyTabWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964F014109DF000A9CE21 /* MyTabWindowController.m */; };
+		C4E965091410A97300A9CE21 /* FBTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E965081410A97300A9CE21 /* FBTabView.m */; };
+		C4E9650A1410A97300A9CE21 /* FBTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E965081410A97300A9CE21 /* FBTabView.m */; };
+		C4E9650D1410A99E00A9CE21 /* FBTabViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9650C1410A99E00A9CE21 /* FBTabViewItem.m */; };
+		C4E9650E1410A99E00A9CE21 /* FBTabViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9650C1410A99E00A9CE21 /* FBTabViewItem.m */; };
 		C4EB176A13F5FE9700BFB45C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB176913F5FE9700BFB45C /* Cocoa.framework */; };
 		C4EB177513F5FE9800BFB45C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177313F5FE9800BFB45C /* InfoPlist.strings */; };
 		C4EB177713F5FE9800BFB45C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB177613F5FE9800BFB45C /* main.m */; };
@@ -165,6 +189,9 @@
 		C428A544140AC557006DE6A1 /* startup.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = startup.html.erb; sourceTree = "<group>"; };
 		C428A547140AC6CB006DE6A1 /* startup.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = startup.css; sourceTree = "<group>"; };
 		C428A54A140ACA5E006DE6A1 /* backgroundTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundTile.png; path = images/backgroundTile.png; sourceTree = "<group>"; };
+		C42DC2DD1412CC2B008345B9 /* tabCenterInActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabCenterInActive.png; path = images/tabCenterInActive.png; sourceTree = "<group>"; };
+		C42DC2DE1412CC2B008345B9 /* tabLeftCapInActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabLeftCapInActive.png; path = images/tabLeftCapInActive.png; sourceTree = "<group>"; };
+		C42DC2DF1412CC2B008345B9 /* tabRightCapInActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabRightCapInActive.png; path = images/tabRightCapInActive.png; sourceTree = "<group>"; };
 		C441F9F213FAB9300061C923 /* FBSidePanelTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSidePanelTableRowView.h; sourceTree = "<group>"; };
 		C441F9F313FAB9310061C923 /* FBSidePanelTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSidePanelTableRowView.m; sourceTree = "<group>"; };
 		C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSidePanelTableRowView.rb; sourceTree = "<group>"; };
@@ -178,6 +205,12 @@
 		C46BD8F513F97CE900C75497 /* FBSidePanelTableCellView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSidePanelTableCellView.rb; sourceTree = "<group>"; };
 		C46BD8F813F97D2700C75497 /* FBSidePanelTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSidePanelTableCellView.h; sourceTree = "<group>"; };
 		C46BD8F913F97D2700C75497 /* FBSidePanelTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSidePanelTableCellView.m; sourceTree = "<group>"; };
+		C46DCDE11411ECD00005DB31 /* FBTabViewBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTabViewBar.h; sourceTree = "<group>"; };
+		C46DCDE21411ECD00005DB31 /* FBTabViewBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTabViewBar.m; sourceTree = "<group>"; };
+		C46DCDF21411F6000005DB31 /* tabCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabCenter.png; path = images/tabCenter.png; sourceTree = "<group>"; };
+		C46DCDF31411F6000005DB31 /* tabLeftCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabLeftCap.png; path = images/tabLeftCap.png; sourceTree = "<group>"; };
+		C46DCDF41411F6000005DB31 /* tabRightCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabRightCap.png; path = images/tabRightCap.png; sourceTree = "<group>"; };
+		C46DCDFB1411F6170005DB31 /* tabTrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabTrack.png; path = images/tabTrack.png; sourceTree = "<group>"; };
 		C480C43214036E040048F2C2 /* message.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = message.html.erb; sourceTree = "<group>"; };
 		C480C43514036E1F0048F2C2 /* message.text.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = message.text.erb; sourceTree = "<group>"; };
 		C480C438140375490048F2C2 /* _header.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _header.html.erb; sourceTree = "<group>"; };
@@ -212,6 +245,13 @@
 		C4D73B5513F6DAC7004D623E /* FRBSideView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FRBSideView.rb; sourceTree = "<group>"; };
 		C4E964E714108C3300A9CE21 /* FBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBApplication.h; sourceTree = "<group>"; };
 		C4E964E814108C3300A9CE21 /* FBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBApplication.m; sourceTree = "<group>"; };
+		C4E964EC14109D9D00A9CE21 /* MyTabs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTabs.xib; sourceTree = "<group>"; };
+		C4E964EF14109DF000A9CE21 /* MyTabWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabWindowController.h; sourceTree = "<group>"; };
+		C4E964F014109DF000A9CE21 /* MyTabWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabWindowController.m; sourceTree = "<group>"; };
+		C4E965071410A97300A9CE21 /* FBTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTabView.h; sourceTree = "<group>"; };
+		C4E965081410A97300A9CE21 /* FBTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTabView.m; sourceTree = "<group>"; };
+		C4E9650B1410A99E00A9CE21 /* FBTabViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTabViewItem.h; sourceTree = "<group>"; };
+		C4E9650C1410A99E00A9CE21 /* FBTabViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTabViewItem.m; sourceTree = "<group>"; };
 		C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsMailPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EB176913F5FE9700BFB45C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C4EB177213F5FE9700BFB45C /* RailsMailPreview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RailsMailPreview-Info.plist"; sourceTree = "<group>"; };
@@ -282,6 +322,19 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		C4E964F31410A03600A9CE21 /* FBTabView */ = {
+			isa = PBXGroup;
+			children = (
+				C4E965071410A97300A9CE21 /* FBTabView.h */,
+				C4E965081410A97300A9CE21 /* FBTabView.m */,
+				C4E9650B1410A99E00A9CE21 /* FBTabViewItem.h */,
+				C4E9650C1410A99E00A9CE21 /* FBTabViewItem.m */,
+				C46DCDE11411ECD00005DB31 /* FBTabViewBar.h */,
+				C46DCDE21411ECD00005DB31 /* FBTabViewBar.m */,
+			);
+			name = FBTabView;
+			sourceTree = "<group>";
+		};
 		C4EB175A13F5FE9700BFB45C = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +368,7 @@
 		C4EB177013F5FE9700BFB45C /* RailsMailPreview */ = {
 			isa = PBXGroup;
 			children = (
+				C4E964F31410A03600A9CE21 /* FBTabView */,
 				C4CCC4121404C85F006EB689 /* Categories */,
 				C40EA95C13F82CCF0049534A /* INAppStoreWindow.h */,
 				C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */,
@@ -356,6 +410,13 @@
 		C4EB177913F5FE9800BFB45C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C42DC2DD1412CC2B008345B9 /* tabCenterInActive.png */,
+				C42DC2DE1412CC2B008345B9 /* tabLeftCapInActive.png */,
+				C42DC2DF1412CC2B008345B9 /* tabRightCapInActive.png */,
+				C46DCDF21411F6000005DB31 /* tabCenter.png */,
+				C46DCDF31411F6000005DB31 /* tabLeftCap.png */,
+				C46DCDF41411F6000005DB31 /* tabRightCap.png */,
+				C46DCDFB1411F6170005DB31 /* tabTrack.png */,
 				C4A6252F1410164000EA7B51 /* QLPreviewPanel.bridgesupport */,
 				C428A54A140ACA5E006DE6A1 /* backgroundTile.png */,
 				C4CCC40214041429006EB689 /* defaultdesktop.png */,
@@ -373,6 +434,7 @@
 				C4ADAAFF140549AB00A43D2F /* application.js */,
 				C428A544140AC557006DE6A1 /* startup.html.erb */,
 				C428A547140AC6CB006DE6A1 /* startup.css */,
+				C4E964EC14109D9D00A9CE21 /* MyTabs.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -412,6 +474,8 @@
 				C4A6253614101EE600EA7B51 /* FBMainContentView.m */,
 				C4E964E714108C3300A9CE21 /* FBApplication.h */,
 				C4E964E814108C3300A9CE21 /* FBApplication.m */,
+				C4E964EF14109DF000A9CE21 /* MyTabWindowController.h */,
+				C4E964F014109DF000A9CE21 /* MyTabWindowController.m */,
 			);
 			name = "Workaround Files";
 			sourceTree = "<group>";
@@ -539,6 +603,14 @@
 				C40A8793140C403500F41FFF /* ProgressWindow.xib in Resources */,
 				C4A625301410164000EA7B51 /* QLPreviewPanel.bridgesupport in Resources */,
 				C4A6253314101EBF00EA7B51 /* FBMainContentView.rb in Resources */,
+				C4E964ED14109D9D00A9CE21 /* MyTabs.xib in Resources */,
+				C46DCDF51411F6000005DB31 /* tabCenter.png in Resources */,
+				C46DCDF71411F6000005DB31 /* tabLeftCap.png in Resources */,
+				C46DCDF91411F6000005DB31 /* tabRightCap.png in Resources */,
+				C46DCDFC1411F6170005DB31 /* tabTrack.png in Resources */,
+				C42DC2E01412CC2B008345B9 /* tabCenterInActive.png in Resources */,
+				C42DC2E21412CC2B008345B9 /* tabLeftCapInActive.png in Resources */,
+				C42DC2E41412CC2B008345B9 /* tabRightCapInActive.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +655,14 @@
 				C40A8794140C403500F41FFF /* ProgressWindow.xib in Resources */,
 				C4A625311410164000EA7B51 /* QLPreviewPanel.bridgesupport in Resources */,
 				C4A6253414101EBF00EA7B51 /* FBMainContentView.rb in Resources */,
+				C4E964EE14109D9D00A9CE21 /* MyTabs.xib in Resources */,
+				C46DCDF61411F6000005DB31 /* tabCenter.png in Resources */,
+				C46DCDF81411F6000005DB31 /* tabLeftCap.png in Resources */,
+				C46DCDFA1411F6000005DB31 /* tabRightCap.png in Resources */,
+				C46DCDFD1411F6170005DB31 /* tabTrack.png in Resources */,
+				C42DC2E11412CC2B008345B9 /* tabCenterInActive.png in Resources */,
+				C42DC2E31412CC2B008345B9 /* tabLeftCapInActive.png in Resources */,
+				C42DC2E51412CC2B008345B9 /* tabRightCapInActive.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +693,10 @@
 				C40A8797140C427700F41FFF /* FBProgressWindowController.m in Sources */,
 				C4A6253714101EE600EA7B51 /* FBMainContentView.m in Sources */,
 				C4E964E914108C3300A9CE21 /* FBApplication.m in Sources */,
+				C4E964F114109DF000A9CE21 /* MyTabWindowController.m in Sources */,
+				C4E965091410A97300A9CE21 /* FBTabView.m in Sources */,
+				C4E9650D1410A99E00A9CE21 /* FBTabViewItem.m in Sources */,
+				C46DCDE31411ECD00005DB31 /* FBTabViewBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +711,10 @@
 				C4CCC4101404C737006EB689 /* Base64Transcoder.c in Sources */,
 				C4CCC4161404C889006EB689 /* NSImage+Additions.m in Sources */,
 				C4E964EB14108C7700A9CE21 /* FBApplication.m in Sources */,
+				C4E964F214109DF000A9CE21 /* MyTabWindowController.m in Sources */,
+				C4E9650A1410A97300A9CE21 /* FBTabView.m in Sources */,
+				C4E9650E1410A99E00A9CE21 /* FBTabViewItem.m in Sources */,
+				C46DCDE41411ECD00005DB31 /* FBTabViewBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

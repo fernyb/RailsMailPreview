@@ -50,9 +50,16 @@
 @end
 
 @implementation INTitlebarView
+@synthesize delegate;
+
+- (BOOL)shouldDrawAsMainWindow
+{
+  return ([[self window] isMainWindow] && [[NSApplication sharedApplication] isActive]);  
+}
+
 - (void)drawRect:(NSRect)dirtyRect
 {
-    BOOL drawsAsMainWindow = ([[self window] isMainWindow] && [[NSApplication sharedApplication] isActive]);
+  BOOL drawsAsMainWindow = [self shouldDrawAsMainWindow];
     NSRect drawingRect = [self bounds];
     drawingRect.size.height -= 1.0; // Decrease the height by 1.0px to show the highlight line at the top
     NSColor *startColor = nil;
@@ -72,16 +79,32 @@
     [gradient release];
     [NSGraphicsContext restoreGraphicsState];
     
-    NSColor *bottomColor = nil;
-    if (IN_RUNNING_LION) {
-        bottomColor = drawsAsMainWindow ? COLOR_MAIN_BOTTOM_L : COLOR_NOTMAIN_BOTTOM_L;
-    } else {
-        bottomColor = drawsAsMainWindow ? COLOR_MAIN_BOTTOM : COLOR_NOTMAIN_BOTTOM;
-    }
-    NSRect bottomRect = NSMakeRect(0.0, NSMinY(drawingRect), NSWidth(drawingRect), 1.0);
+  [self drawBottomLineInRect:drawingRect];
+}
+
+
+- (void)drawBottomLineInRect:(NSRect)drawingRect
+{
+  BOOL drawsAsMainWindow = [self shouldDrawAsMainWindow];
+  NSColor *bottomColor = nil;
+  if (IN_RUNNING_LION) {
+    bottomColor = drawsAsMainWindow ? COLOR_MAIN_BOTTOM_L : COLOR_NOTMAIN_BOTTOM_L;
+  } else {
+    bottomColor = drawsAsMainWindow ? COLOR_MAIN_BOTTOM : COLOR_NOTMAIN_BOTTOM;
+  }
+  NSRect bottomRect = NSMakeRect(0.0, NSMinY(drawingRect), NSWidth(drawingRect), 1.0);
+  
+  if ([self delegate] && [[self delegate] respondsToSelector:@selector(bottomLineRectForTitleBar:)]) {
+    NSRect newBottomRect = [[self delegate] bottomLineRectForTitleBar:bottomRect];
+    [bottomColor set];
+    NSRectFill(newBottomRect);
+  }
+  else {
     [bottomColor set];
     NSRectFill(bottomRect);
+  }
 }
+
 
 // Uses code from NSBezierPath+PXRoundedRectangleAdditions by Andy Matuschak
 // <http://code.andymatuschak.org/pixen/trunk/NSBezierPath+PXRoundedRectangleAdditions.m>

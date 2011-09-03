@@ -1119,7 +1119,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">568</int>
+			<int key="maxID">570</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1186,11 +1186,13 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>controller</string>
+							<string>tabWindowController</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>AppController</string>
+							<string>MyTabWindowController</string>
 							<string>NSWindow</string>
 						</object>
 					</object>
@@ -1199,6 +1201,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>controller</string>
+							<string>tabWindowController</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -1206,6 +1209,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">controller</string>
 								<string key="candidateClassName">AppController</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">tabWindowController</string>
+								<string key="candidateClassName">MyTabWindowController</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">window</string>
@@ -1232,6 +1239,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/INAppStoreWindow.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">MyTabWindowController</string>
+					<string key="superclassName">NSWindowController</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/MyTabWindowController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
