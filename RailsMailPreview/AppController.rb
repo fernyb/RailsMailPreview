@@ -8,14 +8,13 @@
 
 
 class AppController < NSWindowController
-  attr_accessor :splitview
-  attr_accessor :bottomViewController
   attr_accessor :toolbarViewController
   attr_accessor :sidePanelViewController
   attr_accessor :contentSplitView
   attr_accessor :htmlview
   attr_accessor :plainview
   attr_accessor :contentTabView
+  attr_accessor :tabviewBar
 
   def didFinishLaunching
     setup_toolbar
@@ -97,11 +96,13 @@ class AppController < NSWindowController
     if self.contentTabView.isHidden
       @startup_view.setHidden(YES) if @startup_view
       self.contentTabView.setHidden(NO)
+      self.setHiddenTabBar(NO)
     end
   end
 
   def setup_startup_view
     self.contentTabView.setHidden(YES)
+    self.setHiddenTabBar(YES)
 
     @startup_view = FBStartupView.alloc.initWithFrame([0,0, CGRectGetWidth(self.contentTabView.superview.frame), CGRectGetHeight(self.contentTabView.superview.frame)])
     if !Message.first
@@ -112,6 +113,24 @@ class AppController < NSWindowController
     end
 
     self.contentTabView.superview.addSubview(@startup_view.render)
+  end
+
+  def setHiddenTabBar(b)
+    if b == YES
+      NSAnimationContext.beginGrouping
+      NSAnimationContext.currentContext.setDuration(self.animationDuration)
+      self.tabviewBar.setHidden(YES)
+      @contentSplitView.animator.setFrame([0,0, CGRectGetWidth(@contentSplitView.superview.frame), CGRectGetHeight(@contentSplitView.superview.frame)])
+      NSAnimationContext.endGrouping
+    else
+      NSAnimationContext.beginGrouping
+      NSAnimationContext.currentContext.setDuration(self.animationDuration)
+      self.tabviewBar.setHidden(NO)
+      @contentSplitView.animator.setFrame([0,0,
+                                 CGRectGetWidth(@contentSplitView.superview.frame),
+                                 CGRectGetHeight(@contentSplitView.superview.frame) - CGRectGetHeight(self.tabviewBar.frame)])
+      NSAnimationContext.endGrouping
+    end
   end
 
   def setup_side_views
