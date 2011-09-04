@@ -109,8 +109,6 @@
 		C4D73B5713F6DAC7004D623E /* FRBSideView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4D73B5513F6DAC7004D623E /* FRBSideView.rb */; };
 		C4E964E914108C3300A9CE21 /* FBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964E814108C3300A9CE21 /* FBApplication.m */; };
 		C4E964EB14108C7700A9CE21 /* FBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964E814108C3300A9CE21 /* FBApplication.m */; };
-		C4E964ED14109D9D00A9CE21 /* MyTabs.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E964EC14109D9D00A9CE21 /* MyTabs.xib */; };
-		C4E964EE14109D9D00A9CE21 /* MyTabs.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E964EC14109D9D00A9CE21 /* MyTabs.xib */; };
 		C4E964F114109DF000A9CE21 /* MyTabWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964F014109DF000A9CE21 /* MyTabWindowController.m */; };
 		C4E964F214109DF000A9CE21 /* MyTabWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964F014109DF000A9CE21 /* MyTabWindowController.m */; };
 		C4E965091410A97300A9CE21 /* FBTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E965081410A97300A9CE21 /* FBTabView.m */; };
@@ -245,7 +243,6 @@
 		C4D73B5513F6DAC7004D623E /* FRBSideView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FRBSideView.rb; sourceTree = "<group>"; };
 		C4E964E714108C3300A9CE21 /* FBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBApplication.h; sourceTree = "<group>"; };
 		C4E964E814108C3300A9CE21 /* FBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBApplication.m; sourceTree = "<group>"; };
-		C4E964EC14109D9D00A9CE21 /* MyTabs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTabs.xib; sourceTree = "<group>"; };
 		C4E964EF14109DF000A9CE21 /* MyTabWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabWindowController.h; sourceTree = "<group>"; };
 		C4E964F014109DF000A9CE21 /* MyTabWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabWindowController.m; sourceTree = "<group>"; };
 		C4E965071410A97300A9CE21 /* FBTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTabView.h; sourceTree = "<group>"; };
@@ -434,7 +431,6 @@
 				C4ADAAFF140549AB00A43D2F /* application.js */,
 				C428A544140AC557006DE6A1 /* startup.html.erb */,
 				C428A547140AC6CB006DE6A1 /* startup.css */,
-				C4E964EC14109D9D00A9CE21 /* MyTabs.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -603,7 +599,6 @@
 				C40A8793140C403500F41FFF /* ProgressWindow.xib in Resources */,
 				C4A625301410164000EA7B51 /* QLPreviewPanel.bridgesupport in Resources */,
 				C4A6253314101EBF00EA7B51 /* FBMainContentView.rb in Resources */,
-				C4E964ED14109D9D00A9CE21 /* MyTabs.xib in Resources */,
 				C46DCDF51411F6000005DB31 /* tabCenter.png in Resources */,
 				C46DCDF71411F6000005DB31 /* tabLeftCap.png in Resources */,
 				C46DCDF91411F6000005DB31 /* tabRightCap.png in Resources */,
@@ -655,7 +650,6 @@
 				C40A8794140C403500F41FFF /* ProgressWindow.xib in Resources */,
 				C4A625311410164000EA7B51 /* QLPreviewPanel.bridgesupport in Resources */,
 				C4A6253414101EBF00EA7B51 /* FBMainContentView.rb in Resources */,
-				C4E964EE14109D9D00A9CE21 /* MyTabs.xib in Resources */,
 				C46DCDF61411F6000005DB31 /* tabCenter.png in Resources */,
 				C46DCDF81411F6000005DB31 /* tabLeftCap.png in Resources */,
 				C46DCDFA1411F6000005DB31 /* tabRightCap.png in Resources */,

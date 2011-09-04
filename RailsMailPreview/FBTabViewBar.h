@@ -11,6 +11,7 @@
 @interface FBTabViewBar : NSView
 {
   NSImage * trackImage;
+  CGFloat tabWidth;
 }
 
 
