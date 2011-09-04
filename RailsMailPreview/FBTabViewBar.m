@@ -82,7 +82,7 @@
       [aview setFrameSize:NSMakeSize(tabWidth, CGRectGetHeight([self frame]))];
 
       if (i == 0) {
-        [aview setFrameOrigin:NSMakePoint(CGRectGetMinX([self frame]), 0)];
+        [aview setFrameOrigin:NSMakePoint(CGRectGetMinX([self frame]) + 0.2, 0)];
       } 
       else if (i == 1) {
         [aview setFrameOrigin:NSMakePoint(tabWidth - 18.2, 0)];
