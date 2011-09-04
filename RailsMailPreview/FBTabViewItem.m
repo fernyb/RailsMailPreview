@@ -22,11 +22,11 @@
     leftImage   = [[NSImage imageNamed:@"tabLeftCap.png"] retain];
     centerImage = [[NSImage imageNamed:@"tabCenter.png"] retain];
     rightImage  = [[NSImage imageNamed:@"tabRightCap.png"] retain];
-    
+
     leftImageInActive   = [[NSImage imageNamed:@"tabLeftCapInActive.png"] retain];
     centerImageInActive = [[NSImage imageNamed:@"tabCenterCapInActive.png"] retain];
     rightImageInActive  = [[NSImage imageNamed:@"tabRightCapInActive.png"] retain];
-    
+
     titleField  = [[NSTextField alloc] initWithFrame:NSMakeRect(15, 1, 
                                                                 CGRectGetWidth(frame) - 32, 
                                                                 CGRectGetHeight(frame) - 4)];
@@ -38,7 +38,7 @@
     [titleField setAlignment:NSCenterTextAlignment];
     [titleField setFont:[NSFont boldSystemFontOfSize:12.0]];
     [[titleField cell] setBackgroundStyle:NSBackgroundStyleRaised];
-    
+
     [self addSubview:titleField];
   }
   return self;
@@ -68,6 +68,7 @@
 {
   [(FBTabViewBar *)[self superview] setAllInActive];
   [self setActive:YES];
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"FBTabViewItemDidChange" object:self];
   [self setNeedsDisplay:YES];
 }
 
@@ -92,7 +93,7 @@
   [leftImageInActive release];
   [centerImageInActive release];
   [rightImageInActive release];
-  
+
   [leftImage release];
   [centerImage release];
   [rightImage release];

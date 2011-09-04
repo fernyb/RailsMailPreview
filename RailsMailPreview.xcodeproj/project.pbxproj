@@ -111,8 +111,6 @@
 		C4E964EB14108C7700A9CE21 /* FBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964E814108C3300A9CE21 /* FBApplication.m */; };
 		C4E964F114109DF000A9CE21 /* MyTabWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964F014109DF000A9CE21 /* MyTabWindowController.m */; };
 		C4E964F214109DF000A9CE21 /* MyTabWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964F014109DF000A9CE21 /* MyTabWindowController.m */; };
-		C4E965091410A97300A9CE21 /* FBTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E965081410A97300A9CE21 /* FBTabView.m */; };
-		C4E9650A1410A97300A9CE21 /* FBTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E965081410A97300A9CE21 /* FBTabView.m */; };
 		C4E9650D1410A99E00A9CE21 /* FBTabViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9650C1410A99E00A9CE21 /* FBTabViewItem.m */; };
 		C4E9650E1410A99E00A9CE21 /* FBTabViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9650C1410A99E00A9CE21 /* FBTabViewItem.m */; };
 		C4EB176A13F5FE9700BFB45C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB176913F5FE9700BFB45C /* Cocoa.framework */; };
@@ -245,8 +243,6 @@
 		C4E964E814108C3300A9CE21 /* FBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBApplication.m; sourceTree = "<group>"; };
 		C4E964EF14109DF000A9CE21 /* MyTabWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabWindowController.h; sourceTree = "<group>"; };
 		C4E964F014109DF000A9CE21 /* MyTabWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabWindowController.m; sourceTree = "<group>"; };
-		C4E965071410A97300A9CE21 /* FBTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTabView.h; sourceTree = "<group>"; };
-		C4E965081410A97300A9CE21 /* FBTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTabView.m; sourceTree = "<group>"; };
 		C4E9650B1410A99E00A9CE21 /* FBTabViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTabViewItem.h; sourceTree = "<group>"; };
 		C4E9650C1410A99E00A9CE21 /* FBTabViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTabViewItem.m; sourceTree = "<group>"; };
 		C4EB176513F5FE9700BFB45C /* RailsMailPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsMailPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -322,8 +318,6 @@
 		C4E964F31410A03600A9CE21 /* FBTabView */ = {
 			isa = PBXGroup;
 			children = (
-				C4E965071410A97300A9CE21 /* FBTabView.h */,
-				C4E965081410A97300A9CE21 /* FBTabView.m */,
 				C4E9650B1410A99E00A9CE21 /* FBTabViewItem.h */,
 				C4E9650C1410A99E00A9CE21 /* FBTabViewItem.m */,
 				C46DCDE11411ECD00005DB31 /* FBTabViewBar.h */,
@@ -688,7 +682,6 @@
 				C4A6253714101EE600EA7B51 /* FBMainContentView.m in Sources */,
 				C4E964E914108C3300A9CE21 /* FBApplication.m in Sources */,
 				C4E964F114109DF000A9CE21 /* MyTabWindowController.m in Sources */,
-				C4E965091410A97300A9CE21 /* FBTabView.m in Sources */,
 				C4E9650D1410A99E00A9CE21 /* FBTabViewItem.m in Sources */,
 				C46DCDE31411ECD00005DB31 /* FBTabViewBar.m in Sources */,
 			);
@@ -706,7 +699,6 @@
 				C4CCC4161404C889006EB689 /* NSImage+Additions.m in Sources */,
 				C4E964EB14108C7700A9CE21 /* FBApplication.m in Sources */,
 				C4E964F214109DF000A9CE21 /* MyTabWindowController.m in Sources */,
-				C4E9650A1410A97300A9CE21 /* FBTabView.m in Sources */,
 				C4E9650E1410A99E00A9CE21 /* FBTabViewItem.m in Sources */,
 				C46DCDE41411ECD00005DB31 /* FBTabViewBar.m in Sources */,
 			);

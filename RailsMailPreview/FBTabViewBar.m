@@ -19,27 +19,26 @@
       trackImage = [[NSImage imageNamed:@"tabTrack.png"] retain];
       tabWidth = 264.0;
       NSSize tabSize = NSMakeSize(tabWidth, CGRectGetHeight(frame));
-      
+
       FBTabViewItem * itemView = [[FBTabViewItem alloc] initWithFrame:NSMakeRect(0, 0, tabSize.width, tabSize.height)];
-      
       [itemView setAutoresizingMask:NSViewWidthSizable | NSViewMaxXMargin];
       [itemView setItemIndex:0];
       [itemView setActive:YES];
       [itemView setTitle:@"html"];
       [self addSubview:itemView];
-      
+
       FBTabViewItem * itemViewRight = [[FBTabViewItem alloc] initWithFrame:NSMakeRect(CGRectGetMaxX([itemView frame]), 0, tabSize.width, tabSize.height)];
-      
+
       [itemViewRight setAutoresizingMask:NSViewMinXMargin | NSViewWidthSizable];
       [itemViewRight setItemIndex:1];
       [itemViewRight setActive:NO];
       [itemViewRight setTitle:@"text"];
       [self addSubview:itemViewRight];
-      
+
       [itemView release];
       [itemViewRight release];
     }
-    
+
     return self;
 }
 
@@ -56,6 +55,20 @@
   }
 }
 
+- (NSInteger)selectedTabIndex
+{
+  NSEnumerator * e = [[self subviews] objectEnumerator];
+  id aview;
+  while(aview = [e nextObject]) {
+    if ([[aview className] isEqualToString:@"FBTabViewItem"]) {
+      if ([aview active]) {
+        return [aview itemIndex];
+      }
+    }
+  }
+  return NSNotFound;
+}
+
 
 - (void)drawRect:(NSRect)dirtyRect
 {
@@ -65,9 +78,9 @@
   NSInteger i = 0;
   while(aview = [e nextObject] ) {
     if ([[aview className] isEqualToString:@"FBTabViewItem"]) {
-     
+
       [aview setFrameSize:NSMakeSize(tabWidth, CGRectGetHeight([self frame]))];
-      
+
       if (i == 0) {
         [aview setFrameOrigin:NSMakePoint(CGRectGetMinX([self frame]), 0)];
       } 

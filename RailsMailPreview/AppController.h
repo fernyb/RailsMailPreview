@@ -12,8 +12,7 @@
 {
   IBOutlet NSSplitView * contentSplitView;
   IBOutlet NSSplitView * splitview;
-  IBOutlet WebView * leftWebview;
-  IBOutlet WebView * rightWebview;
+  IBOutlet NSTabView * contentTabView;
 }
 
 @end

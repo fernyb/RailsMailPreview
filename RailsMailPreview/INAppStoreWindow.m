@@ -50,7 +50,6 @@
 @end
 
 @implementation INTitlebarView
-@synthesize delegate;
 
 - (BOOL)shouldDrawAsMainWindow
 {
@@ -79,7 +78,7 @@
     [gradient release];
     [NSGraphicsContext restoreGraphicsState];
     
-  [self drawBottomLineInRect:drawingRect];
+  //[self drawBottomLineInRect:drawingRect];
 }
 
 
@@ -94,15 +93,8 @@
   }
   NSRect bottomRect = NSMakeRect(0.0, NSMinY(drawingRect), NSWidth(drawingRect), 1.0);
   
-  if ([self delegate] && [[self delegate] respondsToSelector:@selector(bottomLineRectForTitleBar:)]) {
-    NSRect newBottomRect = [[self delegate] bottomLineRectForTitleBar:bottomRect];
-    [bottomColor set];
-    NSRectFill(newBottomRect);
-  }
-  else {
-    //[bottomColor set];
-    //NSRectFill(bottomRect);
-  }
+  [bottomColor set];
+  NSRectFill(bottomRect);
 }
 
 

@@ -8,20 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol INTitlebarViewDelegateProtocol <NSObject>
-@optional
-- (NSRect)bottomLineRectForTitleBar:(NSRect)rect;
-@end
-
-
 /** @class INTitlebarView
  Draws a default style Mac OS X title bar.
  **/
 @interface INTitlebarView : NSView {
-  id <INTitlebarViewDelegateProtocol> delegate;
 }
 
-@property(assign) id <INTitlebarViewDelegateProtocol> delegate;
 
 - (BOOL)shouldDrawAsMainWindow;
 - (void)drawBottomLineInRect:(NSRect)drawingRect;

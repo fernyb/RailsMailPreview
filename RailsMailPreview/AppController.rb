@@ -15,6 +15,7 @@ class AppController < NSWindowController
   attr_accessor :contentSplitView
   attr_accessor :htmlview
   attr_accessor :plainview
+  attr_accessor :contentTabView
 
   def didFinishLaunching
     setup_toolbar
@@ -37,6 +38,11 @@ class AppController < NSWindowController
                        object: nil)
 
     NSNotificationCenter.defaultCenter.addObserver(self,
+                                                selector: :"tabItemDidChangeNotification:",
+                                                    name: "FBTabViewItemDidChange",
+                                                  object: nil)
+
+    NSNotificationCenter.defaultCenter.addObserver(self,
                                                    selector: :"receiveDidLoadHTMLString:",
                                                    name: "loadHTMLString",
                                                    object: nil)
@@ -45,6 +51,11 @@ class AppController < NSWindowController
                                                    selector: :"receiveSaveNewMessage:",
                                                    name: "saveNewMessage",
                                                    object: nil)
+  end
+
+  def tabItemDidChangeNotification(notification)
+    selectedTabIndex = notification.object.itemIndex
+    @contentTabView.selectTabViewItemAtIndex(selectedTabIndex)
   end
 
   def didReceiveNewMessage
@@ -83,16 +94,16 @@ class AppController < NSWindowController
   end
 
   def receiveDidLoadHTMLString(notification)
-    if self.splitview.isHidden
+    if self.contentTabView.isHidden
       @startup_view.setHidden(YES) if @startup_view
-      self.splitview.setHidden(NO)
+      self.contentTabView.setHidden(NO)
     end
   end
 
   def setup_startup_view
-    self.splitview.setHidden(YES)
+    self.contentTabView.setHidden(YES)
 
-    @startup_view = FBStartupView.alloc.initWithFrame([0,0, CGRectGetWidth(self.splitview.superview.frame), CGRectGetHeight(self.splitview.superview.frame)])
+    @startup_view = FBStartupView.alloc.initWithFrame([0,0, CGRectGetWidth(self.contentTabView.superview.frame), CGRectGetHeight(self.contentTabView.superview.frame)])
     if !Message.first
       self.hide_left_panel(animate:NO)
       @startup_view.message = "No Messages Available"
@@ -100,46 +111,29 @@ class AppController < NSWindowController
       @startup_view.message = "No Message Selected"
     end
 
-    self.splitview.superview.addSubview(@startup_view.render)
+    self.contentTabView.superview.addSubview(@startup_view.render)
   end
 
   def setup_side_views
     # Setup the left view
-    currentLeftView = self.splitview.subviews[0]
     @htmlview = FRBSideView.alloc.initWithFrame(
-      NSMakeRect(0,0, CGRectGetWidth(currentLeftView.frame), CGRectGetHeight(currentLeftView.frame))
+      [0,0, CGRectGetWidth(@contentTabView.frame), CGRectGetHeight(@contentTabView.frame)]
     )
     @htmlview.view_type = :html
 
     # Setup the right view
-    currentRightView = self.splitview.subviews[1]
     @plainview = FRBSideView.alloc.initWithFrame(
-      NSMakeRect(0,0, CGRectGetWidth(currentRightView.frame), CGRectGetHeight(currentRightView.frame))
+      [0,0, CGRectGetWidth(@contentTabView.frame), CGRectGetHeight(@contentTabView.frame)]
     )
     @plainview.view_type = :text
 
-    self.splitview.subviews.first.removeFromSuperview
-    self.splitview.subviews.last.removeFromSuperview
+    htmlTabItem = @contentTabView.tabViewItemAtIndex(0)
+    textTabItem = @contentTabView.tabViewItemAtIndex(1)
 
-    self.splitview.addSubview(@htmlview)
-    self.splitview.addSubview(@plainview)
-  end
+    htmlTabItem.setView(@htmlview)
+    textTabItem.setView(@plainview)
 
-  def html_sideview
-    self.subview_type(:html)
-  end
-
-  def text_sideview
-    self.subview_type(:text)
-  end
-
-  def subview_type(type)
-    self.splitview.subviews.each do |v|
-      if v.respond_to?(:view_type) && v.view_type == type
-        return sv
-      end
-    end
-    nil
+    @contentTabView.selectTabViewItemAtIndex(0)
   end
 
   def setup_toolbar
@@ -204,25 +198,25 @@ class AppController < NSWindowController
   end
 
   def toggle_rotate_view
-    leftview = @splitview.subviews.first
+  #   leftview = @splitview.subviews.first
 
-    @splitview.subviews.first.removeFromSuperview
-    @splitview.subviews.last.removeFromSuperview
+  #   @splitview.subviews.first.removeFromSuperview
+  #   @splitview.subviews.last.removeFromSuperview
 
-    if leftview.view_type == :html
-      @splitview.addSubview(@plainview)
-      @splitview.addSubview(@htmlview)
-    else
-      @splitview.addSubview(@htmlview)
-      @splitview.addSubview(@plainview)
-    end
-    @splitview.adjustSubviews
+  #   if leftview.view_type == :html
+  #     @splitview.addSubview(@plainview)
+  #     @splitview.addSubview(@htmlview)
+  #   else
+  #     @splitview.addSubview(@htmlview)
+  #     @splitview.addSubview(@plainview)
+  #   end
+  #   @splitview.adjustSubviews
   end
 
   def toggle_horizontal_view
-    @splitview.setVertical(!@splitview.isVertical)
-    @splitview.setNeedsDisplay(YES)
-    @splitview.adjustSubviews
+    # @splitview.setVertical(!@splitview.isVertical)
+    # @splitview.setNeedsDisplay(YES)
+    # @splitview.adjustSubviews
   end
 
   # - (CGFloat)splitView:(NSSplitView *)splitView constrainMaxCoordinate:(CGFloat)proposedMax ofSubviewAt:(NSInteger)dividerIndex

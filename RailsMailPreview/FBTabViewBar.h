@@ -16,5 +16,6 @@
 
 
 - (void)setAllInActive;
+- (NSInteger)selectedTabIndex;
 
 @end
