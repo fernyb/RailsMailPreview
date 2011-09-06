@@ -80,12 +80,16 @@ class AppController < NSWindowController
       self.didReceiveNewMessage
     end
 
+    msg = aNotification.object
+
     @dispatch_group ||= Dispatch::Group.new
-    @result_queue ||= Dispatch::Queue.new('net.fernyb.RailsMailPreview.gcd')
+    result_queue = Dispatch::Queue.new("net.fernyb.RailsMailPreview.gcd.#{msg.object_id}")
     Dispatch::Queue.concurrent.async(@dispatch_group) do
-      @result_queue.async(@dispatch_group) {
+      result_queue.async(@dispatch_group) {
+        puts "** counter: #{@message_count} - #{msg.object_id}"
+
+        mail = nil
         begin
-          msg = aNotification.object
           mail = Mail.new(msg)
         rescue Exception => e
           NSLog("Error Caught Exception: #{e}")
@@ -100,6 +104,8 @@ class AppController < NSWindowController
             else
               NSLog("*** Message did not save: #{@message_count}")
             end
+          else
+            NSLog("* Mail Message is nil: #{@message_count} - #{msg.object_id}")
           end
         rescue Exception => e
           NSLog("* Catch Message Exception: #{e}")
@@ -117,6 +123,7 @@ class AppController < NSWindowController
     self.didFinishReceivingNewMessage
     self.receiveDidLoadHTMLString(notification)
     self.show_left_panel
+    @sidePanelViewController.table.reloadData
   end
 
   def hideTabsIfNeeded(item)

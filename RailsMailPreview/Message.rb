@@ -20,13 +20,14 @@ class Message < FBDatabaseBase
   has_many :attachments
 
   def setMessage(mail)
-    self.from    = mail.from.to_a.join(" ,")
-    self.to      = mail.to.to_a.join(", ")
-    self.cc      = mail.cc.to_a.join(", ")
-    self.subject = mail.subject.to_s
-    self.date    = mail.date.to_s
-    self.html    = mail.html_part ? mail.html_part.body.to_s : ""
-    self.text    = mail.text_part ? mail.text_part.body.to_s : ""
+    self.from     = mail.from.to_a.join(" ,")
+    self.to       = mail.to.to_a.join(", ")
+    self.cc       = mail.cc.to_a.join(", ")
+    self.reply_to = mail.reply_to.to_a.join(", ")
+    self.subject  = mail.subject.to_s
+    self.date     = mail.date.to_s
+    self.html     = mail.html_part ? mail.html_part.body.to_s : ""
+    self.text     = mail.text_part ? mail.text_part.body.to_s : ""
 
     mail.attachments.each do |attch|
       attachment = Attachment.new

@@ -35,7 +35,7 @@ class FBDatabaseBase
       load_sql = true
     end
 
-    @db = SQLite3::Database.new(databaseFilePath)
+    @db ||= SQLite3::Database.new(databaseFilePath)
     self.table_name = "#{self.name}s"
 
     load_default_sql if load_sql
@@ -127,7 +127,9 @@ class FBDatabaseBase
    placehoders = ("?, " * values.size).to_s[0..-3]
 
     sql = "INSERT INTO `#{self.class.table_name}` (#{keys.join(', ')}) VALUES (#{placehoders})"
-    self.class.db.execute(sql, *values)
+    self.class.db.transaction do |d|
+      d.execute(sql, *values)
+    end
   end
 
   def save_insert_sql

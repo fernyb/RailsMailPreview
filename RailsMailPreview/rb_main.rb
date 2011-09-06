@@ -13,7 +13,23 @@ framework 'Webkit'
 framework 'QuickLook'
 
 require 'rubygems'
+
 require 'mail'
+require 'mail/network/delivery_methods/smtp'
+
+require 'mail/elements/address'
+require 'mail/elements/address_list'
+require 'mail/elements/content_disposition_element'
+require 'mail/elements/content_location_element'
+require 'mail/elements/content_transfer_encoding_element'
+require 'mail/elements/content_type_element'
+require 'mail/elements/date_time_element'
+require 'mail/elements/envelope_from_element'
+require 'mail/elements/message_ids_element'
+require 'mail/elements/mime_version_element'
+require 'mail/elements/phrase_list'
+require 'mail/elements/received_element'
+
 require 'mail/fields/unstructured_field'
 require 'mail/fields/structured_field'
 require 'mail/fields/optional_field'
