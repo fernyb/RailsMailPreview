@@ -86,8 +86,6 @@ class AppController < NSWindowController
     result_queue = Dispatch::Queue.new("net.fernyb.RailsMailPreview.gcd.#{msg.object_id}")
     Dispatch::Queue.concurrent.async(@dispatch_group) do
       result_queue.async(@dispatch_group) {
-        puts "** counter: #{@message_count} - #{msg.object_id}"
-
         mail = nil
         begin
           mail = Mail.new(msg)
