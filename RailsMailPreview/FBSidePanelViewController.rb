@@ -223,10 +223,14 @@ class FBSidePanelViewController < NSViewController
   end
 
   def tidyup(html)
-    doc = NSXMLDocument.alloc.initWithXMLString(html, options:NSXMLDocumentTidyHTML, error:nil)
-    doc.setDocumentContentKind(NSXMLDocumentHTMLKind)
-    nodes = doc.nodesForXPath("//body/*", error:nil)
-    nodes.map {|node| node.XMLString }.join("")
+    doc = NSXMLDocument.alloc.initWithXMLString(html.to_s, options:NSXMLDocumentTidyHTML, error:nil)
+    if doc
+      doc.setDocumentContentKind(NSXMLDocumentHTMLKind)
+      nodes = doc.nodesForXPath("//body/*", error:nil)
+      nodes.map {|node| node.XMLString }.join("")
+    else
+      ""
+    end
   end
 
   def nl2br(text)

@@ -4,3 +4,4 @@ RailsMailPreview.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad
 RailsMailPreview.xcodeproj/xcuserdata/*.xcuserdata*
 vendor/bundle
 .DS_Store
+import

@@ -409,7 +409,6 @@
 														<nil key="NSNextResponder"/>
 														<int key="NSvFlags">256</int>
 														<string key="NSFrameSize">{870, 512}</string>
-														<reference key="NSNextKeyView"/>
 													</object>
 													<string key="NSLabel">Item 0</string>
 													<object class="NSColor" key="NSColor" id="6671144">
