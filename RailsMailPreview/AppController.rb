@@ -48,7 +48,7 @@ class AppController < NSWindowController
 
     NSNotificationCenter.defaultCenter.addObserver(self,
                                                    selector: :"receiveSaveNewMessage:",
-                                                   name: "saveNewMessage",
+                                                   name: "didSaveNewMessage",
                                                    object: nil)
   end
 
@@ -73,17 +73,44 @@ class AppController < NSWindowController
   end
 
   def receiveNotification(aNotification)
-    self.didReceiveNewMessage
-    queue = Dispatch::Queue.new('net.fernyb.RailsMailPreview.gcd')
-    queue.async do
-      msg = aNotification.object
-      mail = Mail.new(msg)
-      self.performSelectorOnMainThread(:"set_mail_message:", withObject:mail, waitUntilDone:YES)
-    end
-  end
+    @message_count ||= 0
+    @message_count += 1
 
-  def set_mail_message(mail)
-    @sidePanelViewController.saveNewMessage(mail)
+    if @message_count == 1
+      self.didReceiveNewMessage
+    end
+
+    @dispatch_group ||= Dispatch::Group.new
+    @result_queue ||= Dispatch::Queue.new('net.fernyb.RailsMailPreview.gcd')
+    Dispatch::Queue.concurrent.async(@dispatch_group) do
+      @result_queue.async(@dispatch_group) {
+        begin
+          msg = aNotification.object
+          mail = Mail.new(msg)
+        rescue Exception => e
+          NSLog("Error Caught Exception: #{e}")
+        end
+
+        begin
+          if mail
+            message = Message.new
+            message.setMessage(mail)
+            if message.save
+              NSLog("*** Message Saved: #{@message_count}")
+            else
+              NSLog("*** Message did not save: #{@message_count}")
+            end
+          end
+        rescue Exception => e
+          NSLog("* Catch Message Exception: #{e}")
+        end
+
+        @message_count -= 1
+        if @message_count == 0
+          @sidePanelViewController.performSelectorOnMainThread(:"didSaveMessage:", withObject:nil, waitUntilDone:YES)
+        end
+      }
+    end
   end
 
   def receiveSaveNewMessage(notification)

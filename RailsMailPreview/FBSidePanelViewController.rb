@@ -12,15 +12,7 @@ class FBSidePanelViewController < NSViewController
   attr_accessor :htmlview
   attr_accessor :plainview
 
-  def saveNewMessage(mail)
-    message = Message.new
-    message.setMessage(mail)
-    if message.save
-      NSLog("*** Message Saved")
-    else
-      NSLog("*** Message did not save")
-    end
-
+  def didSaveMessage(sender)
     self.items = Message.all
     self.table.window.makeFirstResponder(self.table)
 
@@ -29,7 +21,7 @@ class FBSidePanelViewController < NSViewController
     self.table.selectRowIndexes(NSIndexSet.indexSetWithIndex(0), byExtendingSelection:NO)
     self.table.endUpdates
 
-    NSNotificationCenter.defaultCenter.postNotificationName("saveNewMessage", object:nil)
+    NSNotificationCenter.defaultCenter.postNotificationName("didSaveNewMessage", object:self.items.first)
   end
 
   def items
