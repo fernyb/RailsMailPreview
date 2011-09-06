@@ -11,6 +11,7 @@
 
 
 @implementation FBTabViewBar
+@synthesize tabs;
 
 - (id)initWithFrame:(NSRect)frame
 {
@@ -18,6 +19,7 @@
     if (self) {
       trackImage = [[NSImage imageNamed:@"tabTrack.png"] retain];
       tabWidth = 264.0;
+      
       NSSize tabSize = NSMakeSize(tabWidth, CGRectGetHeight(frame));
 
       FBTabViewItem * itemView = [[FBTabViewItem alloc] initWithFrame:NSMakeRect(0, 0, tabSize.width, tabSize.height)];
@@ -25,7 +27,7 @@
       [itemView setItemIndex:0];
       [itemView setActive:YES];
       [itemView setTitle:@"html"];
-      [self addSubview:itemView];
+      [self addTabViewItem:itemView];
 
       FBTabViewItem * itemViewRight = [[FBTabViewItem alloc] initWithFrame:NSMakeRect(CGRectGetMaxX([itemView frame]), 0, tabSize.width, tabSize.height)];
 
@@ -33,7 +35,7 @@
       [itemViewRight setItemIndex:1];
       [itemViewRight setActive:NO];
       [itemViewRight setTitle:@"text"];
-      [self addSubview:itemViewRight];
+      [self addTabViewItem:itemViewRight];
 
       [itemView release];
       [itemViewRight release];
@@ -42,6 +44,10 @@
     return self;
 }
 
+- (void)addTabViewItem:(FBTabViewItem *)tabItem
+{
+  [self addSubview:tabItem];
+}
 
 - (void)setAllInActive
 {
@@ -50,7 +56,6 @@
   while(aview = [e nextObject]) {
     if ([[aview className] isEqualToString:@"FBTabViewItem"]) {
       [aview setActive:NO];
-      [aview setNeedsDisplay:YES];
     }
   }
 }
@@ -70,29 +75,90 @@
 }
 
 
-- (void)drawRect:(NSRect)dirtyRect
+- (void)selectTabAtIndex:(NSInteger)idx
+{
+  [self setAllInActive];
+  FBTabViewItem * tabItem = [self tabViewItemAtIndex:idx];
+  [tabItem setHidden:NO];
+  [tabItem setActive:YES];
+  [tabItem setNeedsDisplay:YES];
+  [self setNeedsDisplay:YES];
+}
+
+- (FBTabViewItem *)tabViewItemAtIndex:(NSInteger)idx
 {
   NSEnumerator * e = [[self subviews] objectEnumerator];
   id aview;
-  
   NSInteger i = 0;
-  while(aview = [e nextObject] ) {
+  while (aview = [e nextObject]) {
     if ([[aview className] isEqualToString:@"FBTabViewItem"]) {
-
-      [aview setFrameSize:NSMakeSize(tabWidth, CGRectGetHeight([self frame]))];
-
-      if (i == 0) {
-        [aview setFrameOrigin:NSMakePoint(CGRectGetMinX([self frame]) + 0.2, 0)];
-      } 
-      else if (i == 1) {
-        [aview setFrameOrigin:NSMakePoint(tabWidth - 18.2, 0)];
+      if (i == idx) {
+        return (FBTabViewItem *)aview;
       }
       i += 1;
     }
   }
+  return nil;
+}
+
+- (void)setHideTabAtIndex:(NSInteger)idx
+{
+  FBTabViewItem * tabItem = [self tabViewItemAtIndex:idx];
+  [tabItem setFrameOrigin:NSMakePoint(CGRectGetMinX([self frame]) - tabWidth, 0)];
+  [tabItem setHidden:YES];
+  [tabItem setNeedsDisplay:YES];
+}
+
+- (void)setShowTabAtIndex:(NSInteger)idx
+{
+  FBTabViewItem * tabItem = [self tabViewItemAtIndex:idx];
+  [tabItem setHidden:NO];
+  [tabItem setNeedsDisplay:YES];
+}
+
+- (CGFloat)animationDuration
+{
+  return 0.12;
+}
+
+- (void)viewWillDraw
+{
+  NSEnumerator * e = [[self subviews] objectEnumerator];
+  FBTabViewItem * tabItem;
   
+  NSInteger i = 0;
+  
+  [NSAnimationContext beginGrouping];
+  [[NSAnimationContext currentContext] setDuration:[self animationDuration]];
+  
+  while(tabItem = [e nextObject] ) {
+    if (![[tabItem className] isEqualToString:@"FBTabViewItem"]) {
+      continue;
+    }
+    if ([tabItem isHidden]) {
+      continue;
+    }
+    
+    [tabItem setFrameSize:NSMakeSize(tabWidth, CGRectGetHeight([self frame]))];
+    
+    CGFloat originX = CGRectGetMinX([self frame]) + (tabWidth * i);
+    
+    if(i > 0) {
+      originX -= 18.2;
+    }
+    
+    [[tabItem animator] setFrameOrigin:NSMakePoint(originX, 0)];
+  
+    i += 1;
+  }
+  [NSAnimationContext endGrouping];
+}
+
+- (void)drawRect:(NSRect)dirtyRect
+{
  NSDrawThreePartImage([self bounds], trackImage, trackImage, trackImage, NO, NSCompositeSourceOver, 1, NO);
 }
+
 
 
 - (void)dealloc {

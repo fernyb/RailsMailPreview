@@ -12,8 +12,9 @@
  Draws a default style Mac OS X title bar.
  **/
 @interface INTitlebarView : NSView {
+  BOOL shouldDrawBottomLine;
 }
-
+@property(assign) BOOL shouldDrawBottomLine;
 
 - (BOOL)shouldDrawAsMainWindow;
 - (void)drawBottomLineInRect:(NSRect)drawingRect;

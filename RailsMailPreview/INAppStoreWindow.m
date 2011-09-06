@@ -50,6 +50,7 @@
 @end
 
 @implementation INTitlebarView
+@synthesize shouldDrawBottomLine;
 
 - (BOOL)shouldDrawAsMainWindow
 {
@@ -78,9 +79,16 @@
     [gradient release];
     [NSGraphicsContext restoreGraphicsState];
     
-  //[self drawBottomLineInRect:drawingRect];
+  if ([self shouldDrawBottomLine]) {
+    [self drawBottomLineInRect:drawingRect];
+  }
 }
 
+- (void)setShouldDrawBottomLine:(BOOL)b
+{
+  shouldDrawBottomLine = b;
+  [self setNeedsDisplay:YES];
+}
 
 - (void)drawBottomLineInRect:(NSRect)drawingRect
 {
@@ -304,6 +312,7 @@
     // Create the title bar view
     self.titleBarView = [[[INTitlebarView alloc] initWithFrame:NSZeroRect] autorelease];
 }
+
 
 // Solution for tracking area issue thanks to @Perspx (Alex Rozanski) <https://gist.github.com/972958>
 - (void)_setupTrafficLightsTrackingArea

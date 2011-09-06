@@ -69,6 +69,7 @@
   [(FBTabViewBar *)[self superview] setAllInActive];
   [self setActive:YES];
   [[NSNotificationCenter defaultCenter] postNotificationName:@"FBTabViewItemDidChange" object:self];
+  [(FBTabViewBar *)[self superview] setNeedsDisplay:YES];
   [self setNeedsDisplay:YES];
 }
 
@@ -80,10 +81,10 @@
   } 
   else {
     if (itemIndex == 0) {
-      NSDrawThreePartImage([self bounds], leftImageInActive, centerImageInActive, leftImage, NO, NSCompositeSourceOver, 1, NO);
+      NSDrawThreePartImage([self bounds], leftImageInActive, centerImageInActive, centerImageInActive, NO, NSCompositeSourceOver, 1, NO);
     }
     else if (itemIndex == 1) {
-      NSDrawThreePartImage([self bounds], rightImage, centerImageInActive, rightImageInActive, NO, NSCompositeSourceOver, 1, NO);
+      NSDrawThreePartImage([self bounds], centerImageInActive, centerImageInActive, rightImageInActive, NO, NSCompositeSourceOver, 1, NO);
     }
   }
 }

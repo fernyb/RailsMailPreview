@@ -92,11 +92,62 @@ class AppController < NSWindowController
     self.show_left_panel
   end
 
+  def hideTabsIfNeeded(item)
+    if item.html.length < 2
+      self.setHiddenHTMLTab(YES)
+    else
+      self.setHiddenHTMLTab(NO)
+    end
+
+    if item.text.length < 2
+      self.setHiddenTEXTTab(YES)
+    else
+      self.setHiddenTEXTTab(NO)
+    end
+
+    if item.html.length > 2
+      self.setSelectTab(:html)
+    else
+      self.setSelectTab(:text)
+    end
+  end
+
+  def setSelectTab(type)
+    if type == :html
+      self.selectTabAtIndex(0)
+    else
+      self.selectTabAtIndex(1)
+    end
+  end
+
+  def selectTabAtIndex(idx)
+    @contentTabView.selectTabViewItemAtIndex(idx)
+    @tabviewBar.selectTabAtIndex(idx)
+  end
+
   def receiveDidLoadHTMLString(notification)
+    self.hideTabsIfNeeded(notification.object)
+
     if self.contentTabView.isHidden
       @startup_view.setHidden(YES) if @startup_view
       self.contentTabView.setHidden(NO)
       self.setHiddenTabBar(NO)
+    end
+  end
+
+  def setHiddenHTMLTab(b)
+    if b == YES
+      @tabviewBar.setHideTabAtIndex(0)
+    else
+      @tabviewBar.setShowTabAtIndex(0)
+    end
+  end
+
+  def setHiddenTEXTTab(b)
+    if b == YES
+      @tabviewBar.setHideTabAtIndex(1)
+    else
+      @tabviewBar.setShowTabAtIndex(1)
     end
   end
 
@@ -122,6 +173,7 @@ class AppController < NSWindowController
       self.tabviewBar.setHidden(YES)
       @contentSplitView.animator.setFrame([0,0, CGRectGetWidth(@contentSplitView.superview.frame), CGRectGetHeight(@contentSplitView.superview.frame)])
       NSAnimationContext.endGrouping
+      self.window.titleBarView.setShouldDrawBottomLine(YES)
     else
       NSAnimationContext.beginGrouping
       NSAnimationContext.currentContext.setDuration(self.animationDuration)
@@ -130,6 +182,7 @@ class AppController < NSWindowController
                                  CGRectGetWidth(@contentSplitView.superview.frame),
                                  CGRectGetHeight(@contentSplitView.superview.frame) - CGRectGetHeight(self.tabviewBar.frame)])
       NSAnimationContext.endGrouping
+      self.window.titleBarView.setShouldDrawBottomLine(NO)
     end
   end
 
@@ -157,6 +210,8 @@ class AppController < NSWindowController
 
   def setup_toolbar
     self.window.setTitleBarHeight(40.0)
+    self.window.titleBarView.setShouldDrawBottomLine(YES)
+
     @toolbarViewController = FBToolbarViewController.alloc.init
     @toolbarViewController.parentController = self
     self.window.setTitleBarView(@toolbarViewController.view)
