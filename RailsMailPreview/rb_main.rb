@@ -12,6 +12,7 @@ framework 'Cocoa'
 framework 'Webkit'
 framework 'QuickLook'
 
+
 require 'rubygems'
 
 require 'mail'

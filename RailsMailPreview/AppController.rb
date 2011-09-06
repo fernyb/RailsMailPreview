@@ -68,13 +68,26 @@ class AppController < NSWindowController
   end
 
   def didFinishReceivingNewMessage
+    @progress_count = 0
     NSApplication.sharedApplication.endSheet(@progressWindow.window)
+    @progressWindow.setProgressString("")
     @progressWindow.window.orderOut(self)
+  end
+
+  def updateProgressString(sender)
+    if @progress_count == 1
+      msg = "Message"
+    else
+      msg = "Messages"
+    end
+
+    @progressWindow.setProgressString("Processing #{@progress_count} #{msg}")
   end
 
   def receiveNotification(aNotification)
     @message_count ||= 0
     @message_count += 1
+    @progress_count ||= 0
 
     if @message_count == 1
       self.didReceiveNewMessage
@@ -86,6 +99,10 @@ class AppController < NSWindowController
     result_queue = Dispatch::Queue.new("net.fernyb.RailsMailPreview.gcd.#{msg.object_id}")
     Dispatch::Queue.concurrent.async(@dispatch_group) do
       result_queue.async(@dispatch_group) {
+        @progress_count += 1
+
+        self.performSelectorOnMainThread(:"updateProgressString:", withObject:nil, waitUntilDone:NO)
+
         mail = nil
         begin
           mail = Mail.new(msg)

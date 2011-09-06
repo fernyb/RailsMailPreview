@@ -9,6 +9,7 @@
 
 class FBProgressWindowController < NSWindowController
   attr_accessor :progressbar
+  attr_accessor :progressLabel
 
   def init
     self.initWithWindowNibName("ProgressWindow", owner:self)
@@ -17,5 +18,9 @@ class FBProgressWindowController < NSWindowController
 
   def awakeFromNib
     @progressbar.startAnimation(self)
+  end
+
+  def setProgressString(text)
+    @progressLabel.setStringValue(text)
   end
 end

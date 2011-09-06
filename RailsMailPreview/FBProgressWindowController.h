@@ -11,5 +11,6 @@
 @interface FBProgressWindowController : NSWindowController
 {
   IBOutlet NSProgressIndicator * progressbar;
+  IBOutlet NSTextField * progressLabel;
 }
 @end
