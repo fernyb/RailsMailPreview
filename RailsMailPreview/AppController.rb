@@ -15,6 +15,7 @@ class AppController < NSWindowController
   attr_accessor :plainview
   attr_accessor :contentTabView
   attr_accessor :tabviewBar
+  attr_accessor :queue
 
   def didFinishLaunching
     setup_toolbar
@@ -68,70 +69,40 @@ class AppController < NSWindowController
   end
 
   def didFinishReceivingNewMessage
-    @progress_count = 0
     NSApplication.sharedApplication.endSheet(@progressWindow.window)
     @progressWindow.setProgressString("")
     @progressWindow.window.orderOut(self)
   end
 
-  def updateProgressString(sender)
-    if @progress_count == 1
-      msg = "Message"
-    else
-      msg = "Messages"
-    end
-
+  def updateProgressString
+    msg = @progress_count == 1 ? "Message" : "Messages"
     @progressWindow.setProgressString("Processing #{@progress_count} #{msg}")
   end
 
+  def didCompleteSaveOperation
+    @progress_count -= 1
+    if @progress_count == 0
+      @sidePanelViewController.didSaveAllMessages
+    else
+      @sidePanelViewController.didSaveMessage
+    end
+  end
+
+  def didBeginSaveOperation
+    self.updateProgressString
+  end
+
   def receiveNotification(aNotification)
-    @message_count ||= 0
-    @message_count += 1
     @progress_count ||= 0
+    self.didReceiveNewMessage if @progress_count == 0
 
-    if @message_count == 1
-      self.didReceiveNewMessage
-    end
+    @progress_count += 1
+    @queue ||= NSOperationQueue.alloc.init
+    @queue.setMaxConcurrentOperationCount(1)
 
-    msg = aNotification.object
-
-    @dispatch_group ||= Dispatch::Group.new
-    result_queue = Dispatch::Queue.new("net.fernyb.RailsMailPreview.gcd.#{msg.object_id}")
-    Dispatch::Queue.concurrent.async(@dispatch_group) do
-      result_queue.async(@dispatch_group) {
-        @progress_count += 1
-
-        self.performSelectorOnMainThread(:"updateProgressString:", withObject:nil, waitUntilDone:NO)
-
-        mail = nil
-        begin
-          mail = Mail.new(msg)
-        rescue Exception => e
-          NSLog("Error Caught Exception: #{e}")
-        end
-
-        begin
-          if mail
-            message = Message.new
-            message.setMessage(mail)
-            if message.save
-              NSLog("*** Message Saved: #{@message_count}")
-            else
-              NSLog("*** Message did not save: #{@message_count}")
-            end
-          else
-            NSLog("* Mail Message is nil: #{@message_count} - #{msg.object_id}")
-          end
-        rescue Exception => e
-          NSLog("* Catch Message Exception: #{e}")
-        end
-
-        @message_count -= 1
-        if @message_count == 0
-          @sidePanelViewController.performSelectorOnMainThread(:"didSaveMessage:", withObject:nil, waitUntilDone:YES)
-        end
-      }
-    end
+    operation = ParseMailMessageOperation.alloc.initWithMessage(aNotification.object)
+    operation.controller = self
+    @queue.addOperation(operation)
   end
 
   def receiveSaveNewMessage(notification)
@@ -139,6 +110,7 @@ class AppController < NSWindowController
     self.receiveDidLoadHTMLString(notification)
     self.show_left_panel
     @sidePanelViewController.table.reloadData
+    @sidePanelViewController.didSaveMessage
   end
 
   def hideTabsIfNeeded(item)

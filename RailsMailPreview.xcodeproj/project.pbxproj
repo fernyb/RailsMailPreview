@@ -107,6 +107,9 @@
 		C4CCC4161404C889006EB689 /* NSImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4CCC4141404C889006EB689 /* NSImage+Additions.m */; };
 		C4D73B5613F6DAC7004D623E /* FRBSideView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4D73B5513F6DAC7004D623E /* FRBSideView.rb */; };
 		C4D73B5713F6DAC7004D623E /* FRBSideView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4D73B5513F6DAC7004D623E /* FRBSideView.rb */; };
+		C4D7FA3C1416F743002BC53F /* ParseMailMessageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D7FA3B1416F743002BC53F /* ParseMailMessageOperation.m */; };
+		C4D7FA401416F7FE002BC53F /* ParseMailMessageOperation.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4D7FA3F1416F7FE002BC53F /* ParseMailMessageOperation.rb */; };
+		C4D7FA411416F7FE002BC53F /* ParseMailMessageOperation.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4D7FA3F1416F7FE002BC53F /* ParseMailMessageOperation.rb */; };
 		C4E964E914108C3300A9CE21 /* FBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964E814108C3300A9CE21 /* FBApplication.m */; };
 		C4E964EB14108C7700A9CE21 /* FBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964E814108C3300A9CE21 /* FBApplication.m */; };
 		C4E964F114109DF000A9CE21 /* MyTabWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E964F014109DF000A9CE21 /* MyTabWindowController.m */; };
@@ -239,6 +242,9 @@
 		C4CCC4131404C889006EB689 /* NSImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Additions.h"; sourceTree = "<group>"; };
 		C4CCC4141404C889006EB689 /* NSImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Additions.m"; sourceTree = "<group>"; };
 		C4D73B5513F6DAC7004D623E /* FRBSideView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FRBSideView.rb; sourceTree = "<group>"; };
+		C4D7FA3A1416F743002BC53F /* ParseMailMessageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseMailMessageOperation.h; sourceTree = "<group>"; };
+		C4D7FA3B1416F743002BC53F /* ParseMailMessageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseMailMessageOperation.m; sourceTree = "<group>"; };
+		C4D7FA3F1416F7FE002BC53F /* ParseMailMessageOperation.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ParseMailMessageOperation.rb; sourceTree = "<group>"; };
 		C4E964E714108C3300A9CE21 /* FBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBApplication.h; sourceTree = "<group>"; };
 		C4E964E814108C3300A9CE21 /* FBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBApplication.m; sourceTree = "<group>"; };
 		C4E964EF14109DF000A9CE21 /* MyTabWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabWindowController.h; sourceTree = "<group>"; };
@@ -383,6 +389,9 @@
 				C4EB177913F5FE9800BFB45C /* Resources */,
 				C4EB177D13F5FE9800BFB45C /* Other Sources */,
 				C4EB177113F5FE9700BFB45C /* Supporting Files */,
+				C4D7FA3A1416F743002BC53F /* ParseMailMessageOperation.h */,
+				C4D7FA3B1416F743002BC53F /* ParseMailMessageOperation.m */,
+				C4D7FA3F1416F7FE002BC53F /* ParseMailMessageOperation.rb */,
 			);
 			path = RailsMailPreview;
 			sourceTree = "<group>";
@@ -600,6 +609,7 @@
 				C42DC2E01412CC2B008345B9 /* tabCenterInActive.png in Resources */,
 				C42DC2E21412CC2B008345B9 /* tabLeftCapInActive.png in Resources */,
 				C42DC2E41412CC2B008345B9 /* tabRightCapInActive.png in Resources */,
+				C4D7FA401416F7FE002BC53F /* ParseMailMessageOperation.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,6 +661,7 @@
 				C42DC2E11412CC2B008345B9 /* tabCenterInActive.png in Resources */,
 				C42DC2E31412CC2B008345B9 /* tabLeftCapInActive.png in Resources */,
 				C42DC2E51412CC2B008345B9 /* tabRightCapInActive.png in Resources */,
+				C4D7FA411416F7FE002BC53F /* ParseMailMessageOperation.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +695,7 @@
 				C4E964F114109DF000A9CE21 /* MyTabWindowController.m in Sources */,
 				C4E9650D1410A99E00A9CE21 /* FBTabViewItem.m in Sources */,
 				C46DCDE31411ECD00005DB31 /* FBTabViewBar.m in Sources */,
+				C4D7FA3C1416F743002BC53F /* ParseMailMessageOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
