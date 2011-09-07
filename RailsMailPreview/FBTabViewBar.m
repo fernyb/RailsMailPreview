@@ -18,6 +18,8 @@
     self = [super initWithFrame:frame];
     if (self) {
       trackImage = [[NSImage imageNamed:@"tabTrack.png"] retain];
+      trackImageBlur = [[NSImage imageNamed:@"track_blur.png"] retain];
+      
       tabWidth = 264.0;
       
       NSSize tabSize = NSMakeSize(tabWidth, CGRectGetHeight(frame));
@@ -154,15 +156,27 @@
   [NSAnimationContext endGrouping];
 }
 
+
 - (void)drawRect:(NSRect)dirtyRect
-{
- NSDrawThreePartImage([self bounds], trackImage, trackImage, trackImage, NO, NSCompositeSourceOver, 1, NO);
+{ 
+  if ([self drawAsMain]) {
+    NSDrawThreePartImage([self bounds], trackImage, trackImage, trackImage, NO, NSCompositeSourceOver, 1, NO);
+  }
+  else {
+    NSDrawThreePartImage([self bounds], trackImageBlur, trackImageBlur, trackImageBlur, NO, NSCompositeSourceOver, 1, NO);
+  }
 }
+
+- (BOOL)drawAsMain
+{
+  return ([[self window] isMainWindow] && [[NSApplication sharedApplication] isActive]);  
+} 
 
 
 
 - (void)dealloc {
   [trackImage release];
+  [trackImageBlur release];
   [super dealloc];
 }
 

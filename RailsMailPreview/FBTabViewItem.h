@@ -18,6 +18,14 @@
   NSImage * centerImageInActive;
   NSImage * rightImageInActive;
   
+  NSImage * leftImageBlur;
+  NSImage * centerImageBlur;
+  NSImage * rightImageBlur;
+  
+  NSImage * leftImageBlurIA;  
+  NSImage * centerImageBlurIA;
+  NSImage * rightImageBlurIA;
+  
   BOOL active;
   NSTextField * titleField;
   NSInteger itemIndex;
@@ -28,5 +36,6 @@
 
 - (void)setTitle:(NSString *)aTitle;
 - (NSString *)title;
+- (BOOL)drawAsMain;
 
 @end

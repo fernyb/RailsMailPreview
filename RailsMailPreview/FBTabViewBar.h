@@ -13,6 +13,7 @@
 @interface FBTabViewBar : NSView
 {
   NSImage * trackImage;
+  NSImage * trackImageBlur;
   CGFloat tabWidth;
 }
 
@@ -28,5 +29,7 @@
 - (FBTabViewItem *)tabViewItemAtIndex:(NSInteger)idx;
 - (void)setHideTabAtIndex:(NSInteger)idx;
 - (void)setShowTabAtIndex:(NSInteger)idx;
+
+- (BOOL)drawAsMain;
 
 @end

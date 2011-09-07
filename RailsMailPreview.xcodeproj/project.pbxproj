@@ -136,6 +136,20 @@
 		C4EB17AD13F6089E00BFB45C /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177E13F5FE9800BFB45C /* rb_main.rb */; };
 		C4EB17AE13F6089E00BFB45C /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB178013F5FE9800BFB45C /* AppDelegate.rb */; };
 		C4EB17AF13F6089E00BFB45C /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB179513F6046400BFB45C /* AppController.rb */; };
+		C4FD045B14173F6300C49680 /* center_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045414173F6300C49680 /* center_blur.png */; };
+		C4FD045C14173F6300C49680 /* center_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045414173F6300C49680 /* center_blur.png */; };
+		C4FD045D14173F6300C49680 /* center_ia_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045514173F6300C49680 /* center_ia_blur.png */; };
+		C4FD045E14173F6300C49680 /* center_ia_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045514173F6300C49680 /* center_ia_blur.png */; };
+		C4FD045F14173F6300C49680 /* lc_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045614173F6300C49680 /* lc_blur.png */; };
+		C4FD046014173F6300C49680 /* lc_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045614173F6300C49680 /* lc_blur.png */; };
+		C4FD046114173F6300C49680 /* lc_ia_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045714173F6300C49680 /* lc_ia_blur.png */; };
+		C4FD046214173F6300C49680 /* lc_ia_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045714173F6300C49680 /* lc_ia_blur.png */; };
+		C4FD046314173F6300C49680 /* rc_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045814173F6300C49680 /* rc_blur.png */; };
+		C4FD046414173F6300C49680 /* rc_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045814173F6300C49680 /* rc_blur.png */; };
+		C4FD046514173F6300C49680 /* rc_ia_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045914173F6300C49680 /* rc_ia_blur.png */; };
+		C4FD046614173F6300C49680 /* rc_ia_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045914173F6300C49680 /* rc_ia_blur.png */; };
+		C4FD046714173F6300C49680 /* track_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045A14173F6300C49680 /* track_blur.png */; };
+		C4FD046814173F6300C49680 /* track_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045A14173F6300C49680 /* track_blur.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,6 +283,13 @@
 		C4EB179F13F6077000BFB45C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C4EB17B513F6089E00BFB45C /* RailsMailPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsMailPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EB17B713F6089F00BFB45C /* RailsMailPreview copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RailsMailPreview copy-Info.plist"; path = "/Users/fernyb/cocoa/RailsMailPreview/RailsMailPreview copy-Info.plist"; sourceTree = "<absolute>"; };
+		C4FD045414173F6300C49680 /* center_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = center_blur.png; path = images/blur_tabs/center_blur.png; sourceTree = "<group>"; };
+		C4FD045514173F6300C49680 /* center_ia_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = center_ia_blur.png; path = images/blur_tabs/center_ia_blur.png; sourceTree = "<group>"; };
+		C4FD045614173F6300C49680 /* lc_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lc_blur.png; path = images/blur_tabs/lc_blur.png; sourceTree = "<group>"; };
+		C4FD045714173F6300C49680 /* lc_ia_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lc_ia_blur.png; path = images/blur_tabs/lc_ia_blur.png; sourceTree = "<group>"; };
+		C4FD045814173F6300C49680 /* rc_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rc_blur.png; path = images/blur_tabs/rc_blur.png; sourceTree = "<group>"; };
+		C4FD045914173F6300C49680 /* rc_ia_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rc_ia_blur.png; path = images/blur_tabs/rc_ia_blur.png; sourceTree = "<group>"; };
+		C4FD045A14173F6300C49680 /* track_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = track_blur.png; path = images/blur_tabs/track_blur.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +431,13 @@
 		C4EB177913F5FE9800BFB45C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C4FD045414173F6300C49680 /* center_blur.png */,
+				C4FD045514173F6300C49680 /* center_ia_blur.png */,
+				C4FD045614173F6300C49680 /* lc_blur.png */,
+				C4FD045714173F6300C49680 /* lc_ia_blur.png */,
+				C4FD045814173F6300C49680 /* rc_blur.png */,
+				C4FD045914173F6300C49680 /* rc_ia_blur.png */,
+				C4FD045A14173F6300C49680 /* track_blur.png */,
 				C42DC2DD1412CC2B008345B9 /* tabCenterInActive.png */,
 				C42DC2DE1412CC2B008345B9 /* tabLeftCapInActive.png */,
 				C42DC2DF1412CC2B008345B9 /* tabRightCapInActive.png */,
@@ -610,6 +638,13 @@
 				C42DC2E21412CC2B008345B9 /* tabLeftCapInActive.png in Resources */,
 				C42DC2E41412CC2B008345B9 /* tabRightCapInActive.png in Resources */,
 				C4D7FA401416F7FE002BC53F /* ParseMailMessageOperation.rb in Resources */,
+				C4FD045B14173F6300C49680 /* center_blur.png in Resources */,
+				C4FD045D14173F6300C49680 /* center_ia_blur.png in Resources */,
+				C4FD045F14173F6300C49680 /* lc_blur.png in Resources */,
+				C4FD046114173F6300C49680 /* lc_ia_blur.png in Resources */,
+				C4FD046314173F6300C49680 /* rc_blur.png in Resources */,
+				C4FD046514173F6300C49680 /* rc_ia_blur.png in Resources */,
+				C4FD046714173F6300C49680 /* track_blur.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +697,13 @@
 				C42DC2E31412CC2B008345B9 /* tabLeftCapInActive.png in Resources */,
 				C42DC2E51412CC2B008345B9 /* tabRightCapInActive.png in Resources */,
 				C4D7FA411416F7FE002BC53F /* ParseMailMessageOperation.rb in Resources */,
+				C4FD045C14173F6300C49680 /* center_blur.png in Resources */,
+				C4FD045E14173F6300C49680 /* center_ia_blur.png in Resources */,
+				C4FD046014173F6300C49680 /* lc_blur.png in Resources */,
+				C4FD046214173F6300C49680 /* lc_ia_blur.png in Resources */,
+				C4FD046414173F6300C49680 /* rc_blur.png in Resources */,
+				C4FD046614173F6300C49680 /* rc_ia_blur.png in Resources */,
+				C4FD046814173F6300C49680 /* track_blur.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

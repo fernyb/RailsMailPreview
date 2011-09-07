@@ -356,5 +356,6 @@
 {
     // Redraw the window and titlebar
     [_titleBarView setNeedsDisplay:YES];
+  [[self contentView] setNeedsDisplay:YES];
 }
 @end
