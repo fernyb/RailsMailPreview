@@ -17,6 +17,7 @@ class AppController < NSWindowController
   attr_accessor :tabviewBar
   attr_accessor :queue
 
+
   def didFinishLaunching
     setup_toolbar
     setup_side_views
@@ -181,6 +182,7 @@ class AppController < NSWindowController
       self.hide_left_panel(animate:NO)
       @startup_view.message = "No Messages Available"
     else
+      self.show_left_panel
       @startup_view.message = "No Message Selected"
     end
 
@@ -253,6 +255,7 @@ class AppController < NSWindowController
 
   def show_left_panel
     panelview = @contentSplitView.subviews.first
+    @toolbarViewController.selectSidePanelButton
     if CGRectGetWidth(panelview.frame) <= 1
       NSAnimationContext.beginGrouping
       NSAnimationContext.currentContext.setDuration(self.animationDuration)
@@ -268,6 +271,7 @@ class AppController < NSWindowController
   def hide_left_panel(opts={})
     panelview = @contentSplitView.subviews.first
     @prevContentSplitViewFrame = panelview.frame
+    @toolbarViewController.unselectSidePanelButton
     if opts[:animate] == NO
       panelview.setFrameSize([0.0, CGRectGetHeight(panelview.frame)])
     else
@@ -292,44 +296,14 @@ class AppController < NSWindowController
     end
   end
 
-  def toggle_rotate_view
-  #   leftview = @splitview.subviews.first
-
-  #   @splitview.subviews.first.removeFromSuperview
-  #   @splitview.subviews.last.removeFromSuperview
-
-  #   if leftview.view_type == :html
-  #     @splitview.addSubview(@plainview)
-  #     @splitview.addSubview(@htmlview)
-  #   else
-  #     @splitview.addSubview(@htmlview)
-  #     @splitview.addSubview(@plainview)
-  #   end
-  #   @splitview.adjustSubviews
-  end
-
-  def toggle_horizontal_view
-    # @splitview.setVertical(!@splitview.isVertical)
-    # @splitview.setNeedsDisplay(YES)
-    # @splitview.adjustSubviews
-  end
-
   # - (CGFloat)splitView:(NSSplitView *)splitView constrainMaxCoordinate:(CGFloat)proposedMax ofSubviewAt:(NSInteger)dividerIndex
   def splitView(aSplitView, constrainMaxCoordinate:proposedMax, ofSubviewAt:dividerIndex)
-    if dividerIndex == 0
-      350
-    else
-      proposedMax
-    end
+    dividerIndex == 0 ? 350 : proposedMax
   end
 
   # - (CGFloat)splitView:(NSSplitView *)splitView constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)dividerIndex
   def splitView(aSplitView, constrainMinCoordinate:proposedMin, ofSubviewAt:dividerIndex)
-    if dividerIndex == 0
-      150
-    else
-      proposedMin
-    end
+    dividerIndex == 0 ? 150 : proposedMin
   end
 
   # - (BOOL)splitView:(NSSplitView *)splitView shouldAdjustSizeOfSubview:(NSView *)subview

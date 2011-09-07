@@ -23,34 +23,24 @@ class FBToolbarViewController < NSViewController
       @segmentControl.imageForSegment(i).setTemplate(YES)
       @segmentControl.setSelected(NO, forSegment:i)
     end
-
-    window_width = CGRectGetWidth(@parentController.window.frame)
-    @segmentControl.setFrameOrigin([
-      (window_width / 2) - (CGRectGetWidth(@segmentControl.frame) / 2),
-      @segmentControl.frame.origin.y
-    ])
   end
 
   def segmentedItemSelected(sender)
     case sender.selectedSegment
     when 0
       self.selectLeftPanelAction(sender)
-    when 1
-      self.selectHorizontalAction(sender)
-    when 2
-      self.selectRotateAction(sender)
     end
-  end
-
-  def selectRotateAction(sender)
-    @parentController.toggle_rotate_view
-  end
-
-  def selectHorizontalAction(sender)
-    @parentController.toggle_horizontal_view
   end
 
   def selectLeftPanelAction(sender)
     @parentController.toggle_left_panel
+  end
+
+  def selectSidePanelButton
+    @segmentControl.setSelected(YES, forSegment:0)
+  end
+
+  def unselectSidePanelButton
+    @segmentControl.setSelected(NO, forSegment:0)
   end
 end

@@ -46,8 +46,8 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="NSSegmentedControl" id="44768624">
 						<reference key="NSNextResponder" ref="1005"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{190, 7}, {100, 25}}</string>
+						<int key="NSvFlags">265</int>
+						<string key="NSFrame">{{426, 7}, {34, 25}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
@@ -74,27 +74,8 @@
 									<string key="NSSegmentItemLabel"/>
 									<int key="NSSegmentItemImageScaling">0</int>
 								</object>
-								<object class="NSSegmentItem">
-									<double key="NSSegmentItemWidth">32</double>
-									<object class="NSCustomResource" key="NSSegmentItemImage">
-										<string key="NSClassName">NSImage</string>
-										<string key="NSResourceName">show_horizontal_split</string>
-									</object>
-									<string key="NSSegmentItemLabel"/>
-									<int key="NSSegmentItemTag">1</int>
-									<bool key="NSSegmentItemSelected">YES</bool>
-									<int key="NSSegmentItemImageScaling">0</int>
-								</object>
-								<object class="NSSegmentItem">
-									<double key="NSSegmentItemWidth">32</double>
-									<object class="NSCustomResource" key="NSSegmentItemImage">
-										<string key="NSClassName">NSImage</string>
-										<string key="NSResourceName">rotate_splitview_icon</string>
-									</object>
-									<int key="NSSegmentItemImageScaling">0</int>
-								</object>
 							</object>
-							<int key="NSSelectedSegment">1</int>
+							<int key="NSSelectedSegment">-1</int>
 							<int key="NSTrackingMode">1</int>
 							<int key="NSSegmentStyle">4</int>
 						</object>
@@ -208,7 +189,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>segment_control_id</string>
-					<integer value="2"/>
+					<integer value="0"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>
 			</object>
@@ -278,19 +259,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<bool key="EncodedWithXMLCoder">YES</bool>
-			<object class="NSArray" key="dict.sortedKeys">
-				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>rotate_splitview_icon</string>
-				<string>show_horizontal_split</string>
-				<string>show_left_panel</string>
-			</object>
-			<object class="NSMutableArray" key="dict.values">
-				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{19, 18}</string>
-				<string>{19, 18}</string>
-				<string>{19, 18}</string>
-			</object>
+			<string key="NS.key.0">show_left_panel</string>
+			<string key="NS.object.0">{19, 18}</string>
 		</object>
 	</data>
 </archive>
