@@ -56,7 +56,7 @@ class Message < FBDatabaseBase
     item = find_by_id(id)
     if item
       item.attachments.each do |attachment|
-        Attachment.delete_at_index(attachment.id)
+        attachment.destroy!
       end
       super(id)
     end

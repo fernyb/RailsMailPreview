@@ -197,6 +197,10 @@ class FBDatabaseBase
     db.execute("DELETE FROM `#{table_name}` WHERE id = #{id}")
   end
 
+  def destroy!
+    self.class.db.delete_at_index(self.id)
+  end
+
   def self.where(conditions)
     if conditions
       where = conditions.shift

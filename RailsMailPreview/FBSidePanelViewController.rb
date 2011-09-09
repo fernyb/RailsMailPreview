@@ -24,12 +24,18 @@ class FBSidePanelViewController < NSViewController
   def didPressDeleteKey(notification)
     if self.table.selectedRow >= 0
       selectedRow = self.table.selectedRow
+      item = self.items.objectAtIndex(selectedRow)
+
       self.table.beginUpdates
-      self.table.removeRowsAtIndexes(NSIndexSet.indexSetWithIndex(selectedRow), withAnimation:NSTableViewAnimationSlideUp)
+      self.table.removeRowsAtIndexes(NSIndexSet.indexSetWithIndex(selectedRow), withAnimation:NSTableViewAnimationSlideDown | NSTableViewAnimationEffectFade)
       self.table.endUpdates
 
       self.items.removeObjectAtIndex(selectedRow)
-      Message.delete_at_index(selectedRow)
+      Message.delete_at_index(item.id)
+
+      if selectedRow > (self.items.size - 1)
+        selectedRow -= 1
+      end
       self.table.selectRowIndexes(NSIndexSet.indexSetWithIndex(selectedRow), byExtendingSelection:NO)
     end
   end
