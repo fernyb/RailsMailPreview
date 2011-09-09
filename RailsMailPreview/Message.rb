@@ -42,8 +42,6 @@ class Message < FBDatabaseBase
   def brief
     txt = self.trim_text(self.text)
     if txt.size > 0
-      puts txt
-      puts "\n\n"
       txt
     else
       self.trim_text(self.html.flattenHTML)
