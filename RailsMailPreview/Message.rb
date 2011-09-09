@@ -31,7 +31,7 @@ class Message < FBDatabaseBase
 
     mail.attachments.each do |attch|
       attachment = Attachment.new
-      attachment.filename     = attch.filename
+      attachment.filename     = attch.filename.to_s.tr("/", "_")
       attachment.mime_type    = attch.mime_type
       attachment.data         = attch.body.to_s
       attachment.disposition  = attch.inline? ? "inline" : "attachment"

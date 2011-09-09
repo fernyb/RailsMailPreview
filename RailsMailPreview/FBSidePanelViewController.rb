@@ -172,6 +172,9 @@ class FBSidePanelViewController < NSViewController
 
     filePathURL = NSURL.fileURLWithPath("#{ATTACHMENTS_DIR}/#{attachment.filename}", isDirectory:NO)
     attachment_data.writeToURL(filePathURL, atomically:YES)
+    if AppDelegate.development?
+      NSLog("Attachment File Path: #{filePathURL.absoluteString}")
+    end
 
     @previewItem = Struct.new(:previewItemURL).new(filePathURL)
 
@@ -185,7 +188,9 @@ class FBSidePanelViewController < NSViewController
     create_attachments_directory_if_needed
 
     filePathURL = NSURL.fileURLWithPath("#{ATTACHMENTS_DIR}/#{attachment.filename}", isDirectory:NO)
-
+    if AppDelegate.development?
+      NSLog("Attachment File Path: #{filePathURL.absoluteString}")
+    end
     attachment_data.writeToURL(filePathURL, atomically:YES)
     NSWorkspace.sharedWorkspace.openURL(filePathURL)
   end
