@@ -33,10 +33,12 @@ class FBSidePanelViewController < NSViewController
       self.items.removeObjectAtIndex(selectedRow)
       Message.delete_at_index(item.id)
 
-      if selectedRow > (self.items.size - 1)
-        selectedRow -= 1
+      if self.items.size == 0
+        NSNotificationCenter.defaultCenter.postNotificationName("NoMessagesToDisplayNotification", object:nil)
+      else
+        selectedRow -= 1 if selectedRow > (self.items.size - 1)
+        self.table.selectRowIndexes(NSIndexSet.indexSetWithIndex(selectedRow), byExtendingSelection:NO)
       end
-      self.table.selectRowIndexes(NSIndexSet.indexSetWithIndex(selectedRow), byExtendingSelection:NO)
     end
   end
 

@@ -26,6 +26,10 @@ function mousePositionForEvent(e) {
       }
     });
 
+    function deselectAll() {
+      $(".attachment_tile").removeClass("attachment_tile_selected");
+    }
+
     return this.each(function() {
       var $this = $(this);
       $this.mousedown(function(e) {
@@ -42,6 +46,7 @@ function mousePositionForEvent(e) {
 
       $this.click(function(e) {
         e.preventDefault();
+        deselectAll();
         $(this).focus();
       });
 

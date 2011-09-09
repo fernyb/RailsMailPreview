@@ -52,6 +52,11 @@ class AppController < NSWindowController
                                                    selector: :"receiveSaveNewMessage:",
                                                    name: "didSaveNewMessage",
                                                    object: nil)
+
+    NSNotificationCenter.defaultCenter.addObserver(self,
+                                                   selector: :"noMessagesToDisplay:",
+                                                   name: "NoMessagesToDisplayNotification",
+                                                   object: nil)
   end
 
   def tabItemDidChangeNotification(notification)
@@ -148,6 +153,7 @@ class AppController < NSWindowController
   end
 
   def receiveDidLoadHTMLString(notification)
+    return if notification.object.nil?
     self.hideTabsIfNeeded(notification.object)
 
     if self.contentTabView.isHidden
@@ -171,6 +177,13 @@ class AppController < NSWindowController
     else
       @tabviewBar.setShowTabAtIndex(1)
     end
+  end
+
+  def noMessagesToDisplay(notification)
+    self.setHiddenTabBar(YES)
+    self.hide_left_panel
+    @startup_view.message = "No Messages Available"
+    @startup_view.setHidden(NO)
   end
 
   def setup_startup_view
