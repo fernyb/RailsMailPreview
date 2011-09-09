@@ -181,6 +181,7 @@ class AppController < NSWindowController
 
   def noMessagesToDisplay(notification)
     self.setHiddenTabBar(YES)
+    self.contentTabView.setHidden(YES)
     self.hide_left_panel
     @startup_view.message = "No Messages Available"
     @startup_view.setHidden(NO)

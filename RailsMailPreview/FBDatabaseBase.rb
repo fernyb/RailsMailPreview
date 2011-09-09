@@ -198,7 +198,7 @@ class FBDatabaseBase
   end
 
   def destroy!
-    self.class.db.delete_at_index(self.id)
+    self.class.delete_at_index(self.id)
   end
 
   def self.where(conditions)
