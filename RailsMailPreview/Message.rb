@@ -40,7 +40,18 @@ class Message < FBDatabaseBase
   end
 
   def brief
-    "A brief description of the email here..."
+    txt = self.trim_text(self.text)
+    if txt.size > 0
+      puts txt
+      puts "\n\n"
+      txt
+    else
+      self.trim_text(self.html.flattenHTML)
+    end
+  end
+
+  def trim_text(txt)
+    txt.to_s.gsub(/\n|\r|\t|\s+|\-/, " ").gsub(/\s{2,}/, " ")[0..120].strip
   end
 
   def self.delete_at_index(id)

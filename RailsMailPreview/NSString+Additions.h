@@ -12,5 +12,6 @@
 
 - (NSDictionary *)fileType;
 - (NSData *)decode64;
+- (NSString *)flattenHTML;
 
 @end

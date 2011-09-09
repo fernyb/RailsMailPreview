@@ -17,6 +17,6 @@ class AppDelegate
   end
 
   def self.development?
-    YES
+    NO
   end
 end

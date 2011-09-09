@@ -43,4 +43,28 @@
 	return nil;
 }
 
+
+- (NSString *)flattenHTML
+{  
+  NSScanner *theScanner;
+  NSString *text = nil;
+  NSString * html = self;
+  
+  theScanner = [NSScanner scannerWithString:html];
+  
+  while ([theScanner isAtEnd] == NO) 
+  {
+    // find start of tag
+    [theScanner scanUpToString:@"<" intoString:NULL];
+    // find end of tag
+    [theScanner scanUpToString:@">" intoString:&text];
+
+    // replace the found tag with a space
+    //(you can filter multi-spaces out later if you wish)
+    html = [html stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@>", text] withString:@" "];
+  }
+  return [html stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
+
 @end
