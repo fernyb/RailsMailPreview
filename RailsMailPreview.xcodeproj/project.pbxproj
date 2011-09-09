@@ -136,6 +136,9 @@
 		C4EB17AD13F6089E00BFB45C /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177E13F5FE9800BFB45C /* rb_main.rb */; };
 		C4EB17AE13F6089E00BFB45C /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB178013F5FE9800BFB45C /* AppDelegate.rb */; };
 		C4EB17AF13F6089E00BFB45C /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB179513F6046400BFB45C /* AppController.rb */; };
+		C4EEE4981419D2A900160BE5 /* FBSideTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEE4971419D2A900160BE5 /* FBSideTableView.m */; };
+		C4EEE49B1419D38B00160BE5 /* FBSideTableView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EEE49A1419D38A00160BE5 /* FBSideTableView.rb */; };
+		C4EEE49C1419D38B00160BE5 /* FBSideTableView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EEE49A1419D38A00160BE5 /* FBSideTableView.rb */; };
 		C4FD045B14173F6300C49680 /* center_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045414173F6300C49680 /* center_blur.png */; };
 		C4FD045C14173F6300C49680 /* center_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045414173F6300C49680 /* center_blur.png */; };
 		C4FD045D14173F6300C49680 /* center_ia_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD045514173F6300C49680 /* center_ia_blur.png */; };
@@ -283,6 +286,9 @@
 		C4EB179F13F6077000BFB45C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C4EB17B513F6089E00BFB45C /* RailsMailPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsMailPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EB17B713F6089F00BFB45C /* RailsMailPreview copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RailsMailPreview copy-Info.plist"; path = "/Users/fernyb/cocoa/RailsMailPreview/RailsMailPreview copy-Info.plist"; sourceTree = "<absolute>"; };
+		C4EEE4961419D2A900160BE5 /* FBSideTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSideTableView.h; sourceTree = "<group>"; };
+		C4EEE4971419D2A900160BE5 /* FBSideTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSideTableView.m; sourceTree = "<group>"; };
+		C4EEE49A1419D38A00160BE5 /* FBSideTableView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSideTableView.rb; sourceTree = "<group>"; };
 		C4FD045414173F6300C49680 /* center_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = center_blur.png; path = images/blur_tabs/center_blur.png; sourceTree = "<group>"; };
 		C4FD045514173F6300C49680 /* center_ia_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = center_ia_blur.png; path = images/blur_tabs/center_ia_blur.png; sourceTree = "<group>"; };
 		C4FD045614173F6300C49680 /* lc_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lc_blur.png; path = images/blur_tabs/lc_blur.png; sourceTree = "<group>"; };
@@ -406,13 +412,12 @@
 				C40CBF20140017BB0062B2DF /* FBDatabaseBase.rb */,
 				C40CBF2514001D700062B2DF /* Message.rb */,
 				C40CBF2B1400BB530062B2DF /* Attachment.rb */,
+				C4EEE49A1419D38A00160BE5 /* FBSideTableView.rb */,
 				C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */,
+				C4D7FA3F1416F7FE002BC53F /* ParseMailMessageOperation.rb */,
 				C4EB177913F5FE9800BFB45C /* Resources */,
 				C4EB177D13F5FE9800BFB45C /* Other Sources */,
 				C4EB177113F5FE9700BFB45C /* Supporting Files */,
-				C4D7FA3A1416F743002BC53F /* ParseMailMessageOperation.h */,
-				C4D7FA3B1416F743002BC53F /* ParseMailMessageOperation.m */,
-				C4D7FA3F1416F7FE002BC53F /* ParseMailMessageOperation.rb */,
 			);
 			path = RailsMailPreview;
 			sourceTree = "<group>";
@@ -477,6 +482,8 @@
 		C4EB179713F6069300BFB45C /* Workaround Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4D7FA3A1416F743002BC53F /* ParseMailMessageOperation.h */,
+				C4D7FA3B1416F743002BC53F /* ParseMailMessageOperation.m */,
 				C4EB179B13F6074C00BFB45C /* AppController.h */,
 				C4EB179C13F6074C00BFB45C /* AppController.m */,
 				C4EB179E13F6077000BFB45C /* AppDelegate.h */,
@@ -503,6 +510,8 @@
 				C4E964E814108C3300A9CE21 /* FBApplication.m */,
 				C4E964EF14109DF000A9CE21 /* MyTabWindowController.h */,
 				C4E964F014109DF000A9CE21 /* MyTabWindowController.m */,
+				C4EEE4961419D2A900160BE5 /* FBSideTableView.h */,
+				C4EEE4971419D2A900160BE5 /* FBSideTableView.m */,
 			);
 			name = "Workaround Files";
 			sourceTree = "<group>";
@@ -645,6 +654,7 @@
 				C4FD046314173F6300C49680 /* rc_blur.png in Resources */,
 				C4FD046514173F6300C49680 /* rc_ia_blur.png in Resources */,
 				C4FD046714173F6300C49680 /* track_blur.png in Resources */,
+				C4EEE49B1419D38B00160BE5 /* FBSideTableView.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +714,7 @@
 				C4FD046414173F6300C49680 /* rc_blur.png in Resources */,
 				C4FD046614173F6300C49680 /* rc_ia_blur.png in Resources */,
 				C4FD046814173F6300C49680 /* track_blur.png in Resources */,
+				C4EEE49C1419D38B00160BE5 /* FBSideTableView.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,6 +749,7 @@
 				C4E9650D1410A99E00A9CE21 /* FBTabViewItem.m in Sources */,
 				C46DCDE31411ECD00005DB31 /* FBTabViewBar.m in Sources */,
 				C4D7FA3C1416F743002BC53F /* ParseMailMessageOperation.m in Sources */,
+				C4EEE4981419D2A900160BE5 /* FBSideTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

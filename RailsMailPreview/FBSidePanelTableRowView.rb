@@ -12,12 +12,12 @@ class FBSidePanelTableRowView < NSTableRowView
     cellview = viewAtColumn(0)
 
     if self.window.isKeyWindow
-      if self.window.firstResponder.className == "NSTableView"
+      if self.window.firstResponder.className == "FBSideTableView"
         cellview.selected = isSelected
       else
         cellview.selected = NO
       end
-    elsif self.window.firstResponder.className == "NSTableView"
+    elsif self.window.firstResponder.className == "FBSideTableView"
       cellview.selected = NO
     end
 

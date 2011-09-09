@@ -432,6 +432,7 @@
 					<string>30.userInterfaceItemIdentifier</string>
 					<string>4.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
+					<string>7.CustomClassName</string>
 					<string>7.IBPluginDependency</string>
 					<string>7.ibExternalAutomaticallyCalculatesRowSizeFromViewHeight</string>
 					<string>8.IBPluginDependency</string>
@@ -455,6 +456,7 @@
 					<string>TableRowViewKey</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>FBSideTableView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -527,11 +529,11 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">NSTableRowView</string>
-					<string key="superclassName">NSView</string>
+					<string key="className">FBSideTableView</string>
+					<string key="superclassName">NSTableView</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/NSTableRowView.h</string>
+						<string key="minorKey">./Classes/FBSideTableView.h</string>
 					</object>
 				</object>
 			</object>

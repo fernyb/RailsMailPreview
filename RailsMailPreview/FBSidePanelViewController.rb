@@ -12,6 +12,28 @@ class FBSidePanelViewController < NSViewController
   attr_accessor :htmlview
   attr_accessor :plainview
 
+  def init
+    super
+    NSNotificationCenter.defaultCenter.addObserver(self,
+                                               selector: :"didPressDeleteKey:",
+                                                   name: "didPressDeleteKeyNotification",
+                                                 object: nil)
+    self
+  end
+
+  def didPressDeleteKey(notification)
+    if self.table.selectedRow >= 0
+      selectedRow = self.table.selectedRow
+      self.table.beginUpdates
+      self.table.removeRowsAtIndexes(NSIndexSet.indexSetWithIndex(selectedRow), withAnimation:NSTableViewAnimationSlideUp)
+      self.table.endUpdates
+
+      self.items.removeObjectAtIndex(selectedRow)
+      Message.delete_at_index(selectedRow)
+      self.table.selectRowIndexes(NSIndexSet.indexSetWithIndex(selectedRow), byExtendingSelection:NO)
+    end
+  end
+
   def didSaveMessage
     self.items = Message.all
     self.table.window.makeFirstResponder(self.table)
@@ -60,6 +82,7 @@ class FBSidePanelViewController < NSViewController
   def tableView(tableView, heightOfRow:row)
     64 + 8
   end
+
 
   def htmlview=(v)
     @htmlview = v

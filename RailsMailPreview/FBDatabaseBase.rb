@@ -193,6 +193,10 @@ class FBDatabaseBase
     map_results(results).first
   end
 
+  def self.delete_at_index(id)
+    db.execute("DELETE FROM `#{table_name}` WHERE id = #{id}")
+  end
+
   def self.where(conditions)
     if conditions
       where = conditions.shift

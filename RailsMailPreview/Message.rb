@@ -42,4 +42,14 @@ class Message < FBDatabaseBase
   def brief
     "A brief description of the email here..."
   end
+
+  def self.delete_at_index(id)
+    item = find_by_id(id)
+    if item
+      item.attachments.each do |attachment|
+        Attachment.delete_at_index(attachment.id)
+      end
+      super(id)
+    end
+  end
 end

@@ -15,6 +15,9 @@ framework 'QuickLook'
 
 require 'rubygems'
 
+# Not sure why but mail fails to load some classes when it's receving messages,
+# Maybe it could because it's NSOperation?
+# So I did this to load the classes on startup. Now it works...
 require 'mail'
 require 'mail/network/delivery_methods/smtp'
 
