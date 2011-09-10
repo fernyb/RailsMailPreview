@@ -1,0 +1,1269 @@
+Delivered-To: fern.be@gmail.com
+Received: by 10.216.202.9 with SMTP id c9cs124491weo;
+        Wed, 7 Sep 2011 04:27:09 -0700 (PDT)
+Received: by 10.68.48.194 with SMTP id o2mr1488739pbn.192.1315394827657;
+        Wed, 07 Sep 2011 04:27:07 -0700 (PDT)
+Return-Path: <do.not.reply@dreamhost.com>
+Received: from bulk.mail.dreamhost.com (bulk.mail.dreamhost.com. [208.113.189.254])
+        by mx.google.com with ESMTP id k10si1697898pbj.62.2011.09.07.04.27.06;
+        Wed, 07 Sep 2011 04:27:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of do.not.reply@dreamhost.com designates 208.113.189.254 as permitted sender) client-ip=208.113.189.254;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of do.not.reply@dreamhost.com designates 208.113.189.254 as permitted sender) smtp.mail=do.not.reply@dreamhost.com; dkim=pass (test mode) header.i=@dreamhost.com
+Received: from bulk.mail.dreamhost.com (dh-bulkmail.y.sd.dreamhost.com [10.3.29.99])
+	by bulk.mail.dreamhost.com (Postfix) with ESMTP id A6267197EC242
+	for <fern.be@gmail.com>; Wed,  7 Sep 2011 04:27:06 -0700 (PDT)
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=dreamhost.com; h=content-type
+	:mime-version:from:to:subject:message-id:date:
+	content-transfer-encoding; q=dns; s=dreamhost.com; b=Y8NA9Twwa93
+	1uDSEhJBPMUmVHgytEj0noSnLoKWH0257WyE0EH4p84NrIC9SR/v/QsfO26UaAzK
+	ImKmv+na3qL9J47rt2o4Q70+8sfPmutQp8PpkcprAipzKOtlF52b3kksNHiADO05
+	ddoXAoKY7q9QJy878Bb7yYUKl/oZqP54=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=dreamhost.com; h=
+	content-type:mime-version:from:to:subject:message-id:date:
+	content-transfer-encoding; s=dreamhost.com; bh=5BrB58mchwirB3bh5
+	9jY4vtU+R4=; b=c0R8I0wlme/ow6CaPdHROhm7sNy3Gx73OK+5O32bSTOU86SyM
+	j+/e6YoNZ9+7ymKhieulV64lu1dOlmM+RyMVGPRqaHb+niwX8tHYv31XaheZNsK4
+	vd3rPJD8mm+J5S9dH2MSWz7uYrRHNRoaHRkcDBW7EdKJ/YdNV+GvnfQ/mQ=
+Received: from dreamhost.com (ip-66-33-206-8.dreamhost.com [66.33.206.8])
+	by bulk.mail.dreamhost.com (Postfix) with ESMTP id A1D7B197EC1FC
+	for <fern.be@gmail.com>; Wed,  7 Sep 2011 04:27:06 -0700 (PDT)
+Content-Type: multipart/alternative;
+ boundary="----------=_1315394826-6953-101205"
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.427 (Entity 5.427)
+From: DreamHost September Newslettery <do.not.reply@dreamhost.com>
+To: fern.be@gmail.com
+Subject: DreamHost Newsletter v13.9 September 2011
+Message-Id: <20110907112706.A1D7B197EC1FC@bulk.mail.dreamhost.com>
+Date: Wed,  7 Sep 2011 04:27:06 -0700 (PDT)
+Content-Transfer-Encoding: 7bit
+
+This is a multi-part message in MIME format...
+
+------------=_1315394826-6953-101205
+Content-Type: text/plain
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+
+########################################################################
+0. Introduction
+1. Simon Says...
+2. New Website
+3. One-Hour Callbacks
+4. HostingCon Wrapup
+5. New Charity: Dream Foundation
+6. DreamHost 101: Free Whois Privacy
+7. DHSOTMs
+
+########################################################################
+0. Introduction
+
+I don't know about you, but August was a pretty good month for me.
+
+Some highlights:
+
+- I met a ton of customers at HostingCon in San Diego.
+- I figured out what I'm going to be for Halloween.
+- I attended a "toptional" pool at a Las Vegas bachelor party.  Twice.
+- I watched a sizable chunk of our staff leave for Burning Man.
+- I got our CEO to finally admit that he speaks dolphin.
+
+My plans for September look even better:
+
+- I'll move and change change my name.
+- I'll spend too much money on something I'll only wear once.
+- I'll make sure that every photo I took in Las Vegas has been deleted.
+- I'll hide certain coworkers on Facebook so I don't have to look at
+  their junk.
+- I'll get our CEO to schmooze the Dolphin King to reveal the location
+  of the secret dolphin treasure - the Golden Herring.
+
+This promises be a pretty busy month for me; one fraught with peril,
+intrigue, and acts of derring-do.  I know it sounds exciting and you
+probably want to help, but some things a man just has to do on his own.
+
+It's like I told the girl at the toptional pool: "You're an active, I'm
+a sedentary.  It would never work out."
+
+########################################################################
+1. Simon Says... (Written by CEO Simon Anderson!)
+
+Welcome to September. A month of new beginnings for kids all over the
+northern hemisphere going back to school. And the tail end of winter in
+the southern climes. One of the best things about being a part of
+DreamHost is knowing that we serve customers all over the world. From
+Brazil to Canada, China to Morocco. All pursuing your dreams on the web,
+whether that's a passion project blog, a web store that knows no
+boundaries, or a heavy duty web application or site that's going to
+change an industry.
+
+We're excited that last month, we achieved a big milestone - serving
+300,000 customers for the first time in our long and techy-creative
+history. We celebrated in true DreamHost style with a simple cake then
+a chocolate fueled ping pong match. Then we got back to work, because
+there's a lot of you and lots to do!
+
+Since joining DreamHost in July, I've been getting to know the team and
+figuring out ways to take the awesome company and culture that's been
+built, and make it even more focused on your success as customers. We've
+made some changes to the way we handle Tech Support call backs this
+month that I think you're going to like.  Our Tech Support team are the
+true legends of DreamHost, working day and night to help you use our
+services better and solve problems that come up quickly and with a fun
+attitude. Make sure you give them some props (and jokes) when you next
+have to email, chat or take a call. We're also in the process of going
+through all our FAQs and updating them to ensure you get the answers
+you need, fast!
+
+We're always vigilant when it comes to platform stability, and we have
+had some issues on a few shared servers lately with drives failing and
+restores taking time to complete, resulting in degraded performance for
+the affected sites. Our Ops and Sys Admin teams have identified ways to
+mitigate hardware failures and speed resolution, so I'm confident we'll
+see fewer of these issues going forward. And with over 4,000 servers
+running 24/7, we've architected our systems so that hardware failures
+affect as few customers as possible. If you've experienced any issues
+and want to check that you're on the best account type for your web
+resource needs (shared, VPS or dedicated server), our support team is
+always happy to step you through the options.
+
+In the end, running a business like DreamHost is all about agility. How
+fast can we get your account provisioned; how rapidly can we respond to
+your support request; how quickly can we implement support for a new
+framework or add a new app on our platform. Agile is a methodology that
+is well known and practiced by leading software development teams around
+the world, including our team of 25+ developers at DreamHost. But here
+at DreamHost, we're extending it to the whole organization, from
+Marketing to DevOps and Support. It's an approach that I think brings
+out the best in any team. Openness, transparency, authenticity, and
+attacking big challenges in small chunks with a fast moving attitude and
+the ability to course-correct as new ideas or information comes in.=20
+
+So as you build your business or personal project on the web with
+DreamHost, know that we take our responsibility to all 300,000 of you
+very seriously, with a touch of irreverence and wacky humor. And to
+steal a line from a classic 80's movie, we feel the need, the need for
+speed - in everything we do.
+
+@DreamHostSimon
+
+Best,
+Simon
+
+########################################################################
+2. New Website (Back to Brett!)
+
+As a DreamHost customer you have little reason to visit our website at
+http://www.dreamhost.com.
+
+Why would you?  That's the front door.  You're already in the front
+door.
+
+No sir, you take the back door.  It doesn't matter what time of day or
+night it may be, it's back door entry all the way for you!  You conduct
+your business at http://panel.dreamhost.com/ and you like it.
+
+You may be interested, then, to learn that the front door has gotten a
+fresh coat of paint and some new window treatments.  That's right,
+dreamhost.com is all-new.
+
+For the first time in our 14 year history we hired an external design
+agency to build our website - and it's never looked better.
+
+Hold on to your hats and cover your head holes because I'm about to
+blow your mind in six words: Dreamhost.com is now powered by WordPress.
+
+WordPress these days is so customizable and extensible that when it
+came time for us to switch away from static HTML files and onto a
+content management system, WordPress was the only platform we seriously
+considered.
+
+Do you know who got stuck designing and redesigning dreamhost.com for
+the last decade?  Me.
+
+Do you have any idea how good it feels to be able to throw money at a
+problem and have it disappear?  There are no words.  Only tears of joy.
+
+Learn more about the whys and the whos at...
+http://blog.dreamhost.com/2011/08/25/lookin-good-there-self/
+
+########################################################################
+3. One-Hour Callbacks
+
+As a hosting company we can say with great confidence that providing
+technical support is not an inexpensive endeavor.  In fact, it's one of
+our largest expenses.
+
+Once you buy a rack of servers, that's it.  The money's spent.  Hardware
+comes with warranties.  Electricity and network costs are minimal.
+Hardware generally doesn't die...often.
+
+PEOPLE, on the other hand, are hugely inefficient.  They need health
+insurance.  They need air conditioning.  They need ongoing product
+education.  They need toilet paper in the bathroom.  They need "safe
+working conditions."
+
+All of these things cost money, which is why most companies who offer
+any kind of technical support look to cut corners wherever they can.
+They might outsource.  They might understaff themselves.
+
+They might just stop caring!
+
+We've managed to keep our support costs down by providing telephone-
+based technical support only to customers who plan to use it and elect
+to pay a little bit extra for it.
+
+Phone support comes in the form of callbacks from our technical support
+team - and you specify the time that we call.
+
+Until recently we asked you to provide us with a three-hour window in
+which to reach you.  Unfortunately, we've seen that people just don't
+trust service delivery windows.  Thanks a lot, cable companies!
+
+So we've tightened things up a bit around here and we're happy to say
+that, Monday through Friday, callbacks can now be requested down to the
+hour.
+
+http://blog.dreamhost.com/2011/08/30/long-time-hoster-first-time-caller/
+
+If you're seeking satisfaction and looking for a good time on the phone,
+DreamHost Support is cheaper than other types of phone hotlines and
+won't leave you filled with shame and regret when you hang up.
+
+I mean...I've I heard that happens.
+
+Somebody told me.
+
+...
+
+What?  What's with the look?
+
+########################################################################
+4. HostingCon Wrapup
+
+We sent more-employees-than-was-probably-a-good-idea down to San Diego
+in August to attend HostingCon, a hosting industry event where the focus
+was on networking, deal making, and a large collection of
+disappointingly light-on-details and not-at-all-funny conference
+sessions.
+
+The good news is that WE were there so things never got TOO lame.
+
+For starters, we threw a party!
+
+http://blog.dreamhost.com/2011/08/13/what-you-missed-at-hostingcon-2011/
+
+Along with all the usual industry people, YOU were invited!  And, in
+fact, meeting customers was the highlight of the evening for me.  I feel
+like we've never been closer!
+
+...especially after one of you lady-types goosed me and ran out the
+door.
+
+Here's what you missed out on!
+
+http://www.flickr.com/photos/dreamhost/sets/72157627463454112/
+
+We also livened up the streets of downtown San Diego by turning what the
+locals consider to be a nuisance into a fleet of beautiful, rideable,
+moving billboards.
+
+http://blog.dreamhost.com/2011/08/18/pedal-powered-hosting/
+
+As great as it was to meet with all those analysts, reporters, vendors,
+and even competitors for one crazy week in August, meeting with
+customers was the one activity that brought our team the most joy and
+insight.
+
+You guys are everything to us.
+
+You're the sun to our moon.
+
+The gin to our tonic.
+
+The fiddle to our faddle.
+
+I guess what I'm saying is we kind of have a thing for you and we want
+to hang out more often!
+
+Stay tuned...
+
+########################################################################
+4. New Charity: Dream Foundation
+
+June through August we solicited donations for Project C.U.R.E., whose
+mission of helping to provide medical supplies and equipment to medical
+personnel and health care professionals around the world...seemed good.
+
+http://www.projectcure.org/
+
+21 of our kindest customers raised $603.00 for Project C.U.R.E. which
+we then matched three times over for a grand total of $2412.00!
+
+Our next donation target is...
+
+Dream Foundation
+http://www.dreamfoundation.org/
+
+"Dream Foundation helps adults find peace and closure with the
+realization of a final wish. Dream Foundation has granted thousands of
+dreams to adults who are emotionally, financially and physically
+devastated by terminal illness."
+
+They won't just come out and say it, so I'll say it for them:
+Dream Foundation is Make-A-Wish for grown-ups.
+
+How great is that?
+
+Contracting a terminal illness is one of the worst things that could
+happen to anybody.
+
+But learning that you've missed the Make-A-Wish bus by a few YEARS just
+because you got older?  That's devastating.
+
+So now I have a plan B.  If and when "The Big C" comes callin' my name,
+the Black Eyed Peas are going to have the BEST FIFTH MEMBER EVER:
+"b.rock"
+
+You can submit donations to Dream Foundation (which we'll then
+quadruple, as always!) from the "Give to Charity" section of your
+account control panel:
+
+https://panel.dreamhost.com/index.cgi?tree=3Dhome.charity
+
+########################################################################
+6. DreamHost 101: Free Whois Privacy
+
+The thing about registering domain names is that you're supposed to
+provide your own legit contact information when you do it.  Full name,
+address, phone number, email address, blood type, cheek swab, dental
+records, sexual preference, credit score - the works.
+
+All of that information (most of it) is then immediately put into the
+public record where it's viewable to anyone who cares to look it up
+through a registrar's "whois" tool.
+
+After registering a domain you'll immediately start to get more spam in
+your inbox, more junk mail in your "other" inbox, and your life will
+generally not be as hassle-free as it would have been otherwise.  All
+because you registered some dumb domain name!  Sheesh!
+
+You COULD just falsify your contact information, but that would put you
+at risk of having the domain taken away from you if anyone ever noticed.
+
+That's quite a pickle!
+
+To help ease your pain we offer a whois Privacy Service - FREE.
+
+We will provide a valid mailing address, phone number, and email address
+for your domain's registration record.
+
+We'll list "yourdomainname.com@proxy.dreamhost.com" and forward its
+messages to your true hidden email address.
+
+We'll even accept and recycle all junk mail on your behalf!
+
+There really is no good reason not to do it.
+
+To enable or disable domain privacy, just visit the
+"Domains/Registrations" section of your account control panel, click a
+domain name, click to modify its "whois" info, and there you go -
+instant privacy.
+
+https://panel.dreamhost.com/index.cgi?tree=3Ddomain.registration
+
+But seriously, are you going to eat that pickle?
+
+########################################################################
+7. DHSOTMs
+
+As voted by you, the winners from AUGUST are as follows...
+
+The winner in the DESIGN and STRUCTURE categories is:
+One Long House
+"We are a cooperative of designers, writers, photographers, programmers,
+and creatives alike. Our common bond is embracing curiosity and loving
+to create."
+http://onelonghouse.com/
+
+The winner in the CONTENT, ORIGINALITY, and OVERALL categories is:
+Tampa Changing Re-Photography
+"Re-photographing historic buildings in Tampa, Florida."
+http://www.TampaChanging.com
+
+Congratulations to the winners!
+
+Don't forget to cast your votes (and enter your own site) for the
+next round of DHSOTMs at
+
+  https://panel.dreamhost.com/index.cgi?tree=3Dhome.dhsotm
+ =20
+########################################################################
+See ya next month!
+Brett D!
+
+P.S. - Actives and sedentaries alike may unsubscribe here:
+
+    https://panel.dreamhost.com/id/?tab=3Dcontact
+
+------------=_1315394826-6953-101205
+Content-Type: text/html
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/x=
+html11/DTD/xhtml11.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xml:lang=3D"en">
+<head>
+	<meta http-equiv=3D"content-type" content=3D"text/html;charset=3Diso-885=
+9-1" />
+
+<style type=3D"text/css" media=3D"all">
+body{
+	margin: 0px;
+	padding: 0px;
+	color: #333333;
+}
+
+p, ul, h1, h2, h3, #footer, a{
+	color: #333333;
+}
+
+a{
+	color: #1f5d91;
+}
+
+h1{
+	height: 82px;
+	max-height: 82px;
+	line-height: 82px;
+	color: #003366;
+	margin: 0px auto;
+	width: 100%;
+	padding: 0px 10px 0px 10px;
+	font-size: 30px;
+	border-top: 0px solid #6dafe4;
+	border-bottom: 0px solid #6dafe4;
+}
+
+h2{
+	margin: 0px;
+	height: 55px;
+	max-height: 55px;
+	line-height: 57px;
+	font-size: 18px;
+	padding-left: 15px;
+	color: #11487f;
+	border-bottom: 0px solid #6dafe4;
+}
+
+h3{
+	color: #01569b;
+	line-height: 1.1em;
+	padding: 10px 0px 0px 20px;
+	margin: 0px;
+}
+
+.fancylink{
+	display: block;
+	text-align: center;
+	margin: 10px 30px 10px 30px;
+	padding: 0px;
+	font-weight: bold;
+	color: #1f5d91;
+	line-height: 2em;
+}
+
+.fancylink a{
+	border: 1px solid #transparent;
+	padding: 5px;
+=09
+}
+
+.fancylink a:hover{
+	border: 1px solid #ffd71f;
+	background: #fff6cd url(http://images.dreamhost.com/newsletter/fancylink=
+.gif) bottom left repeat-x;
+}
+
+#logoheader{
+	height: 77px;
+	max-height: 77px;
+	width: 600px;
+	margin: 30px auto 0px auto;
+}
+
+#logoheader img{
+	margin: 0px 10px 0px 10px;
+	border: 0px;
+}
+
+#logo{
+	display: inline;
+	margin: 0px;
+	padding: 0px 0px 20px 0px;
+}
+
+#social{
+	display: inline;
+	margin: 10px 0px 0px 0px;
+	padding: 50px 0px 0px 185px;
+}
+
+#social img{
+	margin-top: 0px;
+}
+
+#main{
+	font-family: arial, helvetica, sans-serif;
+	width: 600px;
+	margin: 0px auto 0px auto;
+}
+
+p{
+	margin: 15px 20px 15px 20px;
+	padding: 0px;
+	line-height: 1.5em;
+	text-align: justify;
+	font-size: 13px;
+}
+
+ul{
+	float: right;
+	margin: 0px 0px 0px 1em;
+	padding: 0px 10px 10px 2em;
+	line-height: 1.5em;
+	font-size: 12px;
+	clear: both;
+}
+
+ul a{
+	color: #124c00;
+}
+
+ul a:hover{
+	color: #003366;
+}
+
+#topsplit {
+	clear: both;
+	padding: 0px 15px 0px 15px;
+}
+
+#footer{
+	line-height: 60px;
+	width: 598px;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+	font-size: 10px;
+}
+
+</style>
+
+</head>
+<body>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" he=
+ight=3D"100%" background=3D"http://images.dreamhost.com/newsletter/pagebg=
+.gif"><tr><td>
+<span style=3D"font-size: 0.75em;">Having problems viewing this email? Cl=
+ick here! <a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?=
+campaign=3Dseptember2011&url=3Dhttp://www.dreamhost.com/newsletter/0911.h=
+tml" style=3D"color: #1f5d91;">http://www.dreamhost.com/newsletter/0911.h=
+tml</a></span>
+<div id=3D"logoheader">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" he=
+ight=3D"77" background=3D"http://images.dreamhost.com/newsletter/header.p=
+ng"><tr><td valign=3D"top">
+=09
+	<img src=3D"http://images.dreamhost.com/newsletter/logo.gif" moz-do-not-=
+send=3D"true" id=3D"logo" alt=3D"DreamHost" height=3D"38" width=3D"192" /=
+>
+
+	<div id=3D"social">
+	<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://blog.dreamhost.com/"><img src=3D"http://images=
+.dreamhost.com/newsletter/blog.png" moz-do-not-send=3D"true" alt=3D"Dream=
+Host" height=3D"42" width=3D"36" /></a>
+	<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://www.facebook.com/dreamhost/"><img src=3D"http:=
+//images.dreamhost.com/newsletter/facebook.png" moz-do-not-send=3D"true" =
+alt=3D"DreamHost" height=3D"42" width=3D"36" /></a>
+	<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://www.twitter.com/dreamhost/"><img src=3D"http:/=
+/images.dreamhost.com/newsletter/twitter.png" moz-do-not-send=3D"true" al=
+t=3D"DreamHost" height=3D"42" width=3D"36" /></a>
+	</div>
+</td></tr></table>
+</div><!--logoheader-->
+
+<div id=3D"main">
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"600" hei=
+ght=3D"100%" background=3D"http://images.dreamhost.com/newsletter/mainbg.=
+gif">
+	<tr><td align=3D"center">
+=09
+		<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"95%" h=
+eight=3D"82" background=3D"http://images.dreamhost.com/newsletter/h1.gif"=
+><tr><td><h1>September 2011 Newsletter</h1></td></tr></table>
+
+	</td></tr>
+
+	<tr><td>
+
+<h3>Introduction</h3>
+
+<div id=3D"topsplit">
+	<ul>
+		<li><a href=3D"#a1">Simon Says...</a></li>
+		<li><a href=3D"#a2">New Website</a></li>
+		<li><a href=3D"#a3">One-Hour Callbacks</a></li>
+		<li><a href=3D"#a4">HostingCon Wrapup</a></li>
+		<li><a href=3D"#a5">New Charity: Dream Foundation</a></li>
+		<li><a href=3D"#a6">DreamHost 101: Free Whois Privacy</a></li>
+		<li><a href=3D"#a7">DHSOTMs</a></li>
+	</ul>
+
+<p>
+I don't know about you, but August was a pretty good month for me.
+</p>
+
+<p>
+Some highlights:
+</p>
+
+<p>
+&#8226; I met a ton of customers at HostingCon in San Diego.<br />
+&#8226; I figured out what I'm going to be for Halloween.<br />
+&#8226; I attended a "toptional" pool at a Las Vegas bachelor party.  Twi=
+ce.<br />
+&#8226; I watched a sizable chunk of our staff leave for Burning Man.<br =
+/>
+&#8226; I got our CEO to finally admit that he speaks dolphin.
+</p>
+
+<p>
+My plans for September look even better:
+</p>
+
+<p>
+&#8226; I'll move and change change my name.<br />
+&#8226; I'll spend too much money on something I'll only wear once.<br />
+&#8226; I'll make sure that every photo I took in Las Vegas has been dele=
+ted.<br />
+&#8226; I'll hide certain coworkers on Facebook so I don't have to look a=
+t
+  their junk.<br />
+&#8226; I'll get our CEO to schmooze the Dolphin King to reveal the locat=
+ion
+  of the secret dolphin treasure - the Golden Herring.
+</p>
+
+<p>
+This promises be a pretty busy month for me; one fraught with peril,
+intrigue, and acts of derring-do.  I know it sounds exciting and you
+probably want to help, but some things a man just has to do on his own.
+</p>
+
+<p>
+It's like I told the girl at the toptional pool: "You're an active, I'm
+a sedentary.  It would never work out."
+</p>
+
+</div><!--topsplit-->
+
+<a name=3D"a1"></a>
+</td></tr>
+<tr><td background=3D"http://images.dreamhost.com/newsletter/h2.gif" heig=
+ht=3D"55"><h2>Simon Says... (Written by CEO Simon Anderson!)</h2></td></t=
+r>
+<tr><td>
+
+<p>
+Welcome to September. A month of new beginnings for kids all over the
+northern hemisphere going back to school. And the tail end of winter in
+the southern climes. One of the best things about being a part of
+DreamHost is knowing that we serve customers all over the world. From
+Brazil to Canada, China to Morocco. All pursuing your dreams on the web,
+whether that's a passion project blog, a web store that knows no
+boundaries, or a heavy duty web application or site that's going to
+change an industry.
+</p>
+
+<p>
+We're excited that last month, we achieved a big milestone - serving
+300,000 customers for the first time in our long and techy-creative
+history. We celebrated in true DreamHost style with a simple cake then
+a chocolate fueled ping pong match. Then we got back to work, because
+there's a lot of you and lots to do!
+</p>
+
+<p>
+Since joining DreamHost in July, I've been getting to know the team and
+figuring out ways to take the awesome company and culture that's been
+built, and make it even more focused on your success as customers. We've
+made some changes to the way we handle Tech Support call backs this
+month that I think you're going to like.  Our Tech Support team are the
+true legends of DreamHost, working day and night to help you use our
+services better and solve problems that come up quickly and with a fun
+attitude. Make sure you give them some props (and jokes) when you next
+have to email, chat or take a call. We're also in the process of going
+through all our FAQs and updating them to ensure you get the answers
+you need, fast!
+</p>
+
+<p>
+We're always vigilant when it comes to platform stability, and we have
+had some issues on a few shared servers lately with drives failing and
+restores taking time to complete, resulting in degraded performance for
+the affected sites. Our Ops and Sys Admin teams have identified ways to
+mitigate hardware failures and speed resolution, so I'm confident we'll
+see fewer of these issues going forward. And with over 4,000 servers
+running 24/7, we've architected our systems so that hardware failures
+affect as few customers as possible. If you've experienced any issues
+and want to check that you're on the best account type for your web
+resource needs (shared, VPS or dedicated server), our support team is
+always happy to step you through the options.
+</p>
+
+<p>
+In the end, running a business like DreamHost is all about agility. How
+fast can we get your account provisioned; how rapidly can we respond to
+your support request; how quickly can we implement support for a new
+framework or add a new app on our platform. Agile is a methodology that
+is well known and practiced by leading software development teams around
+the world, including our team of 25+ developers at DreamHost. But here
+at DreamHost, we're extending it to the whole organization, from
+Marketing to DevOps and Support. It's an approach that I think brings
+out the best in any team. Openness, transparency, authenticity, and
+attacking big challenges in small chunks with a fast moving attitude and
+the ability to course-correct as new ideas or information comes in.=20
+</p>
+
+<p>
+So as you build your business or personal project on the web with
+DreamHost, know that we take our responsibility to all 300,000 of you
+very seriously, with a touch of irreverence and wacky humor. And to
+steal a line from a classic 80's movie, we feel the need, the need for
+speed - in everything we do.
+</p>
+
+<p>
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://twitter.com/#!/dreamhostsimon">@DreamHostSimon=
+</a>
+</p>
+
+<p>
+Best,<br />
+Simon
+</p>
+
+<a name=3D"a2"></a>
+</td></tr>
+<tr><td background=3D"http://images.dreamhost.com/newsletter/h2.gif" heig=
+ht=3D"55"><h2>New Website (Back to Brett!)</h2></td></tr>
+<tr><td>
+
+<p>
+As a DreamHost customer you have little reason to visit our website at
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://www.dreamhost.com/">http://www.dreamhost.com</=
+a>.
+</p>
+
+<p>
+Why would you?  That's the front door.  You're already in the front
+door.
+</p>
+
+<p>
+No sir, you take the back door.  It doesn't matter what time of day or
+night it may be, it's back door entry all the way for you!  You conduct
+your business at <a href=3D"http://www.dreamhost.com/newsletter/track/ind=
+ex.cgi?campaign=3Dseptember2011&url=3Dhttps://panel.dreamhost.com/">http:=
+//panel.dreamhost.com/</a> and you like it.
+</p>
+
+<p>
+You may be interested, then, to learn that the front door has gotten a
+fresh coat of paint and some new window treatments.  That's right,
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttps://www.dreamhost.com/">dreamhost.com</a> is all-=
+new:
+</p>
+
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://www.dreamhost.com/">http://www.dreamhost.com/<=
+/a>
+</span></p>
+
+<p>
+For the first time in our 14 year history we hired an external design
+agency to build our website - and it's never looked better.
+</p>
+
+<p>
+Hold on to your hats and cover your head holes because I'm about to
+blow your mind in six words: Dreamhost.com is now powered by WordPress.
+</p>
+
+<p>
+WordPress these days is so customizable and extensible that when it
+came time for us to switch away from static HTML files and onto a
+content management system, WordPress was the only platform we seriously
+considered.
+</p>
+
+<p>
+Do you know who got stuck designing and redesigning dreamhost.com for
+the last decade?  Me.
+</p>
+
+<p>
+Do you have any idea how good it feels to be able to throw money at a
+problem and have it disappear?  There are no words.  Only tears of joy.
+</p>
+
+<p>
+Learn more about the whys and the whos at...
+</p>
+
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://blog.dreamhost.com/2011/08/25/lookin-good-ther=
+e-self/">Lookin' good there, Self!</a>
+</span></p>
+
+<a name=3D"a3"></a>
+</td></tr>
+<tr><td background=3D"http://images.dreamhost.com/newsletter/h2.gif" heig=
+ht=3D"55"><h2>One-Hour Callbacks</h2></td></tr>
+<tr><td>
+
+<p>
+As a hosting company we can say with great confidence that providing
+technical support is not an inexpensive endeavor.  In fact, it's one of
+our largest expenses.
+</p>
+
+<p>
+Once you buy a rack of servers, that's it.  The money's spent.  Hardware
+comes with warranties.  Electricity and network costs are minimal.
+Hardware generally doesn't die...often.
+</p>
+
+<p>
+PEOPLE, on the other hand, are hugely inefficient.  They need health
+insurance.  They need air conditioning.  They need ongoing product
+education.  They need toilet paper in the bathroom.  They need "safe
+working conditions."
+</p>
+
+<p>
+All of these things cost money, which is why most companies who offer
+any kind of technical support look to cut corners wherever they can.
+They might outsource.  They might understaff themselves.
+</p>
+
+<p>
+They might just stop caring!
+</p>
+
+<p>
+We've managed to keep our support costs down by providing telephone-
+based technical support only to customers who plan to use it and elect
+to pay a little bit extra for it.
+</p>
+
+<p>
+Phone support comes in the form of callbacks from our technical support
+team - and you specify the time that we call.
+</p>
+
+<p>
+Until recently we asked you to provide us with a three-hour window in
+which to reach you.  Unfortunately, we've seen that people just don't
+trust service delivery windows.  Thanks a lot, cable companies!
+</p>
+
+<p>
+So we've tightened things up a bit around here and we're happy to say
+that, Monday through Friday, callbacks can now be requested down to the
+hour.
+</p>
+
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://blog.dreamhost.com/2011/08/30/long-time-hoster=
+-first-time-caller/">Long time hoster, first time caller.</a>
+</span></p>
+
+<p>
+If you're seeking satisfaction and looking for a good time on the phone,
+DreamHost Support is cheaper than other types of phone hotlines and
+won't leave you filled with shame and regret when you hang up.
+</p>
+
+<p>
+I mean...I've I heard that happens.
+</p>
+
+<p>
+Somebody told me.
+</p>
+
+<p>
+...
+</p>
+
+<p>
+What?  What's with the look?
+</p>
+
+<a name=3D"a4"></a>
+</td></tr>
+<tr><td background=3D"http://images.dreamhost.com/newsletter/h2.gif" heig=
+ht=3D"55"><h2>HostingCon Wrapup</h2></td></tr>
+<tr><td>
+
+<p>
+We sent more-employees-than-was-probably-a-good-idea down to San Diego
+in August to attend HostingCon, a hosting industry event where the focus
+was on networking, deal making, and a large collection of
+disappointingly light-on-details and not-at-all-funny conference
+sessions.
+</p>
+
+<p>
+The good news is that WE were there so things never got TOO lame.
+</p>
+
+<p>
+For starters, we threw a party!
+</p>
+
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://blog.dreamhost.com/2011/08/13/what-you-missed-=
+at-hostingcon-2011/">What you missed at HostingCon 2011</a>
+</span></p>
+
+<p>
+Along with all the usual industry people, YOU were invited!  And, in
+fact, meeting customers was the highlight of the evening for me.  I feel
+like we've never been closer!
+</p>
+
+<p>
+...especially after one of you lady-types goosed me and ran out the
+door.
+</p>
+
+<p>
+Here's what you missed out on!
+</p>
+
+
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://www.flickr.com/photos/dreamhost/sets/721576274=
+63454112/">DreamHost's HostingCon 2011 Party Photos</a>
+</span></p>
+
+<p>
+We also livened up the streets of downtown San Diego by turning what the
+locals consider to be a nuisance into a fleet of beautiful, rideable,
+moving billboards.
+</p>
+
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://blog.dreamhost.com/2011/08/18/pedal-powered-ho=
+sting/">DreamHost Blog: Pedal-Powered Hosting</a>
+</span></p>
+
+<p>
+As great as it was to meet with all those analysts, reporters, vendors,
+and even competitors for one crazy week in August, meeting with
+customers was the one activity that brought our team the most joy and
+insight.
+</p>
+
+<p>
+You guys are everything to us.
+</p>
+
+<p>
+You're the sun to our moon.
+</p>
+
+<p>
+The gin to our tonic.
+</p>
+
+<p>
+The fiddle to our faddle.
+</p>
+
+<p>
+I guess what I'm saying is we kind of have a thing for you and we want
+to hang out more often!
+</p>
+
+<p>
+Stay tuned...
+</p>
+
+<a name=3D"a5"></a>
+</td></tr>
+<tr><td background=3D"http://images.dreamhost.com/newsletter/h2.gif" heig=
+ht=3D"55"><h2>New Charity: Dream Foundation</h2></td></tr>
+<tr><td>
+
+<p>
+June through August we solicited donations for Project C.U.R.E., whose
+mission of helping to provide medical supplies and equipment to medical
+personnel and health care professionals around the world...seemed good.
+</p>
+
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://www.projectcure.org/">Project C.U.R.E.</a>
+</span></p>
+
+<p>
+21 of our kindest customers raised $603.00 for Project C.U.R.E. which
+we then matched three times over for a grand total of $2412.00!
+</p>
+
+<p>
+Our next donation target is...
+</p>
+
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://www.dreamfoundation.org/">Dream Foundation</a>
+</span></p>
+
+<p>
+"Dream Foundation helps adults find peace and closure with the
+realization of a final wish. Dream Foundation has granted thousands of
+dreams to adults who are emotionally, financially and physically
+devastated by terminal illness."
+</p>
+
+<p>
+They won't just come out and say it, so I'll say it for them:
+Dream Foundation is Make-A-Wish for grown-ups.
+</p>
+
+<p>
+How great is that?
+</p>
+
+<p>
+Contracting a terminal illness is one of the worst things that could
+happen to anybody.
+</p>
+
+<p>
+But learning that you've missed the Make-A-Wish bus by a few YEARS just
+because you got older?  That's devastating.
+</p>
+
+<p>
+So now I have a plan B.  If and when "The Big C" comes callin' my name,
+the Black Eyed Peas are going to have the BEST FIFTH MEMBER EVER:
+<strong>"b.rock"</strong>
+</p>
+
+<p>
+You can submit donations to Dream Foundation (which we'll then
+quadruple, as always!) from the "Give to Charity" section of your
+account control panel:
+</p>
+
+
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttps://panel.dreamhost.com/index.cgi?tree=3Dhome.cha=
+rity">Give to Charity</a>
+</span></p>
+
+<a name=3D"a6"></a>
+</td></tr>
+<tr><td background=3D"http://images.dreamhost.com/newsletter/h2.gif" heig=
+ht=3D"55"><h2>DreamHost 101: Free Whois Privacy</h2></td></tr>
+<tr><td>
+
+<p>
+The thing about registering domain names is that you're <em>supposed</em>=
+ to
+provide your own legit contact information when you do it.  Full name,
+address, phone number, email address, blood type, cheek swab, dental
+records, sexual preference, credit score - the works.
+</p>
+
+<p>
+All of that information (most of it) is then immediately put into the
+public record where it's viewable to anyone who cares to look it up
+through a registrar's "whois" tool.
+</p>
+
+<p>
+After registering a domain you'll immediately start to get more spam in
+your inbox, more junk mail in your "other" inbox, and your life will
+generally not be as hassle-free as it would have been otherwise.  All
+because you registered some dumb domain name!  Sheesh!
+</p>
+
+<p>
+You COULD just falsify your contact information, but that would put you
+at risk of having the domain taken away from you if anyone ever noticed.
+</p>
+
+<p>
+That's quite a pickle!
+</p>
+
+<p>
+To help ease your pain we offer a whois Privacy Service - FREE.
+</p>
+
+<p>
+We will provide a valid mailing address, phone number, and email address
+for your domain's registration record.
+</p>
+
+<p>
+We'll list "yourdomainname.com@proxy.dreamhost.com" and forward its
+messages to your true hidden email address.
+</p>
+
+<p>
+We'll even accept and recycle all junk mail on your behalf!
+</p>
+
+<p>
+There really is no good reason not to do it.
+</p>
+
+<p>
+To enable or disable domain privacy, just visit the
+"Domains/Registrations" section of your account control panel, click a
+domain name, click to modify its "whois" info, and there you go -
+instant privacy.
+</p>
+
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttps://panel.dreamhost.com/index.cgi?tree=3Ddomain.r=
+egistration">Web Panel: Domains / Registrations</a>
+</span></p>
+
+<p>
+But seriously, are you going to eat that pickle?
+</p>
+
+<a name=3D"a7"></a>
+</td></tr>
+<tr><td background=3D"http://images.dreamhost.com/newsletter/h2.gif" heig=
+ht=3D"55"><h2>DHSOTMs</h2></td></tr>
+<tr><td>
+
+<p>
+As voted by you, the winners from AUGUST are as follows...
+</p>
+
+<p style=3D"border-top: 1px solid #cccccc;">
+The winner in the DESIGN and STRUCTURE categories is:<br />
+<span style=3D"font-weight: bold;">
+One Long House<br />
+</span>
+"We are a cooperative of designers, writers, photographers, programmers,
+and creatives alike. Our common bond is embracing curiosity and loving
+to create."
+</span>
+</p>
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://onelonghouse.com/">http://onelonghouse.com/</a=
+>
+</span></p>
+
+<p style=3D"border-top: 1px solid #cccccc;">
+The winner in the CONTENT, ORIGINALITY, and OVERALL categories is:<br />
+<span style=3D"font-weight: bold;">
+Tampa Changing Re-Photography<br />
+</span>
+"Re-photographing historic buildings in Tampa, Florida."
+</span>
+</p>
+<p><span class=3D"fancylink">
+<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttp://www.TampaChanging.com">http://www.TampaChangin=
+g.com</a>
+</span></p>
+
+<p>
+	Congratulations to the winners!
+</p>
+
+<p>
+	Don't forget to cast your votes (and enter your own site) for the
+next round of DHSOTMs at
+</p>
+
+<p>
+	<span class=3D"fancylink">
+	<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttps://panel.dreamhost.com/index.cgi?tree=3Dhome.dhs=
+otm">https://panel.dreamhost.com/index.cgi?tree=3Dhome.dhsotm</a>
+	</span>
+</p>
+
+<a name=3D"a6"></a>
+</td></tr>
+<tr><td background=3D"http://images.dreamhost.com/newsletter/h2.gif" heig=
+ht=3D"55"><h2>See ya next month!</h2></td></tr>
+<tr><td>
+
+<p>
+	See ya next month!<br />
+	Brett D!
+</p>
+
+<p>
+P.S. - Actives and sedentaries alike may unsubscribe here:
+</p>
+
+<p>
+	<span class=3D"fancylink">
+	<a href=3D"http://www.dreamhost.com/newsletter/track/index.cgi?campaign=3D=
+september2011&url=3Dhttps://panel.dreamhost.com/id/?tab=3Dcontact">https:=
+//panel.dreamhost.com/id/?tab=3Dcontact</a>
+	</span>
+</p>
+
+</td></tr></table>
+</div><!--main-->
+
+<div id=3D"footer">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" he=
+ight=3D"100%" background=3D"http://images.dreamhost.com/newsletter/footer=
+.png"><tr><td>
+	&nbsp;&nbsp;&copy; 2011 DreamHost / <a href=3D"http://dreamhost.com/term=
+s-of-service/">Terms of Service</a> / <a href=3D"http://dreamhost.com/pri=
+vacy-policy/">Privacy Policy</a> / <a href=3D"https://panel.dreamhost.com=
+/index.cgi?tree=3Dsupport.msg">Contact Technical Support</a>
+</td></tr></table>
+</div><!--footer-->
+
+</td></tr></table>
+</body>
+</html>
+
+------------=_1315394826-6953-101205--

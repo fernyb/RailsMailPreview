@@ -16,6 +16,9 @@ class Message < FBDatabaseBase
   field :reply_to
   field :html
   field :text
+  field :body
+  field :mime_type
+  field :is_multipart
   field :timestamp
   has_many :attachments
 
@@ -28,6 +31,17 @@ class Message < FBDatabaseBase
     self.date     = mail.date.to_s
     self.html     = mail.html_part ? mail.html_part.body.to_s : ""
     self.text     = mail.text_part ? mail.text_part.body.to_s : ""
+    self.body     = mail.multipart? ? "" : mail.body.decoded
+    self.mime_type = mail.mime_type
+    self.is_multipart   = mail.multipart? ? "true" : "false"
+
+    if mail.multipart? == false
+      if mail.mime_type =~ /html/i
+        self.html = mail.body.decoded
+      elsif mail.mime_type =~ /plain/i
+        self.text = mail.body.decoded
+      end
+    end
 
     mail.attachments.each do |attch|
       attachment = Attachment.new
@@ -37,6 +51,10 @@ class Message < FBDatabaseBase
       attachment.disposition  = attch.inline? ? "inline" : "attachment"
       self.attachments << attachment
     end
+  end
+
+  def multipart?
+    self.is_multipart == "true"
   end
 
   def brief

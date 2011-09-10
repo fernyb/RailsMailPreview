@@ -8,6 +8,9 @@ CREATE TABLE IF NOT EXISTS messages (
   `reply_to` TEXT,
   `html` TEXT,
   `text` TEXT,
+  `body` TEXT,
+  `mime_type` TEXT,
+  `is_multipart` TEXT,
   `timestamp` TIMESTAMP
    DEFAULT CURRENT_TIMESTAMP
 );

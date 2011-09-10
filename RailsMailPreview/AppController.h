@@ -18,4 +18,6 @@
   IBOutlet FBTabViewBar * tabviewBar;
 }
 
+- (IBAction)useSampleData:(id)sender;
+
 @end

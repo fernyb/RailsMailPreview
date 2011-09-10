@@ -1,0 +1,497 @@
+Delivered-To: fernyb@fernyb.net
+Received: by 10.213.7.76 with SMTP id c12cs653700ebc;
+        Thu, 24 Dec 2009 23:13:54 -0800 (PST)
+Received: by 10.224.58.166 with SMTP id g38mr6250423qah.32.1261725233388;
+        Thu, 24 Dec 2009 23:13:53 -0800 (PST)
+Return-Path: <sentto-22118759-485-1261725231-fernyb=fernyb.net@returns.groups.yahoo.com>
+Received: from n9.bullet.mail.re1.yahoo.com (n9.bullet.mail.re1.yahoo.com [69.147.103.136])
+        by mx.google.com with SMTP id 5si24781314qwg.48.2009.12.24.23.13.51;
+        Thu, 24 Dec 2009 23:13:52 -0800 (PST)
+Received-SPF: pass (google.com: domain of sentto-22118759-485-1261725231-fernyb=fernyb.net@returns.groups.yahoo.com designates 69.147.103.136 as permitted sender) client-ip=69.147.103.136;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of sentto-22118759-485-1261725231-fernyb=fernyb.net@returns.groups.yahoo.com designates 69.147.103.136 as permitted sender) smtp.mail=sentto-22118759-485-1261725231-fernyb=fernyb.net@returns.groups.yahoo.com; dkim=pass header.i=@yahoogroups.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoogroups.com; s=lima; t=1261725231; bh=NIvWb8ROpuqJ/5p7vikormCSNqhPVKKZIOJWXw0QOfA=; h=Received:Received:Received:X-Yahoo-Newman-Id:X-Sender:X-Apparently-To:X-Received:X-Received:X-Received:X-Received:X-Received:Message-ID:To:X-Originating-IP:X-eGroups-Msg-Info:From:X-Yahoo-Profile:Sender:MIME-Version:Mailing-List:Delivered-To:List-Id:Precedence:List-Unsubscribe:Date:Subject:Reply-To:X-Yahoo-Newman-Property:Content-Type; b=JKofMQay5jE3jbCuoocNgMO1PDCHmzwfHQQlqsbjQ4y0n022UA4A3/N8TpBjtxsCx2ByGLJVVTCbid8vb8quTykbX1vIe0fX28c2cmmC5O4UwibvukVHpNC14+fslIdS
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws; s=lima; d=yahoogroups.com;
+	b=b7TKpW0Y9WmkAIWqFu4gXiB7/ljxWM6UnrM6I0qBZjr5/vs+pvqH3ZpBy0VNBKiW0QUQZUl4tQx08sclKXFy9Gb09lH9b0JI1kYUuP1AwrQuDmagCif1IksJXlzpBYEf;
+Received: from [68.142.230.28] by n9.bullet.mail.re1.yahoo.com with NNFMP; 25 Dec 2009 07:13:51 -0000
+Received: from [69.147.65.148] by t1.bullet.re2.yahoo.com with NNFMP; 25 Dec 2009 07:13:51 -0000
+Received: from [98.137.34.40] by t11.bullet.mail.sp1.yahoo.com with NNFMP; 25 Dec 2009 07:13:51 -0000
+X-Yahoo-Newman-Id: 22118759-m485
+X-Sender: randquistcp@gmail.com
+X-Apparently-To: LARuby@yahoogroups.com
+X-Received: (qmail 12224 invoked from network); 25 Dec 2009 07:13:49 -0000
+X-Received: from unknown (66.196.94.106)
+  by m4.grp.sp2.yahoo.com with QMQP; 25 Dec 2009 07:13:49 -0000
+X-Received: from unknown (HELO mail-px0-f198.google.com) (209.85.216.198)
+  by mta2.grp.re1.yahoo.com with SMTP; 25 Dec 2009 07:13:49 -0000
+X-Received: by pxi36 with SMTP id 36so5688698pxi.26
+        for <LARuby@yahoogroups.com>; Thu, 24 Dec 2009 23:13:03 -0800 (PST)
+X-Received: by 10.143.26.41 with SMTP id d41mr5985503wfj.13.1261725182892; Thu, 
+	24 Dec 2009 23:13:02 -0800 (PST)
+Message-ID: <773e377f0912242313o108dd059q21adc1bfdc219a2d@mail.gmail.com>
+To: laruby <LARuby@yahoogroups.com>
+X-Originating-IP: 209.85.216.198
+X-eGroups-Msg-Info: 1:12:0:0:0
+From: Coby Randquist <randquistcp@gmail.com>
+X-Yahoo-Profile: coby_randquist
+Sender: LARuby@yahoogroups.com
+MIME-Version: 1.0
+Mailing-List: list LARuby@yahoogroups.com; contact LARuby-owner@yahoogroups.com
+Delivered-To: mailing list LARuby@yahoogroups.com
+List-Id: <LARuby.yahoogroups.com>
+Precedence: bulk
+List-Unsubscribe: <mailto:LARuby-unsubscribe@yahoogroups.com>
+Date: Thu, 24 Dec 2009 23:13:02 -0800
+Subject: [LARuby] LA RUby Conference 2010 - Discount Code
+Reply-To: LARuby@yahoogroups.com
+X-Yahoo-Newman-Property: groups-email-ff-m
+Content-Type: multipart/alternative;
+ boundary="001636e0af3254991e047b88499c"
+
+--001636e0af3254991e047b88499c
+Content-Type: text/plain; charset=ISO-8859-1
+
+We now have user registration for the conference configured and enabled on
+the web-site.
+
+Visit http://larubyconf.com and click the registration button on the lower
+left.
+
+In the promo code field enter
+
+laruby
+
+to receive a ticket at $149.00 - a $50.00 savings just for being part of the
+LA Ruby Meetup!
+
+We're looking forward to a great conference follow us on twitter -
+http://twitter.com/larubyconf for regular announcements.
+
+Happy holidays!
+
+--001636e0af3254991e047b88499c
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+</head>
+
+
+
+
+
+
+
+<body style="background-color: #fff;">
+<span style="display:none">&nbsp;</span>
+
+<!--~-|**|PrettyHtmlStartT|**|-~-->
+<div id="ygrp-mlmsg" style="position:relative;">
+  <div id="ygrp-msg" style="z-index: 1;">
+<!--~-|**|PrettyHtmlEndT|**|-~-->
+
+    <div id="ygrp-text" >
+      
+      
+      <p>We now have user registration for the conference configured and enabled on the web-site.<br><br>Visit <a href="http://larubyconf.com">http://larubyconf.<wbr>com</a> and click the registration button on the lower left.<br><br>In the promo code field enter <br>
+<br>laruby <br><br>to receive a ticket at $149.00 - a $50.00 savings just for being part of the LA Ruby Meetup!<br><br>We&#39;re looking forward to a great conference follow us on twitter - <a href="http://twitter.com/larubyconf">http://twitter.<wbr>com/larubyconf</a> for regular announcements.<br>
+<br>Happy holidays!<br>
+<div id="divCleekiAttrib"></div>
+</p>
+
+    </div>
+     
+
+    <!--~-|**|PrettyHtmlStart|**|-~-->
+    <div style="color: #fff; height: 0;">__._,_.___</div>
+
+        
+  
+   
+    <div id="ygrp-actbar" style="clear: both; margin-bottom: 10px; white-space: nowrap; color: #666; padding-top: 15px;">
+      <div>
+        <a href="mailto:randquistcp@gmail.com?subject=LA RUby Conference 2010 - Discount Code">
+          Reply to <span style="font-weight: 700;">sender</span></a>
+          | <a href="mailto:LARuby@yahoogroups.com?subject=LA RUby Conference 2010 - Discount Code">
+        Reply to <span style="font-weight: 700;">group</span></a>
+      </div>
+
+                <a href="http://groups.yahoo.com/group/LARuby/message/485;_ylc=X3oDMTMzbG1zaGNuBF9TAzk3MzU5NzE0BGdycElkAzIyMTE4NzU5BGdycHNwSWQDMTcwNTAwNjc2NARtc2dJZAM0ODUEc2VjA2Z0cgRzbGsDdnRwYwRzdGltZQMxMjYxNzI1MjMxBHRwY0lkAzQ4NQ--">Messages in this topic</a>
+          (<span style="font-weight: 700;">1</span>)
+          </div> 
+<!------- Start Nav Bar ------>
+<!-- |**|begin egp html banner|**| -->
+<!-- |**|end egp html banner|**| -->
+
+<!-- |**|begin egp html banner|**| -->
+<div id="ygrp-vital" style="background-color: #e0ecee; font-family: Verdana; font-size: 10px; margin-bottom: 10px; padding: 10px;">
+      <span id="vithd" style="font-weight: bold; color: #333; text-transform: uppercase; ">Recent Activity:</span>
+
+    <ul style="list-style-type: none; margin: 0; padding: 0; display: inline;">
+                                                    </ul>
+    
+  <div style="clear: both; padding-top: 2px; color: #1e66ae;">
+    <a href="http://groups.yahoo.com/group/LARuby;_ylc=X3oDMTJmZ2tyazM0BF9TAzk3MzU5NzE0BGdycElkAzIyMTE4NzU5BGdycHNwSWQDMTcwNTAwNjc2NARzZWMDdnRsBHNsawN2Z2hwBHN0aW1lAzEyNjE3MjUyMzE-" style="border-right: 1px solid #000; padding-right: 5px; margin-right: 2px; text-decoration: none;">Visit Your Group</a>
+    <a href="http://groups.yahoo.com/group/LARuby/post;_ylc=X3oDMTJmbGdkb2MzBF9TAzk3MzU5NzE0BGdycElkAzIyMTE4NzU5BGdycHNwSWQDMTcwNTAwNjc2NARzZWMDZnRyBHNsawNudHBjBHN0aW1lAzEyNjE3MjUyMzE-" style="font-weight: 700; text-decoration: none;">Start a New Topic</a>
+  </div>
+</div>
+
+              <div id="ygrp-mkp" style="border: 1px solid #d8d8d8; clear: both; float: left; font-family: Arial; margin: 5px 0 10px 0; padding: 0 10px;">
+      <div id="hd" style="color: #628c2a; font-size: 85%; font-weight: 700; line-height: 122%; margin: 10px 0;">MARKETPLACE</div>
+      <div id="ads" style="margin-bottom: 10px;">
+                  <div class="ad" style="color: #628C2A; font-family: Arial; font-weight: 700; padding: 0 0;">
+            <p><a href="http://us.ard.yahoo.com/SIG=14kbejqsf/M=493064.13814333.13821539.13298430/D=groups/S=1705006764:MKP1/Y=YAHOO/EXP=1261732431/L=/B=WWn0b0PDhEg-/J=1261725231594702/K=rWbUsI5NY1xG6A7W_67mEA/A=5922843/R=0/SIG=11ckn2mo6/*http://advision.webevents.yahoo.com/green/">Going Green: Your Yahoo! Groups resource for green living</a></p>          </div>
+                          <div class="ad" style="color: #628C2A; font-family: Arial; font-weight: 700; padding: 0 0;">
+                          <hr style="border: 1px solid #d8d8d8;">
+                        <p><a href="http://us.ard.yahoo.com/SIG=14kuoc36h/M=493064.13814537.13821737.10835568/D=groups/S=1705006764:MKP1/Y=YAHOO/EXP=1261732431/L=/B=Wmn0b0PDhEg-/J=1261725231594702/K=rWbUsI5NY1xG6A7W_67mEA/A=5922843/R=0/SIG=11ckn2mo6/*http://advision.webevents.yahoo.com/green/">Going Green: Your Yahoo! Groups resource for green living</a></p>          </div>
+                      </div>
+    </div>
+  
+<div id="ft" style="font-family: Arial; font-size: 11px; margin-top: 5px; padding: 0 2px 0 0; clear: both;">
+  <a href="http://groups.yahoo.com/;_ylc=X3oDMTJlMHJyY2U3BF9TAzk3NDc2NTkwBGdycElkAzIyMTE4NzU5BGdycHNwSWQDMTcwNTAwNjc2NARzZWMDZnRyBHNsawNnZnAEc3RpbWUDMTI2MTcyNTIzMQ--" style="float: left;"><img src="http://l.yimg.com/a/i/us/yg/logo/us.gif" height="15" width="137" alt="Yahoo! Groups" style="border: 0;"/></a>
+  <div style="color: #747575; float: right;">Switch to: <a href="mailto:LARuby-traditional@yahoogroups.com?subject=Change Delivery Format: Traditional" style="text-decoration: none;">Text-Only</a>, <a href="mailto:LARuby-digest@yahoogroups.com?subject=Email Delivery: Digest" class="margin-rt" style="text-decoration: none;">Daily Digest</a> &bull; <a href="mailto:LARuby-unsubscribe@yahoogroups.com?subject=Unsubscribe" style="text-decoration: none;">Unsubscribe</a> &bull; <a href="http://docs.yahoo.com/info/terms/" style="text-decoration: none;">Terms of Use</a></div>
+</div>
+
+<!-- |**|end egp html banner|**| -->
+
+  </div> <!-- ygrp-msg -->
+
+  <!-- Sponsor -->
+  <!-- |**|begin egp html banner|**| -->
+  <div id="ygrp-sponsor" style="width:160px; float:right; clear:none; margin:0 0 25px 0; background: #fff;">
+
+<!-- Start Recommendations -->
+<div id="ygrp-reco">
+     </div>
+<!-- End Recommendations -->
+
+
+
+  </div>   <!-- |**|end egp html banner|**| -->
+
+  <div style="clear:both; color: #FFF; font-size:1px;">.</div>
+</div>
+
+  <img src="http://geo.yahoo.com/serv?s=97359714/grpId=22118759/grpspId=1705006764/msgId=485/stime=1261725231/nc1=4507179/nc2=3848640/nc3=5170420" width="1" height="1"> <br>
+
+<div style="color: #fff; height: 0;">__,_._,___</div>
+<!--~-|**|PrettyHtmlEnd|**|-~-->
+
+</body>
+
+<!--~-|**|PrettyHtmlStart|**|-~-->
+<head>
+  <style type="text/css">
+  <!--
+  #ygrp-mkp {
+  border: 1px solid #d8d8d8;
+  font-family: Arial;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+#ygrp-mkp hr {
+  border: 1px solid #d8d8d8;
+}
+
+#ygrp-mkp #hd {
+  color: #628c2a;
+  font-size: 85%;
+  font-weight: 700;
+  line-height: 122%;
+  margin: 10px 0;
+}
+
+#ygrp-mkp #ads {
+  margin-bottom: 10px;
+}
+
+#ygrp-mkp .ad {
+  padding: 0 0;
+}
+
+#ygrp-mkp .ad a {
+  color: #0000ff;
+  text-decoration: none;
+}
+  #ygrp-sponsor #ygrp-lc {
+  font-family: Arial;
+}
+
+#ygrp-sponsor #ygrp-lc #hd {
+  margin: 10px 0px;
+  font-weight: 700;
+  font-size: 78%;
+  line-height: 122%;
+}
+
+#ygrp-sponsor #ygrp-lc .ad {
+  margin-bottom: 10px;
+  padding: 0 0;
+}
+
+  a {
+    color: #1e66ae;
+  }
+
+  #actions {
+    font-family: Verdana;
+    font-size: 11px;
+    padding: 10px 0;
+  }
+
+  #activity {
+    background-color: #e0ecee;
+    float: left;
+    font-family: Verdana;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  #activity span {
+    font-weight: 700;
+  }
+
+  #activity span:first-child {
+    text-transform: uppercase;
+  }
+
+  #activity span a {
+    color: #5085b6;
+    text-decoration: none;
+  }
+
+  #activity span span {
+    color: #ff7900;
+  }
+
+  #activity span .underline {
+    text-decoration: underline;
+  }
+
+  .attach {
+    clear: both;
+    display: table;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 10px 0;
+    width: 400px;
+  }
+
+  .attach div a {
+    text-decoration: none;
+  }
+
+  .attach img {
+    border: none;
+    padding-right: 5px;
+  }
+
+  .attach label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .attach label a {
+    text-decoration: none;
+  }
+  
+  blockquote {
+    margin: 0 0 0 4px;
+  }
+
+  .bold {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .bold a {
+    text-decoration: none;
+  }
+
+  dd.last p a {
+    font-family: Verdana;
+    font-weight: 700;
+  }
+
+  dd.last p span {
+    margin-right: 10px;
+    font-family: Verdana;
+    font-weight: 700;
+  }
+
+  dd.last p span.yshortcuts {
+    margin-right: 0;
+  }
+
+  div.attach-table div div a {
+    text-decoration: none;
+  }
+
+  div.attach-table {
+    width: 400px;
+  }
+
+  div.file-title a, div.file-title a:active, div.file-title a:hover, div.file-title a:visited {
+    text-decoration: none;
+  }
+
+  div.photo-title a, div.photo-title a:active, div.photo-title a:hover, div.photo-title a:visited {
+    text-decoration: none;
+  }
+
+  div#ygrp-mlmsg #ygrp-msg p a span.yshortcuts {
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  .green {
+    color: #628c2a;
+  }
+
+  .MsoNormal {
+    margin: 0 0 0 0;
+  }
+
+  o {
+    font-size: 0;
+  }
+
+  #photos div {
+    float: left;
+    width: 72px;
+  }
+
+  #photos div div {
+    border: 1px solid #666666;
+    height: 62px;
+    overflow: hidden;
+    width: 62px;
+  }
+
+  #photos div label {
+    color: #666666;
+    font-size: 10px;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    width: 64px;
+  }
+
+  #reco-category {
+    font-size: 77%;
+  }
+
+  #reco-desc {
+    font-size: 77%;
+  }
+
+  .replbq {
+    margin: 4px;
+  }
+
+  #ygrp-actbar div a:first-child {
+   /* border-right: 0px solid #000;*/
+    margin-right: 2px;
+    padding-right: 5px;
+  }
+
+  #ygrp-mlmsg {
+    font-size: 13px;
+    font-family: Arial, helvetica,clean, sans-serif;
+    *font-size: small;
+    *font: x-small;
+  }
+
+  #ygrp-mlmsg table {
+    font-size: inherit;
+    font: 100%;
+  }
+
+  #ygrp-mlmsg select, input, textarea {
+    font: 99% Arial, Helvetica, clean, sans-serif;
+  }
+
+  #ygrp-mlmsg pre, code {
+    font:115% monospace;
+    *font-size:100%;
+  }
+
+  #ygrp-mlmsg * {
+    line-height: 1.22em;
+  }
+
+  #ygrp-mlmsg #logo {
+    padding-bottom: 10px;
+  }
+
+  #ygrp-mlmsg a {
+    color: #1E66AE;
+  }
+
+  #ygrp-msg p a {
+    font-family: Verdana;
+  }
+
+  #ygrp-msg p#attach-count span {
+    color: #1E66AE;
+    font-weight: 700;
+  }
+
+  #ygrp-reco #reco-head {
+    color: #ff7900;
+    font-weight: 700;
+  }
+
+  #ygrp-reco {
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+
+  #ygrp-sponsor #ov li a {
+    font-size: 130%;
+    text-decoration: none;
+  }
+
+  #ygrp-sponsor #ov li {
+    font-size: 77%;
+    list-style-type: square;
+    padding: 6px 0;
+  } 
+
+  #ygrp-sponsor #ov ul {
+    margin: 0;
+    padding: 0 0 0 8px;
+  }
+
+  #ygrp-text {
+    font-family: Georgia;
+  }
+
+  #ygrp-text p {
+    margin: 0 0 1em 0;
+  }
+
+  #ygrp-text tt {
+    font-size: 120%;
+  }
+
+  #ygrp-vital ul li:last-child {
+    border-right: none !important; 
+  } 
+  -->
+  </style>
+</head>
+
+<!--~-|**|PrettyHtmlEnd|**|-~-->
+</html>
+<!-- end group email -->
+
+
+--001636e0af3254991e047b88499c--

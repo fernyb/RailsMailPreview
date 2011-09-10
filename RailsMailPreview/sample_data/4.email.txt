@@ -1,0 +1,92 @@
+Delivered-To: fernyb@fernyb.net
+Received: by 10.216.49.143 with SMTP id x15cs821945web;
+        Tue, 11 Jan 2011 10:39:11 -0800 (PST)
+Received: by 10.227.145.193 with SMTP id e1mr20496528wbv.110.1294771151383;
+        Tue, 11 Jan 2011 10:39:11 -0800 (PST)
+Return-Path: <peepcode@topfunky.com>
+Received: from outmail148147.authsmtp.net (outmail148147.authsmtp.net [62.13.148.147])
+        by mx.google.com with ESMTP id k57si37756947wer.137.2011.01.11.10.39.11;
+        Tue, 11 Jan 2011 10:39:11 -0800 (PST)
+Received-SPF: pass (google.com: domain of peepcode@topfunky.com designates 62.13.148.147 as permitted sender) client-ip=62.13.148.147;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of peepcode@topfunky.com designates 62.13.148.147 as permitted sender) smtp.mail=peepcode@topfunky.com
+Received: from mail-c187.authsmtp.com (mail-c187.authsmtp.com [62.13.128.33])
+	by punt2.authsmtp.com (8.14.2/8.14.2/Kp) with ESMTP id p0BIdAUK004458
+	for <fernyb@fernyb.net>; Tue, 11 Jan 2011 18:39:10 GMT
+Received: from mail.authsmtp.com (peepcode.topfunky.railsmachina.com [64.22.127.253])
+	(authenticated bits=0)
+	by mail.authsmtp.com (8.14.2/8.14.2) with ESMTP id p0BIWGXD082926
+	for <fernyb@fernyb.net>; Tue, 11 Jan 2011 18:39:08 GMT
+Date: Tue, 11 Jan 2011 18:39:08 GMT
+Message-Id: <201101111839.p0BIWGXD082926@mail.authsmtp.com>
+From: peepcode@topfunky.com
+To: fernyb@fernyb.net
+Subject: [PeepCode] Rails 3 & Play by Play Screencasts
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Precedence: bulk
+X-Server-Quench: 1399f6f0-1db2-11e0-ab46-001185d377ca
+X-AuthReport-Spam: If SPAM / abuse - report it at: http://www.authsmtp.com/abuse
+X-AuthRoute: OCdxaQAXB1ZNQQkC ASQIAQdcTh0rOxtP EFkIKg5MLlcTUxVb GkhXNFxCOhsaSE1P AmcUIQUKT19xWGJl agJbbgxXYkMAWQF0 UkpXQ1BVCgdtAgMD AxwbTRk8NwU0ARkH DTJiVnJSXkI0dkd6 RwBVFmQPM2E2aH0e BBJaagJVJQNXL01B bE1/VHIMaWBTZX1n FAYlDAg8MC10LyhY d0k3JFMWWg5QVnB0 fxQLDH0lDAU9Qywi ZyctMFMRGk0YKVkp WQAA
+X-Authentic-SMTP: 61633239383234.1000:706
+X-AuthFastPath: 0 (Was 255)
+X-AuthVirus-Status: No virus detected - but ensure you scan with your own anti-virus system.
+
+
+Summary: A new screencast, a new series, and comic books!
+
+++++ Meet Rails 3 Parts I & II ++++
+
+Part II of our introductory Rails 3 series has been published! If you're learning Rails for the first time, this two part series will teach you the basics of Rails in under three hours.
+
+    https://peepcode.com/products/meet-rails-3-i
+
+    https://peepcode.com/products/meet-rails-3-ii
+
+The demand for Rails developers around the world is intense. Our first videos on Rails helped thousands of developers get their groove on with Rails. This series continues that tradition.
+
+Part II runs for 90 action-packed minutes where youâll learn to use Railsâ packaging and code generation tools, work with stylesheets and JavaScript files, link data models together, and build powerful controllers in only a few lines. Youâll learn to build forms and organize view templates for easy reuse and maintenance.
+
+âGreat work on Rails 3 pt. II. You've really helped to decrease the learning curve.â 
+- George Gilmer
+
+âI purchased the two 'Meet Rails 3' screencasts and I must say that they were very well organized, easy to follow and to the point! After watching the screencasts I was able to continue programming my web app at least twice as fast as before. Well done! Definitely worth the money, and I will gladly purchase any more advanced Rails 3 screencasts.â 
+- Alex Nikolaidis
+
+++++ Play by Play with Gary Bernhardt ++++
+
+We love to watch developers at work. It's a great way to pick up workflow tips, shell shortcuts, and text editor optimizations.
+
+This screencast is part of a new series at PeepCode where we sit down with expert programmers and build a simple project. You wonât learn a specific topic or build a deployable product, but youâll pick up workflow tips and editor hacks that usually require years of experience to figure out.
+
+In this episode, we will learn tips and tricks from our friend and development guru Gary Bernhardt. Topics covered include Ruby, Git, RSpec, Vim, the terminal, and test-driven development.
+
+    https://peepcode.com/products/play-by-play-bernhardt
+
+âGreat video! The TDD and Git info you share far exceeds the cost of video. Highly recommended.â 
+- Matt Margolis via Twitter
+
+âAll kinds of awesome in this PeepCode screencast featuring Gary Bernhardt.â 
+- James Martin via Twitter
+
+âIf you have a couple bucks, I'd totally suggest that you buy this Play by Play screencast, what a great idea!â 
+- Federico Builes
+
+++++ The Blog ++++
+
+After a brief hiatus, the PeepCode blog is charged up and ready to spin. We had a lot of fun recreating a classic comic book to talk about new syntax in Ruby 1.9:
+
+    http://blog.peepcode.com/tutorials/2011/rip-ruby-hash-rocket-syntax
+
+    http://blog.peepcode.com/tutorials/2010/happy-holidays
+
+
+PeepCode Screencasts
+peepcode@topfunky.com
+http://peepcode.com
+
+Topfunky Corporation | 1808 NW 83rd St. Seattle, WA 98117 USA
+
+
+
+Unsubscribe: http://peepcode.com/optouts?email=fernyb%40fernyb.net
+

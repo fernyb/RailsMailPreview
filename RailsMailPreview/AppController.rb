@@ -59,6 +59,24 @@ class AppController < NSWindowController
                                                    object: nil)
   end
 
+  def useSampleData(sender)
+    @can_import_sample_data ||= true
+    return if @can_import_sample_data == false
+    queue = Dispatch::Queue.new('net.fernyb.RailsMailPreview.gcd')
+    queue.async do
+      @can_import_sample_data = false
+      Dir.glob(File.join(RESOURCE_PATH, "*.email.txt")).each do |file|
+        filename_path = File.expand_path(file)
+        file_data = File.open(filename_path) {|f| f.read }
+
+        defaultCenter = NSDistributedNotificationCenter.defaultCenter
+        defaultCenter.postNotificationName("RailsMailPreview.email", object: file_data, userInfo: nil, deliverImmediately: true)
+        sleep 1
+      end
+      @can_import_sample_data = true
+    end
+  end
+
   def tabItemDidChangeNotification(notification)
     selectedTabIndex = notification.object.itemIndex
     @contentTabView.selectTabViewItemAtIndex(selectedTabIndex)

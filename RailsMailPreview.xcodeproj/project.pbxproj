@@ -61,6 +61,14 @@
 		C46DCDFA1411F6000005DB31 /* tabRightCap.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDF41411F6000005DB31 /* tabRightCap.png */; };
 		C46DCDFC1411F6170005DB31 /* tabTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDFB1411F6170005DB31 /* tabTrack.png */; };
 		C46DCDFD1411F6170005DB31 /* tabTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = C46DCDFB1411F6170005DB31 /* tabTrack.png */; };
+		C46EF60A141B28EB005B520E /* 1.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C46EF605141B28EB005B520E /* 1.email.txt */; };
+		C46EF60B141B28EB005B520E /* 1.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C46EF605141B28EB005B520E /* 1.email.txt */; };
+		C46EF60C141B28EB005B520E /* 2.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C46EF606141B28EB005B520E /* 2.email.txt */; };
+		C46EF60D141B28EB005B520E /* 2.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C46EF606141B28EB005B520E /* 2.email.txt */; };
+		C46EF60E141B28EB005B520E /* 3.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C46EF607141B28EB005B520E /* 3.email.txt */; };
+		C46EF60F141B28EB005B520E /* 3.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C46EF607141B28EB005B520E /* 3.email.txt */; };
+		C46EF615141B346C005B520E /* 4.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C46EF614141B346C005B520E /* 4.email.txt */; };
+		C46EF616141B346C005B520E /* 4.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C46EF614141B346C005B520E /* 4.email.txt */; };
 		C480C43314036E050048F2C2 /* message.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C43214036E040048F2C2 /* message.html.erb */; };
 		C480C43414036E050048F2C2 /* message.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C43214036E040048F2C2 /* message.html.erb */; };
 		C480C43614036E1F0048F2C2 /* message.text.erb in Resources */ = {isa = PBXBuildFile; fileRef = C480C43514036E1F0048F2C2 /* message.text.erb */; };
@@ -227,6 +235,10 @@
 		C46DCDF31411F6000005DB31 /* tabLeftCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabLeftCap.png; path = images/tabLeftCap.png; sourceTree = "<group>"; };
 		C46DCDF41411F6000005DB31 /* tabRightCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabRightCap.png; path = images/tabRightCap.png; sourceTree = "<group>"; };
 		C46DCDFB1411F6170005DB31 /* tabTrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabTrack.png; path = images/tabTrack.png; sourceTree = "<group>"; };
+		C46EF605141B28EB005B520E /* 1.email.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.email.txt; sourceTree = "<group>"; };
+		C46EF606141B28EB005B520E /* 2.email.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2.email.txt; sourceTree = "<group>"; };
+		C46EF607141B28EB005B520E /* 3.email.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3.email.txt; sourceTree = "<group>"; };
+		C46EF614141B346C005B520E /* 4.email.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 4.email.txt; sourceTree = "<group>"; };
 		C480C43214036E040048F2C2 /* message.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = message.html.erb; sourceTree = "<group>"; };
 		C480C43514036E1F0048F2C2 /* message.text.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = message.text.erb; sourceTree = "<group>"; };
 		C480C438140375490048F2C2 /* _header.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _header.html.erb; sourceTree = "<group>"; };
@@ -323,6 +335,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C46EF603141B2070005B520E /* sample_data */ = {
+			isa = PBXGroup;
+			children = (
+				C46EF605141B28EB005B520E /* 1.email.txt */,
+				C46EF606141B28EB005B520E /* 2.email.txt */,
+				C46EF607141B28EB005B520E /* 3.email.txt */,
+				C46EF614141B346C005B520E /* 4.email.txt */,
+			);
+			path = sample_data;
+			sourceTree = "<group>";
+		};
 		C4A92C1513F8CB3200B6F4F4 /* icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +459,7 @@
 		C4EB177913F5FE9800BFB45C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C46EF603141B2070005B520E /* sample_data */,
 				C4FD045414173F6300C49680 /* center_blur.png */,
 				C4FD045514173F6300C49680 /* center_ia_blur.png */,
 				C4FD045614173F6300C49680 /* lc_blur.png */,
@@ -655,6 +679,10 @@
 				C4FD046514173F6300C49680 /* rc_ia_blur.png in Resources */,
 				C4FD046714173F6300C49680 /* track_blur.png in Resources */,
 				C4EEE49B1419D38B00160BE5 /* FBSideTableView.rb in Resources */,
+				C46EF60A141B28EB005B520E /* 1.email.txt in Resources */,
+				C46EF60C141B28EB005B520E /* 2.email.txt in Resources */,
+				C46EF60E141B28EB005B520E /* 3.email.txt in Resources */,
+				C46EF615141B346C005B520E /* 4.email.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +743,10 @@
 				C4FD046614173F6300C49680 /* rc_ia_blur.png in Resources */,
 				C4FD046814173F6300C49680 /* track_blur.png in Resources */,
 				C4EEE49C1419D38B00160BE5 /* FBSideTableView.rb in Resources */,
+				C46EF60B141B28EB005B520E /* 1.email.txt in Resources */,
+				C46EF60D141B28EB005B520E /* 2.email.txt in Resources */,
+				C46EF60F141B28EB005B520E /* 3.email.txt in Resources */,
+				C46EF616141B346C005B520E /* 4.email.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
