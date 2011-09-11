@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C402629C141C701F00615D10 /* AboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C402629B141C701F00615D10 /* AboutWindowController.m */; };
-		C402629D141C701F00615D10 /* AboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C402629B141C701F00615D10 /* AboutWindowController.m */; };
 		C40A8790140C3FF400F41FFF /* FBProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */; };
 		C40A8791140C3FF400F41FFF /* FBProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */; };
 		C40A8793140C403500F41FFF /* ProgressWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40A8792140C403500F41FFF /* ProgressWindow.xib */; };
@@ -201,8 +199,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C402629A141C701F00615D10 /* AboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWindowController.h; sourceTree = "<group>"; };
-		C402629B141C701F00615D10 /* AboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWindowController.m; sourceTree = "<group>"; };
 		C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBProgressWindowController.rb; sourceTree = "<group>"; };
 		C40A8792140C403500F41FFF /* ProgressWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressWindow.xib; sourceTree = "<group>"; };
 		C40A8795140C427700F41FFF /* FBProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBProgressWindowController.h; sourceTree = "<group>"; };
@@ -544,8 +540,6 @@
 				C4E964F014109DF000A9CE21 /* MyTabWindowController.m */,
 				C4EEE4961419D2A900160BE5 /* FBSideTableView.h */,
 				C4EEE4971419D2A900160BE5 /* FBSideTableView.m */,
-				C402629A141C701F00615D10 /* AboutWindowController.h */,
-				C402629B141C701F00615D10 /* AboutWindowController.m */,
 			);
 			name = "Workaround Files";
 			sourceTree = "<group>";
@@ -794,7 +788,6 @@
 				C46DCDE31411ECD00005DB31 /* FBTabViewBar.m in Sources */,
 				C4D7FA3C1416F743002BC53F /* ParseMailMessageOperation.m in Sources */,
 				C4EEE4981419D2A900160BE5 /* FBSideTableView.m in Sources */,
-				C402629C141C701F00615D10 /* AboutWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,7 +805,6 @@
 				C4E964F214109DF000A9CE21 /* MyTabWindowController.m in Sources */,
 				C4E9650E1410A99E00A9CE21 /* FBTabViewItem.m in Sources */,
 				C46DCDE41411ECD00005DB31 /* FBTabViewBar.m in Sources */,
-				C402629D141C701F00615D10 /* AboutWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
