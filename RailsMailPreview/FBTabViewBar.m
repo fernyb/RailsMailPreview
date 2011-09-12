@@ -142,14 +142,14 @@
     }
     
     [tabItem setFrameSize:NSMakeSize(tabWidth, CGRectGetHeight([self frame]))];
-    
+
     CGFloat originX = CGRectGetMinX([self frame]) + (tabWidth * i);
     
     if(i > 0) {
       originX -= 18.2;
     }
     
-    [[tabItem animator] setFrameOrigin:NSMakePoint(originX, 0)];
+    [[tabItem animator] setFrameOrigin:NSMakePoint(floor(originX), 0.0)];
   
     i += 1;
   }

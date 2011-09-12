@@ -611,6 +611,7 @@
 		C4EB175C13F5FE9700BFB45C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Fernando Barajas";
 			};
 			buildConfigurationList = C4EB175F13F5FE9700BFB45C /* Build configuration list for PBXProject "RailsMailPreview" */;
