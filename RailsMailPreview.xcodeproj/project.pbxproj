@@ -168,12 +168,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C4EB176E13F5FE9700BFB45C /* PBXContainerItemProxy */ = {
+		C421726E141F1CE50099F800 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C4EB175C13F5FE9700BFB45C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C4EB176413F5FE9700BFB45C;
-			remoteInfo = RailsMailPreview;
+			remoteGlobalIDString = C4EB17A113F6089E00BFB45C;
+			remoteInfo = Workaround;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -553,13 +553,14 @@
 /* Begin PBXLegacyTarget section */
 		C4EB176D13F5FE9700BFB45C /* Deployment */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "--compile --embed";
+			buildArgumentsString = "--compile --embed --gem mail --gem sqlite3";
 			buildConfigurationList = C4EB178713F5FE9800BFB45C /* Build configuration list for PBXLegacyTarget "Deployment" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/local/bin/macruby_deploy;
+			buildWorkingDirectory = "";
 			dependencies = (
-				C4EB176F13F5FE9700BFB45C /* PBXTargetDependency */,
+				C421726F141F1CE50099F800 /* PBXTargetDependency */,
 			);
 			name = Deployment;
 			passBuildSettingsInEnvironment = 1;
@@ -835,10 +836,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C4EB176F13F5FE9700BFB45C /* PBXTargetDependency */ = {
+		C421726F141F1CE50099F800 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C4EB176413F5FE9700BFB45C /* RailsMailPreview */;
-			targetProxy = C4EB176E13F5FE9700BFB45C /* PBXContainerItemProxy */;
+			target = C4EB17A113F6089E00BFB45C /* Workaround */;
+			targetProxy = C421726E141F1CE50099F800 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

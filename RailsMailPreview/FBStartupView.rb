@@ -6,7 +6,11 @@
 #  Copyright 2011 Fernando Barajas. All rights reserved.
 #
 
+if File.exists?("#{RESOURCE_PATH}/FRBSideView.rb")
 require "#{RESOURCE_PATH}/FRBSideView.rb"
+elsif File.exists?("#{RESOURCE_PATH}/FRBSideView.rbo")
+require "#{RESOURCE_PATH}/FRBSideView.rbo"
+end
 
 class FBStartupView < FRBSideView
   attr_accessor :message

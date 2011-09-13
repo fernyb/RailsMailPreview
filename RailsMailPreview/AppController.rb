@@ -342,4 +342,5 @@ class AppController < NSWindowController
   def splitView(aSplitView, shouldAdjustSizeOfSubview:subview)
    subview.className != "FBSidePanelView"
   end
+
 end

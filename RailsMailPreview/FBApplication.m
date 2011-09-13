@@ -21,4 +21,9 @@
   return [super requestUserAttention:requestType];
 }
 
+- (IBAction)showHelp:(id)sender
+{
+  [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.nufex.com/rails_mail_preview/faq"]];
+}
+
 @end

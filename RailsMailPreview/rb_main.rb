@@ -13,7 +13,6 @@ framework 'Webkit'
 framework 'QuickLook'
 
 
-require 'rubygems'
 
 # Not sure why but mail fails to load some classes when it's receving messages,
 # Maybe it could because it's NSOperation?
@@ -76,6 +75,7 @@ require 'time'
 
 YES = true
 NO  = false
+
 
 SUPPORT_DIR = "~/Library/Application Support/RailsMailPreview".stringByExpandingTildeInPath
 ATTACHMENTS_DIR = "#{SUPPORT_DIR}/attachments"

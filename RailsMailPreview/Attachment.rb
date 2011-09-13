@@ -5,7 +5,12 @@
 #  Created by Fernando Barajas on 8/20/11.
 #  Copyright 2011 Fernando Barajas. All rights reserved.
 #
+
+if File.exists?("#{RESOURCE_PATH}/FBDatabaseBase.rb")
 require "#{RESOURCE_PATH}/FBDatabaseBase.rb"
+elsif File.exists?("#{RESOURCE_PATH}/FBDatabaseBase.rbo")
+require "#{RESOURCE_PATH}/FBDatabaseBase.rbo"
+end
 
 class Attachment < FBDatabaseBase
   field :id,         :type => 'Integer'
