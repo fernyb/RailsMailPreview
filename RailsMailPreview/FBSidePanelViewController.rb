@@ -109,15 +109,9 @@ class FBSidePanelViewController < NSViewController
     lambda {|webScriptObject, webFrame|
       webScriptObject.setValue(self, forKey: "controller")
       self.respondsToSelector("onRightClickAttachment:type:")
-      self.respondsToSelector("setMousePosition:posY:")
     }
   end
 
-  attr_accessor :mouse_position
-  attr_accessor :setMousePosition
-  def setMousePosition(x, posY:y)
-    self.mouse_position = [x, y]
-  end
 
   attr_accessor :onRightClickAttachment
   def onRightClickAttachment(selectedRid, type:type)
@@ -136,11 +130,11 @@ class FBSidePanelViewController < NSViewController
     menuItem.setAction(:"openAttachmentInQuickLook:")
     menu.addItem(menuItem)
 
+    loc = self.view.window.mouseLocationOutsideOfEventStream
     theWebView = type == "html" ? @htmlview.webview : @plainview.webview
-    mouseLocation = theWebView.superview.convertPoint(self.mouse_position, toView:nil)
 
     event = NSEvent.mouseEventWithType(NSRightMouseDown,
-                                            location: mouseLocation,
+                                            location: loc,
                                        modifierFlags: 0,
                                            timestamp: NSDate.date.timeIntervalSince1970,
                                         windowNumber: theWebView.window.windowNumber,
