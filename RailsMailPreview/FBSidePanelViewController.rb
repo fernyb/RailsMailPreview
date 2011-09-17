@@ -14,14 +14,11 @@ class FBSidePanelViewController < NSViewController
 
   def init
     self.initWithNibName("FBSidePanelView", bundle:NSBundle.mainBundle)
-    self
-  end
-  
-  def awakeFromNib
     NSNotificationCenter.defaultCenter.addObserver(self,
                                                    selector: :"didPressDeleteKey:",
                                                    name: "didPressDeleteKeyNotification",
                                                    object: nil)
+    self
   end
 
   def didPressDeleteKey(notification)
