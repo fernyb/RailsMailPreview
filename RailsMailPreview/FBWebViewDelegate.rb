@@ -9,6 +9,18 @@
 class FBWebViewDelegate
   # - (NSArray *)webView:(WebView *)sender contextMenuItemsForElement:(NSDictionary *)element defaultMenuItems:(NSArray *)defaultMenuItems
   def webView(webview, contextMenuItemsForElement:items, defaultMenuItems:defaultItems)
+    if items
+      if items['WebElementIsSelected'] && items['WebElementDOMNode'].class.to_s == "DOMText"
+        selected_text = webview.selectedDOMRange.markupString.flattenHTML.to_s.strip
+        if selected_text.size > 0
+          newDefaultItem = defaultItems.detect do |item|
+            item.title =~ /^copy$/i
+          end
+          return [newDefaultItem] if newDefaultItem
+        end
+      end
+    end
+
     if AppDelegate.development?
      defaultItems
     else

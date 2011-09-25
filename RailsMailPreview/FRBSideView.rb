@@ -6,6 +6,9 @@
 #  Copyright 2011 Fernando Barajas. All rights reserved.
 #
 
+
+# One thing I could not find was any way to enable the drop shadow for the WebViewFrame
+# So I'm drawing it my self.
 WebFrameView.class_eval do
   attr_accessor :shouldDrawShadow
 
