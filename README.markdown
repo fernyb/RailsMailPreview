@@ -1,8 +1,8 @@
-= RailsMailPreview
+## RailsMailPreview
 
 RailsMailPreview, will preview your email along with any attachments that are sent. This gives you an idea of what will be sent.
 
-== Required
+## Required
 
 Make sure to install the "rails_mail_preview" gem into your Rails web app.
 
