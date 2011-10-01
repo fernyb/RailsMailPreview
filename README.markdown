@@ -14,3 +14,5 @@ Make sure to install the "rails_mail_preview" gem into your Rails web app.
 ## Screenshots
 
 ![RailsMailPreview](https://github.com/downloads/fernyb/RailsMailPreview/rails_mail_preview_screenshot.png)
+
+![RailsMailPreviewIncoming](https://github.com/downloads/fernyb/RailsMailPreview/rails_mail_preview_2.png)
