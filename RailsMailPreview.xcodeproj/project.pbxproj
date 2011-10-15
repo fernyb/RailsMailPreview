@@ -779,7 +779,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = /Users/fernyb/cocoa/RailsMailPreview/RailsMailPreview/scripts/gitsha.rb;
+			shellScript = "cd $SOURCE_ROOT\nRailsMailPreview/scripts/gitsha.rb";
 		};
 /* End PBXShellScriptBuildPhase section */
 
