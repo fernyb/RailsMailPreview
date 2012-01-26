@@ -23,6 +23,8 @@
 		C40EA95E13F82CCF0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
 		C40EA96513F8465B0049534A /* FRBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA96413F8465B0049534A /* FRBWindow.m */; };
 		C40EA97613F86CEB0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
+		C413402414D11776005C0005 /* 5.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C413402314D11776005C0005 /* 5.email.txt */; };
+		C413402514D11776005C0005 /* 5.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C413402314D11776005C0005 /* 5.email.txt */; };
 		C41D5825141D0B5A00A05D94 /* RailsMailPreview.icns in Resources */ = {isa = PBXBuildFile; fileRef = C41D5824141D0B5A00A05D94 /* RailsMailPreview.icns */; };
 		C41D5826141D0B5A00A05D94 /* RailsMailPreview.icns in Resources */ = {isa = PBXBuildFile; fileRef = C41D5824141D0B5A00A05D94 /* RailsMailPreview.icns */; };
 		C41D582B141D0CE500A05D94 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C41D582A141D0CE500A05D94 /* Credits.rtf */; };
@@ -213,6 +215,7 @@
 		C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
 		C40EA96313F8465B0049534A /* FRBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBWindow.h; sourceTree = "<group>"; };
 		C40EA96413F8465B0049534A /* FRBWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBWindow.m; sourceTree = "<group>"; };
+		C413402314D11776005C0005 /* 5.email.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5.email.txt; sourceTree = "<group>"; };
 		C41D5824141D0B5A00A05D94 /* RailsMailPreview.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = RailsMailPreview.icns; path = images/RailsMailPreview.icns; sourceTree = "<group>"; };
 		C41D582A141D0CE500A05D94 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		C428A541140AC482006DE6A1 /* FBStartupView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBStartupView.rb; sourceTree = "<group>"; };
@@ -280,6 +283,7 @@
 		C4D7FA3A1416F743002BC53F /* ParseMailMessageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseMailMessageOperation.h; sourceTree = "<group>"; };
 		C4D7FA3B1416F743002BC53F /* ParseMailMessageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseMailMessageOperation.m; sourceTree = "<group>"; };
 		C4D7FA3F1416F7FE002BC53F /* ParseMailMessageOperation.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ParseMailMessageOperation.rb; sourceTree = "<group>"; };
+		C4E0575F14D0F96800E59760 /* RailsMailPreview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RailsMailPreview.entitlements; sourceTree = "<group>"; };
 		C4E964E714108C3300A9CE21 /* FBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBApplication.h; sourceTree = "<group>"; };
 		C4E964E814108C3300A9CE21 /* FBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBApplication.m; sourceTree = "<group>"; };
 		C4E964EF14109DF000A9CE21 /* MyTabWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabWindowController.h; sourceTree = "<group>"; };
@@ -348,6 +352,7 @@
 				C46EF606141B28EB005B520E /* 2.email.txt */,
 				C46EF607141B28EB005B520E /* 3.email.txt */,
 				C46EF614141B346C005B520E /* 4.email.txt */,
+				C413402314D11776005C0005 /* 5.email.txt */,
 			);
 			path = sample_data;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 		C4EB175A13F5FE9700BFB45C = {
 			isa = PBXGroup;
 			children = (
+				C4E0575F14D0F96800E59760 /* RailsMailPreview.entitlements */,
 				C4A6252C1410070500EA7B51 /* QuickLook.framework */,
 				C4EB179113F6019000BFB45C /* WebKit.framework */,
 				C4EB177013F5FE9700BFB45C /* RailsMailPreview */,
@@ -695,6 +701,7 @@
 				C46EF615141B346C005B520E /* 4.email.txt in Resources */,
 				C41D5825141D0B5A00A05D94 /* RailsMailPreview.icns in Resources */,
 				C41D582B141D0CE500A05D94 /* Credits.rtf in Resources */,
+				C413402414D11776005C0005 /* 5.email.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +768,7 @@
 				C46EF616141B346C005B520E /* 4.email.txt in Resources */,
 				C41D5826141D0B5A00A05D94 /* RailsMailPreview.icns in Resources */,
 				C41D582C141D0CE500A05D94 /* Credits.rtf in Resources */,
+				C413402514D11776005C0005 /* 5.email.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,6 +918,7 @@
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreview/RailsMailPreview-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -927,6 +936,7 @@
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreview/RailsMailPreview-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -947,6 +957,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -964,6 +975,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",

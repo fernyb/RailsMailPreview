@@ -19,5 +19,7 @@
 }
 
 - (IBAction)useSampleData:(id)sender;
+- (IBAction)showWebInspector:(id)sender;
+
 
 @end

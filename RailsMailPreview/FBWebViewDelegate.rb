@@ -13,10 +13,13 @@ class FBWebViewDelegate
       if items['WebElementIsSelected'] && items['WebElementDOMNode'].class.to_s == "DOMText"
         selected_text = webview.selectedDOMRange.markupString.flattenHTML.to_s.strip
         if selected_text.size > 0
-          newDefaultItem = defaultItems.detect do |item|
-            item.title =~ /^copy$/i
+          newDefaultItem = defaultItems.select do |item|
+            ( item.title =~ /^copy$/i || item.title.to_s =~ /Inspect/i )
           end
-          return [newDefaultItem] if newDefaultItem
+          
+          if newDefaultItem
+            return newDefaultItem
+          end
         end
       end
     end
@@ -24,7 +27,8 @@ class FBWebViewDelegate
     if AppDelegate.development?
      defaultItems
     else
-      nil
+      newElements = defaultItems.select {|item| item.title =~ /Inspect/i }
+      return newElements
     end
   end
 

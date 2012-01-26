@@ -57,6 +57,7 @@ WebFrameView.class_eval do
   end
 end
 
+
 class FRBSideView < NSView
   attr_accessor :webview
   attr_accessor :side
@@ -84,7 +85,8 @@ class FRBSideView < NSView
     self.addSubview(@webview)
     self.setAutoresizingMask(self.resizeMask)
   end
-
+ 
+  
   def setWebScriptObjectWithBlock(block)
     @webviewDelegate.setWebScriptObjectWithBlock(block)
   end

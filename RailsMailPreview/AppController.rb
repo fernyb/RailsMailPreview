@@ -58,6 +58,7 @@ class AppController < NSWindowController
                                                    name: "NoMessagesToDisplayNotification",
                                                    object: nil)
   end
+  
 
   def useSampleData(sender)
     @can_import_sample_data ||= true

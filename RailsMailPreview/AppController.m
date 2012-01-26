@@ -32,4 +32,8 @@
 {
 }
 
+- (IBAction)showWebInspector:(id)sender
+{
+}
+
 @end
