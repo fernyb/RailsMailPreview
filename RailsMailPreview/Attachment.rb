@@ -20,6 +20,7 @@ class Attachment < FBDatabaseBase
   field :data,      :on_save => :on_save
   field :disposition
   field :timestamp
+  field :content_id
   belongs_to :message
 
   def on_save

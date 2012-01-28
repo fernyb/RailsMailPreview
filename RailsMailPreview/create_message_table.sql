@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS messages (
 CREATE TABLE IF NOT EXISTS attachments (
   `id` INTEGER PRIMARY KEY,
   `message_id` INTEGER,
+  `content_id` TEXT,
   `filename` TEXT,
   `mime_type` TEXT,
   `disposition` TEXT,

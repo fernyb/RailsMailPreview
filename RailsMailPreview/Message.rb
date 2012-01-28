@@ -49,6 +49,7 @@ class Message < FBDatabaseBase
       attachment.mime_type    = attch.mime_type
       attachment.data         = attch.body.to_s
       attachment.disposition  = attch.inline? ? "inline" : "attachment"
+      attachment.content_id   = attch.content_id.to_s
       self.attachments << attachment
     end
   end

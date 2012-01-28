@@ -38,7 +38,20 @@ class FBDatabaseBase
     @db = SQLite3::Database.new(databaseFilePath)
     self.table_name = "#{self.name}s"
 
-    load_default_sql if load_sql
+    if load_sql
+      load_default_sql
+    else
+      alter_table_sql
+    end
+  end
+  
+  def self.alter_table_sql
+    info = @db.execute("PRAGMA table_info( attachments )")
+    # add column only if not exists
+    row_found = info.select {|row| row[1] == "content_id" }
+    if row_found.size == 0
+      @db.execute("ALTER TABLE attachments ADD COLUMN content_id TEXT")
+    end
   end
 
   def self.load_default_sql

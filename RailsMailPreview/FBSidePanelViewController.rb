@@ -246,11 +246,34 @@ class FBSidePanelViewController < NSViewController
     %Q{<span class="email-address">#{emails}</span>}
   end
 
-  def tidyup(html)
+  def tidyup(item)
+    html = item.html
+    attachment_list = Attachment.where(["message_id = ?", item.id])
+    
     doc = NSXMLDocument.alloc.initWithXMLString(html.to_s, options:NSXMLDocumentTidyHTML, error:nil)
     if doc
       doc.setDocumentContentKind(NSXMLDocumentHTMLKind)
       nodes = doc.nodesForXPath("//body/*", error:nil)
+      
+      # Make sure to include background image
+      allnodes = doc.nodesForXPath("//body//*", error:nil)
+      allnodes.each {|node|
+        nodeItem = node.attributeForName("background")
+        if nodeItem.nil?
+          nodeItem = node.attributeForName("src")
+        end
+        next if nodeItem.nil?
+        
+        if nodeItem.objectValue.to_s[0..3].to_s == "cid:"
+          content_id = nodeItem.objectValue.to_s[4..-1]
+          inline_image = attachment_list.select {|item| item.content_id =~ /#{content_id}/i }.first
+          if !inline_image.nil?
+            # Set the Image Source
+            node.addAttribute(NSXMLNode.attributeWithName(nodeItem.name, stringValue:"data:#{inline_image.mime_type};base64,#{inline_image.data}"))
+          end
+        end
+      }
+      
       nodes.map {|node| node.XMLString }.join("")
     else
       ""
