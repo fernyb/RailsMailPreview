@@ -918,7 +918,6 @@
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreview/RailsMailPreview-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -936,7 +935,6 @@
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreview/RailsMailPreview-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -957,7 +955,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -967,6 +965,7 @@
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreviewWorkaround-Info.plist";
 				PRODUCT_NAME = RailsMailPreview;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -975,7 +974,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -985,6 +984,7 @@
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreviewWorkaround-Info.plist";
 				PRODUCT_NAME = RailsMailPreview;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
