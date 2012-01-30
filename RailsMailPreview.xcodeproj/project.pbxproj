@@ -23,8 +23,6 @@
 		C40EA95E13F82CCF0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
 		C40EA96513F8465B0049534A /* FRBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA96413F8465B0049534A /* FRBWindow.m */; };
 		C40EA97613F86CEB0049534A /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */; };
-		C413402414D11776005C0005 /* 5.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C413402314D11776005C0005 /* 5.email.txt */; };
-		C413402514D11776005C0005 /* 5.email.txt in Resources */ = {isa = PBXBuildFile; fileRef = C413402314D11776005C0005 /* 5.email.txt */; };
 		C41D5825141D0B5A00A05D94 /* RailsMailPreview.icns in Resources */ = {isa = PBXBuildFile; fileRef = C41D5824141D0B5A00A05D94 /* RailsMailPreview.icns */; };
 		C41D5826141D0B5A00A05D94 /* RailsMailPreview.icns in Resources */ = {isa = PBXBuildFile; fileRef = C41D5824141D0B5A00A05D94 /* RailsMailPreview.icns */; };
 		C41D582B141D0CE500A05D94 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C41D582A141D0CE500A05D94 /* Credits.rtf */; };
@@ -215,7 +213,6 @@
 		C40EA95D13F82CCF0049534A /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
 		C40EA96313F8465B0049534A /* FRBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBWindow.h; sourceTree = "<group>"; };
 		C40EA96413F8465B0049534A /* FRBWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBWindow.m; sourceTree = "<group>"; };
-		C413402314D11776005C0005 /* 5.email.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5.email.txt; sourceTree = "<group>"; };
 		C41D5824141D0B5A00A05D94 /* RailsMailPreview.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = RailsMailPreview.icns; path = images/RailsMailPreview.icns; sourceTree = "<group>"; };
 		C41D582A141D0CE500A05D94 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		C428A541140AC482006DE6A1 /* FBStartupView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBStartupView.rb; sourceTree = "<group>"; };
@@ -352,7 +349,6 @@
 				C46EF606141B28EB005B520E /* 2.email.txt */,
 				C46EF607141B28EB005B520E /* 3.email.txt */,
 				C46EF614141B346C005B520E /* 4.email.txt */,
-				C413402314D11776005C0005 /* 5.email.txt */,
 			);
 			path = sample_data;
 			sourceTree = "<group>";
@@ -701,7 +697,6 @@
 				C46EF615141B346C005B520E /* 4.email.txt in Resources */,
 				C41D5825141D0B5A00A05D94 /* RailsMailPreview.icns in Resources */,
 				C41D582B141D0CE500A05D94 /* Credits.rtf in Resources */,
-				C413402414D11776005C0005 /* 5.email.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,7 +763,6 @@
 				C46EF616141B346C005B520E /* 4.email.txt in Resources */,
 				C41D5826141D0B5A00A05D94 /* RailsMailPreview.icns in Resources */,
 				C41D582C141D0CE500A05D94 /* Credits.rtf in Resources */,
-				C413402514D11776005C0005 /* 5.email.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

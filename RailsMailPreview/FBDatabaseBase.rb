@@ -8,7 +8,6 @@
 
 class FBDatabaseBase
   def self.support_path
-    # bundleName = NSBundle.mainBundle.objectForInfoDictionaryKey("CFBundleName")
     bundleName = "RailsMailPreview"
     databasePath = "~/Library/Application Support/#{bundleName}".stringByExpandingTildeInPath
   end

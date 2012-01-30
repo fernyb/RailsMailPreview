@@ -86,6 +86,8 @@ NO  = false
 SUPPORT_DIR = "~/Library/Application Support/RailsMailPreview".stringByExpandingTildeInPath
 ATTACHMENTS_DIR = "#{SUPPORT_DIR}/attachments"
 
+`mkdir -p ~/Library/Containers/net.fernyb.RailsMailPreview/attachments`
+
 
 # Loading all the Ruby project files.
 main = File.basename(__FILE__, File.extname(__FILE__))
@@ -103,6 +105,7 @@ Dir.glob(File.join(dir_path, '*.{rb,rbo}')).map { |x| File.basename(x, File.extn
 end
 
 FBDatabaseBase.create_support_path
+
 
 # Starting the Cocoa main loop.
 NSApplicationMain(0, nil)
