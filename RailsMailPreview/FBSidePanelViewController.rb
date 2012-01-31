@@ -101,6 +101,14 @@ class FBSidePanelViewController < NSViewController
     @plainview = v
     @plainview.setWebScriptObjectWithBlock(self.webScriptObjectBlock)
   end
+  
+  def htmlview
+    @htmlview
+  end
+  
+  def plainview
+    @plainview
+  end
 
   def webScriptObjectBlock
     lambda {|webScriptObject, webFrame|
@@ -128,7 +136,7 @@ class FBSidePanelViewController < NSViewController
     menu.addItem(menuItem)
 
     loc = self.view.window.mouseLocationOutsideOfEventStream
-    theWebView = type == "html" ? @htmlview.webview : @plainview.webview
+    theWebView = type == "html" ? self.htmlview.webview : self.plainview.webview
 
     event = NSEvent.mouseEventWithType(NSRightMouseDown,
                                             location: loc,

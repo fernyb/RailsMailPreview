@@ -16,6 +16,7 @@ class AppController < NSWindowController
   attr_accessor :contentTabView
   attr_accessor :tabviewBar
   attr_accessor :queue
+  attr_accessor :tabIndex
 
 
   def didFinishLaunching
@@ -61,6 +62,11 @@ class AppController < NSWindowController
   
 
   def useSampleData(sender)
+    if !self.window.isVisible
+      self.window.orderFrontRegardless
+      self.window.makeKeyAndOrderFront(nil)
+    end
+    
     @can_import_sample_data ||= true
     return if @can_import_sample_data == false
     queue = Dispatch::Queue.new('net.fernyb.RailsMailPreview.gcd')
@@ -158,6 +164,8 @@ class AppController < NSWindowController
     end
   end
 
+  
+  
   def setSelectTab(type)
     if type == :html
       self.selectTabAtIndex(0)
@@ -167,6 +175,7 @@ class AppController < NSWindowController
   end
 
   def selectTabAtIndex(idx)
+    self.tabIndex = idx
     @contentTabView.selectTabViewItemAtIndex(idx)
     @tabviewBar.selectTabAtIndex(idx)
   end
@@ -243,18 +252,22 @@ class AppController < NSWindowController
   end
 
   def setup_side_views
+    if !@htmlview.nil? && !@plainview.nil?
+      return
+    end
+    
     # Setup the left view
     @htmlview = FRBSideView.alloc.initWithFrame(
       [0,0, CGRectGetWidth(@contentTabView.frame), CGRectGetHeight(@contentTabView.frame)]
     )
     @htmlview.view_type = :html
-
+    
     # Setup the right view
     @plainview = FRBSideView.alloc.initWithFrame(
       [0,0, CGRectGetWidth(@contentTabView.frame), CGRectGetHeight(@contentTabView.frame)]
     )
     @plainview.view_type = :text
-
+    
     htmlTabItem = @contentTabView.tabViewItemAtIndex(0)
     textTabItem = @contentTabView.tabViewItemAtIndex(1)
 

@@ -71,18 +71,20 @@ class FRBSideView < NSView
   end
 
   def after_init(rect)
-    @webview = WebView.alloc.initWithFrame(rect)
-    frameView = @webview.mainFrame.frameView
+    self.webview = WebView.alloc.initWithFrame(rect)
+    self.webview.setShouldCloseWithWindow(NO)
+    
+    frameView = self.webview.mainFrame.frameView
     frameView.shouldDrawShadow = YES
 
-    @webviewDelegate = FBWebViewDelegate.alloc.init
+    self.webviewDelegate = FBWebViewDelegate.alloc.init
 
-    @webview.setFrameLoadDelegate(@webviewDelegate)
-    @webview.setUIDelegate(@webviewDelegate)
-    @webview.setPolicyDelegate(@webviewDelegate)
-    @webview.setDrawsBackground(NO)
+    self.webview.setFrameLoadDelegate(self.webviewDelegate)
+    self.webview.setUIDelegate(self.webviewDelegate)
+    self.webview.setPolicyDelegate(self.webviewDelegate)
+    self.webview.setDrawsBackground(NO)
 
-    self.addSubview(@webview)
+    self.addSubview(self.webview)
     self.setAutoresizingMask(self.resizeMask)
   end
  
@@ -93,12 +95,16 @@ class FRBSideView < NSView
 
   def setAutoresizingMask(mask)
     super(mask)
-    @webview.setAutoresizingMask(mask)
+    self.webview.setAutoresizingMask(mask)
   end
 
   def loadHTMLString(html)
     base_url = NSURL.URLWithString("file://localhost/")
-    @webview.mainFrame.loadHTMLString(html, baseURL:base_url)
+    self.webview.setHidden(NO)
+    
+    mainFrame = self.webview.mainFrame
+    puts "\n*** Type: #{self.view_type}, #{mainFrame.inspect}, Hidden: #{self.isHidden} \n\n"
+    mainFrame.loadHTMLString(html, baseURL:base_url)
   end
 
   def resizeMask
