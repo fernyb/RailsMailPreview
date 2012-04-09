@@ -1,0 +1,82 @@
+ Date: Sat, 07 Apr 2012 01:37:53 -0400
+From: B2B Asiatides <webmaster@asiatides.com>
+to: XL Projects, INC. <x.lozinguez@xlprojects.com>
+Message-ID: <4f7fd2b1d896c_3fc3fc755c34ec8238bb@new-host-2.home.mail>
+Subject: =?UTF-8?Q?B2B_Asiatides.com_-_Votre_compte_viens_d'=C3=AAtre?=
+ =?UTF-8?Q?_cr=C3=A9=C3=A9!?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<table style=3D'width:100%;background-color:#A8A8A8;color:#FFF;'>
+  <tr>
+    <td><img alt=3D"Asiatides.com" border=3D"0" src=3D"/images/logo.png?1=
+266552025" /></td>
+  </tr>
+  <tr>
+    <td colspan=3D'100%' style=3D'padding:5px 20px;background-color:#FFF;=
+color:#000;'>
+      <div style=3D'padding:5px;color:#666666;font-size:18px;'>Bienvenue =
+sur notre site de commande en ligne!</div>
+      <div style=3D'padding:10px;color:#000;font-size:14px;'>
+        <div style=3D'font-size:12px;'>
+          <b>Ref.:</b>
+          55555 XLPRO F
+        </div>
+        <div style=3D'font-size:14px;padding:5px;'>
+          Madame , Mademoiselle , Monsieur ,
+          <br>
+          <br>
+          Vous pouvez d=C3=A9sormais trouver les derniers produits Asiati=
+des ainsi que certaines de nos collections directement sur notre site e-c=
+ommerce. Vous avez aussi la possibilit=C3=A9 de passer vos ordres.
+          <br>
+          <br>
+          Rendez-vous sur http://localhost:/login
+          <br>
+          <div style=3D'border:2px solid silver;font-size:14px;padding:10=
+px;margin:10px;'>
+            Les informations ci-apr=C3=A8s vous permettent d=E2=80=99acc=C3=
+=A9der =C3=A0 votre espace s=C3=A9curis=C3=A9 en ligne:
+            <ul>
+              <li><span style=3D'color:#444444;font-weight:bold;'>identif=
+iant</span>: x.lozinguez@xlprojects.com
+              </li>
+              <li><span style=3D'color:#444444;font-weight:bold;'>mot de =
+passe</span>: 10105
+              </li>
+            </ul>
+          </div>
+          Lors de votre premi=C3=A8re connexion, vous serez invit=C3=A9 =C3=
+=A0 modifier ce mot de passe pour notre s=C3=A9curit=C3=A9 commune.
+          <br>
+          <br>
+          <span style=3D'color:#444444;font-weight:bold;font-size:16px;'>=
+ATTENTION:</span>
+          Sous 45 jours, en l=E2=80=99absence de visite sur notre site, v=
+otre compte sera automatiquement supprim=C3=A9.
+        </div>
+      </div>
+      <div style=3D'padding:10px;color:#666666;font-size:14px;'>
+        Recevez nos plus cordiales salutations.&lt;br/&gt;L=E2=80=99=C3=A9=
+quipe d=E2=80=99Asiatides.&lt;br/&gt;&lt;br/&gt;Note: merci de ne pas r=C3=
+=A9pondre =C3=A0 cet email. Si vous avez oubli=C3=A9 votre mot de passe p=
+our acc=C3=A9der au site, veuillez &lt;a href=3D'http://localhost:/forgot=
+_password'&gt;cliquer ici&lt;/a&gt;.
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style=3D'padding=3Dleft:15px;color:#FFF;font-size:12px;'>
+      Veuillez noter que notre prochaine exposition =C3=A0 Maison &amp; O=
+bjet Paris est programm=C3=A9e du Vendredi 7 au Mardi 11 Septembre 2012. =
+&lt;a href=3D'http://asiatides.com/meet_exibition_fr.html'&gt;Plus d'info=
+s&lt;/a&gt;
+      <br>
+      http://www.asiatides.com
+      <br>
+      https://b2b.asiatides.com
+    </td>
+  </tr>
+</table>

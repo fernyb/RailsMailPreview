@@ -103,7 +103,7 @@ class FRBSideView < NSView
     self.webview.setHidden(NO)
     
     mainFrame = self.webview.mainFrame
-    puts "\n*** Type: #{self.view_type}, #{mainFrame.inspect}, Hidden: #{self.isHidden} \n\n"
+    #puts "\n*** Type: #{self.view_type}, #{mainFrame.inspect}, Hidden: #{self.isHidden} \n\n"
     mainFrame.loadHTMLString(html, baseURL:base_url)
   end
 

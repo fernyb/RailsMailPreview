@@ -23,10 +23,11 @@ class Message < FBDatabaseBase
   has_many :attachments
 
   def setMessage(mail)
-    self.from     = mail.from.to_a.join(" ,")
-    self.to       = mail.to.to_a.join(", ")
-    self.cc       = mail.cc.to_a.join(", ")
-    self.reply_to = mail.reply_to.to_a.join(", ")
+    self.from     = mail.from.kind_of?(String) ? mail.from.to_s : mail.from.to_a.join(" ,")
+    self.to       = mail.to.respond_to?(:to_a) ? mail.to.to_a.join(", ")  : mail.to.to_s
+    
+    self.cc       = mail.cc.kind_of?(String)   ? mail.cc.to_s   : mail.cc.to_a.join(", ")
+    self.reply_to = mail.reply_to.kind_of?(String) ?  mail.reply_to.to_s : mail.reply_to.to_a.join(", ")
     self.subject  = mail.subject.to_s
     self.date     = mail.date.to_s
     self.html     = mail.html_part ? mail.html_part.body.to_s : ""
