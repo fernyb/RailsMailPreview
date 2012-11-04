@@ -82,6 +82,41 @@ require 'time'
 YES = true
 NO  = false
 
+#### Fix on Mac OS X 10.8 ####
+
+# This looks like a problem with macruby... as it it'll probably be fixed
+# Just check to make sure the bug hasn't been fixed yet.
+
+unless defined? CGRectGetWidth
+
+    def CGRectGetWidth(rect)
+        rect.size.width
+    end
+
+    def CGRectGetHeight(rect)
+        rect.size.height
+    end
+
+    def CGRectGetMinY(rect)
+        HDArtificialBridge.new.runCGRectGetMinY(rect)
+    end
+
+    def CGRectGetMinX(rect)
+        HDArtificialBridge.new.runCGRectGetMinX(rect)
+    end
+
+    def CGRectGetMaxY(rect)
+        HDArtificialBridge.new.runCGRectGetMaxY(rect)
+    end
+
+    def CGRectGetMaxX(rect)
+        HDArtificialBridge.new.runCGRectGetMaxX(rect)
+    end
+
+end
+
+#### End Fix ####
+
 
 SUPPORT_DIR = "~/Library/Application Support/RailsMailPreview".stringByExpandingTildeInPath
 ATTACHMENTS_DIR = "#{SUPPORT_DIR}/attachments"
