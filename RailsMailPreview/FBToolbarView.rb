@@ -7,7 +7,7 @@
 #
 
 
-class FBToolbarView < INTitlebarView
+class RFBToolbarView < INTitlebarView
   attr_accessor :segmentControl
 
   def viewWillDraw

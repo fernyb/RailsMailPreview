@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A62E1DF1646E70B00AA04F3 /* HDArtificialBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A62E1DE1646E70B00AA04F3 /* HDArtificialBridge.m */; };
 		C40A8790140C3FF400F41FFF /* FBProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */; };
 		C40A8791140C3FF400F41FFF /* FBProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */; };
 		C40A8793140C403500F41FFF /* ProgressWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40A8792140C403500F41FFF /* ProgressWindow.xib */; };
@@ -201,6 +202,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5A62E1DD1646E70B00AA04F3 /* HDArtificialBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDArtificialBridge.h; sourceTree = "<group>"; };
+		5A62E1DE1646E70B00AA04F3 /* HDArtificialBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDArtificialBridge.m; sourceTree = "<group>"; };
 		C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBProgressWindowController.rb; sourceTree = "<group>"; };
 		C40A8792140C403500F41FFF /* ProgressWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressWindow.xib; sourceTree = "<group>"; };
 		C40A8795140C427700F41FFF /* FBProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBProgressWindowController.h; sourceTree = "<group>"; };
@@ -509,6 +512,8 @@
 			isa = PBXGroup;
 			children = (
 				C4EB177E13F5FE9800BFB45C /* rb_main.rb */,
+				5A62E1DD1646E70B00AA04F3 /* HDArtificialBridge.h */,
+				5A62E1DE1646E70B00AA04F3 /* HDArtificialBridge.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -798,6 +803,7 @@
 				C46DCDE31411ECD00005DB31 /* FBTabViewBar.m in Sources */,
 				C4D7FA3C1416F743002BC53F /* ParseMailMessageOperation.m in Sources */,
 				C4EEE4981419D2A900160BE5 /* FBSideTableView.m in Sources */,
+				5A62E1DF1646E70B00AA04F3 /* HDArtificialBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
