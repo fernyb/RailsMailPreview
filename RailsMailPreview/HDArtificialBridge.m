@@ -10,25 +10,25 @@
 
 @implementation HDArtificialBridge
 
--(int)runCGRectGetMaxY:(CGRect) rect
++(int)runCGRectGetMaxY:(CGRect) rect
 {
     return CGRectGetMaxY(rect);
 }
 
 
--(int)runCGRectGetMaxX:(CGRect) rect
++(int)runCGRectGetMaxX:(CGRect) rect
 {
     return CGRectGetMaxX(rect);
 }
 
 
--(int)runCGRectGetMinY:(CGRect) rect
++(int)runCGRectGetMinY:(CGRect) rect
 {
     return CGRectGetMinY(rect);
 }
 
 
--(int)runCGRectGetMinX:(CGRect) rect
++(int)runCGRectGetMinX:(CGRect) rect
 {
     return CGRectGetMinX(rect);
 }

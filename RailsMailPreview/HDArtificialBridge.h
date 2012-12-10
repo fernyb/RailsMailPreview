@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ApplicationServices/ApplicationServices.h>
+
 
 @interface HDArtificialBridge : NSObject
 
--(int)runCGRectGetMaxY:(CGRect) rect;
--(int)runCGRectGetMaxX:(CGRect) rect;
--(int)runCGRectGetMinY:(CGRect) rect;
--(int)runCGRectGetMinX:(CGRect) rect;
++(int)runCGRectGetMaxY:(CGRect) rect;
++(int)runCGRectGetMaxX:(CGRect) rect;
++(int)runCGRectGetMinY:(CGRect) rect;
++(int)runCGRectGetMinX:(CGRect) rect;
 
 @end

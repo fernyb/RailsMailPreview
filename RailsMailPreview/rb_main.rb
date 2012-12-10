@@ -14,7 +14,7 @@ $:.unshift NSBundle.mainBundle.resourcePath.fileSystemRepresentation
 framework 'Cocoa'
 framework 'Webkit'
 framework 'QuickLook'
-
+framework 'ApplicationServices'
 
 
 # Not sure why but mail fails to load some classes when it's receving messages,
@@ -101,22 +101,23 @@ unless defined? CGRectGetWidth
     end
 
     def CGRectGetMinY(rect)
-        HDArtificialBridge.new.runCGRectGetMinY(rect)
+        HDArtificialBridge.runCGRectGetMinY(rect)
     end
 
     def CGRectGetMinX(rect)
-        HDArtificialBridge.new.runCGRectGetMinX(rect)
+        HDArtificialBridge.runCGRectGetMinX(rect)
     end
 
     def CGRectGetMaxY(rect)
-        HDArtificialBridge.new.runCGRectGetMaxY(rect)
+        HDArtificialBridge.runCGRectGetMaxY(rect)
     end
 
     def CGRectGetMaxX(rect)
-        HDArtificialBridge.new.runCGRectGetMaxX(rect)
+        HDArtificialBridge.runCGRectGetMaxX(rect)
     end
 
 end
+
 
 #### End Fix ####
 

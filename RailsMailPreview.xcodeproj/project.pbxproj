@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A62E1DF1646E70B00AA04F3 /* HDArtificialBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A62E1DE1646E70B00AA04F3 /* HDArtificialBridge.m */; };
+		C405087D1675BCB000649FE0 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C405087C1675BCB000649FE0 /* ApplicationServices.framework */; };
+		C405087E1675BF3700649FE0 /* HDArtificialBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A62E1DE1646E70B00AA04F3 /* HDArtificialBridge.m */; };
 		C40A8790140C3FF400F41FFF /* FBProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */; };
 		C40A8791140C3FF400F41FFF /* FBProgressWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */; };
 		C40A8793140C403500F41FFF /* ProgressWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40A8792140C403500F41FFF /* ProgressWindow.xib */; };
@@ -204,6 +206,7 @@
 /* Begin PBXFileReference section */
 		5A62E1DD1646E70B00AA04F3 /* HDArtificialBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDArtificialBridge.h; sourceTree = "<group>"; };
 		5A62E1DE1646E70B00AA04F3 /* HDArtificialBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDArtificialBridge.m; sourceTree = "<group>"; };
+		C405087C1675BCB000649FE0 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		C40A878F140C3FF400F41FFF /* FBProgressWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBProgressWindowController.rb; sourceTree = "<group>"; };
 		C40A8792140C403500F41FFF /* ProgressWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressWindow.xib; sourceTree = "<group>"; };
 		C40A8795140C427700F41FFF /* FBProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBProgressWindowController.h; sourceTree = "<group>"; };
@@ -336,6 +339,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C405087D1675BCB000649FE0 /* ApplicationServices.framework in Frameworks */,
 				C4A6252D1410070500EA7B51 /* QuickLook.framework in Frameworks */,
 				C4EB17A713F6089E00BFB45C /* WebKit.framework in Frameworks */,
 				C4EB17A913F6089E00BFB45C /* Cocoa.framework in Frameworks */,
@@ -397,6 +401,7 @@
 		C4EB175A13F5FE9700BFB45C = {
 			isa = PBXGroup;
 			children = (
+				C405087C1675BCB000649FE0 /* ApplicationServices.framework */,
 				C461F00F16758B2100D587FE /* MacRuby.framework */,
 				C4E0575F14D0F96800E59760 /* RailsMailPreview.entitlements */,
 				C4A6252C1410070500EA7B51 /* QuickLook.framework */,
@@ -814,6 +819,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EB17A313F6089E00BFB45C /* main.m in Sources */,
+				C405087E1675BF3700649FE0 /* HDArtificialBridge.m in Sources */,
 				C40EA97613F86CEB0049534A /* INAppStoreWindow.m in Sources */,
 				C4CCC4081404C27B006EB689 /* NSString+Additions.m in Sources */,
 				C4CCC40C1404C645006EB689 /* NSData+Additions.m in Sources */,
@@ -986,9 +992,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreviewWorkaround-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = RailsMailPreview;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1011,9 +1017,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreviewWorkaround-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = RailsMailPreview;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};

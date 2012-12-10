@@ -7,8 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <ApplicationServices/ApplicationServices.h>
 #import <MacRuby/MacRuby.h>
 #import <QuickLook/QuickLook.h>
+
+#import "HDArtificialBridge.h"
 #import "INAppStoreWindow.h"
 #import "NSData+Additions.h"
 #import "NSString+Additions.h"
