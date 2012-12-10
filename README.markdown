@@ -2,7 +2,7 @@
 
 RailsMailPreview, will preview your email along with any attachments that are sent. This gives you an idea of what will be sent.
 
-Available for Download FREE from the Mac App Store: http://itunes.apple.com/us/app/railsmailpreview/id474232890?mt=12
+Available from the following link for FREE: https://github.com/downloads/fernyb/RailsMailPreview/RailsMailPreview.app.1.3.zip
 
 ## Dependencies
 
