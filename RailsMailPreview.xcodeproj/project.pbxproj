@@ -44,6 +44,8 @@
 		C441F9F413FAB9310061C923 /* FBSidePanelTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C441F9F313FAB9310061C923 /* FBSidePanelTableRowView.m */; };
 		C441F9F813FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */; };
 		C441F9F913FAB9610061C923 /* FBSidePanelTableRowView.rb in Resources */ = {isa = PBXBuildFile; fileRef = C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */; };
+		C461F01516758FA600D587FE /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C461F00F16758B2100D587FE /* MacRuby.framework */; };
+		C461F01616758FAE00D587FE /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C461F00F16758B2100D587FE /* MacRuby.framework */; };
 		C46BD8E113F972B400C75497 /* FBSidePanelViewController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8E013F972B400C75497 /* FBSidePanelViewController.rb */; };
 		C46BD8E213F972B400C75497 /* FBSidePanelViewController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8E013F972B400C75497 /* FBSidePanelViewController.rb */; };
 		C46BD8E513F9732200C75497 /* FBSidePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C46BD8E413F9732200C75497 /* FBSidePanelView.xib */; };
@@ -134,14 +136,12 @@
 		C4EB177C13F5FE9800BFB45C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177A13F5FE9800BFB45C /* MainMenu.xib */; };
 		C4EB177F13F5FE9800BFB45C /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177E13F5FE9800BFB45C /* rb_main.rb */; };
 		C4EB178113F5FE9800BFB45C /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB178013F5FE9800BFB45C /* AppDelegate.rb */; };
-		C4EB178F13F6006700BFB45C /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB178E13F6006700BFB45C /* MacRuby.framework */; };
 		C4EB179213F6019000BFB45C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB179113F6019000BFB45C /* WebKit.framework */; };
 		C4EB179613F6046400BFB45C /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = C4EB179513F6046400BFB45C /* AppController.rb */; };
 		C4EB179D13F6074C00BFB45C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB179C13F6074C00BFB45C /* AppController.m */; };
 		C4EB17A013F6077000BFB45C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB179F13F6077000BFB45C /* AppDelegate.m */; };
 		C4EB17A313F6089E00BFB45C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB177613F5FE9800BFB45C /* main.m */; };
 		C4EB17A713F6089E00BFB45C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB179113F6019000BFB45C /* WebKit.framework */; };
-		C4EB17A813F6089E00BFB45C /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB178E13F6006700BFB45C /* MacRuby.framework */; };
 		C4EB17A913F6089E00BFB45C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB176913F5FE9700BFB45C /* Cocoa.framework */; };
 		C4EB17AB13F6089E00BFB45C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177313F5FE9800BFB45C /* InfoPlist.strings */; };
 		C4EB17AC13F6089E00BFB45C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EB177A13F5FE9800BFB45C /* MainMenu.xib */; };
@@ -225,6 +225,7 @@
 		C441F9F213FAB9300061C923 /* FBSidePanelTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSidePanelTableRowView.h; sourceTree = "<group>"; };
 		C441F9F313FAB9310061C923 /* FBSidePanelTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSidePanelTableRowView.m; sourceTree = "<group>"; };
 		C441F9F713FAB9610061C923 /* FBSidePanelTableRowView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSidePanelTableRowView.rb; sourceTree = "<group>"; };
+		C461F00F16758B2100D587FE /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = ../../../../Library/Frameworks/MacRuby.framework; sourceTree = "<group>"; };
 		C46BD8E013F972B400C75497 /* FBSidePanelViewController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FBSidePanelViewController.rb; sourceTree = "<group>"; };
 		C46BD8E413F9732200C75497 /* FBSidePanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBSidePanelView.xib; sourceTree = "<group>"; };
 		C46BD8E713F9737700C75497 /* FBSidePanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSidePanelViewController.h; sourceTree = "<group>"; };
@@ -323,8 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EB179213F6019000BFB45C /* WebKit.framework in Frameworks */,
-				C4EB178F13F6006700BFB45C /* MacRuby.framework in Frameworks */,
 				C4EB176A13F5FE9700BFB45C /* Cocoa.framework in Frameworks */,
+				C461F01616758FAE00D587FE /* MacRuby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,8 +335,8 @@
 			files = (
 				C4A6252D1410070500EA7B51 /* QuickLook.framework in Frameworks */,
 				C4EB17A713F6089E00BFB45C /* WebKit.framework in Frameworks */,
-				C4EB17A813F6089E00BFB45C /* MacRuby.framework in Frameworks */,
 				C4EB17A913F6089E00BFB45C /* Cocoa.framework in Frameworks */,
+				C461F01516758FA600D587FE /* MacRuby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +394,7 @@
 		C4EB175A13F5FE9700BFB45C = {
 			isa = PBXGroup;
 			children = (
+				C461F00F16758B2100D587FE /* MacRuby.framework */,
 				C4E0575F14D0F96800E59760 /* RailsMailPreview.entitlements */,
 				C4A6252C1410070500EA7B51 /* QuickLook.framework */,
 				C4EB179113F6019000BFB45C /* WebKit.framework */,
@@ -613,7 +615,7 @@
 		C4EB175C13F5FE9700BFB45C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Fernando Barajas";
 			};
 			buildConfigurationList = C4EB175F13F5FE9700BFB45C /* Build configuration list for PBXProject "RailsMailPreview" */;
@@ -903,15 +905,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
+					"@loader_path/../Frameworks",
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					/Library/Frameworks,
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreview/RailsMailPreview-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -920,15 +927,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
+					"@loader_path/../Frameworks",
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					/Library/Frameworks,
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreview/RailsMailPreview-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -936,12 +948,18 @@
 		C4EB178813F5FE9800BFB45C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 			};
 			name = Debug;
 		};
 		C4EB178913F5FE9800BFB45C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 			};
 			name = Release;
 		};
@@ -949,17 +967,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
+					"@loader_path/../Frameworks",
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					/Library/Frameworks,
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreviewWorkaround-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = RailsMailPreview;
-				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.8;
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -968,17 +992,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = x86_64;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
+					"@loader_path/../Frameworks",
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					/Library/Frameworks,
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RailsMailPreview/RailsMailPreview-Prefix.pch";
 				INFOPLIST_FILE = "RailsMailPreviewWorkaround-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = RailsMailPreview;
-				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx10.8;
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

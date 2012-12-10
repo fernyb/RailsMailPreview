@@ -4,9 +4,32 @@ RailsMailPreview, will preview your email along with any attachments that are se
 
 Available for Download FREE from the Mac App Store: http://itunes.apple.com/us/app/railsmailpreview/id474232890?mt=12
 
+## Dependencies
+
+Make sure to install the following gems:
+    
+    * mail
+    * sqlite3
+
+Install the gems:
+
+    sudo macgem install mail
+    sudo macgem install sqlite3
+
+Be sure the directory where the gems will reside exists in my case the following was missing:
+
+    /Library/Ruby/Gems/MacRuby/0.12
+
+Create the missing directory, if needed:
+
+    sudo mkdir -p /Library/Ruby/Gems/MacRuby/0.12
+
+
 ## Required
 
 Make sure to install the "rails_mail_preview" gem into your Rails web app.
+
+    sudo gem install railsmailpreview
 
 ## Download
 
