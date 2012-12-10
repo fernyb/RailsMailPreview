@@ -29,7 +29,7 @@ Create the missing directory, if needed:
 
 Make sure to install the "rails_mail_preview" gem into your Rails web app.
 
-    sudo gem install railsmailpreview
+    sudo gem install rails_mail_preview
 
 ## Download
 
