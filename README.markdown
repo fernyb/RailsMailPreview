@@ -4,6 +4,12 @@ RailsMailPreview, will preview your email along with any attachments that are se
 
 Available from the following link for FREE: https://github.com/downloads/fernyb/RailsMailPreview/RailsMailPreview.app.1.3.zip
 
+## Screencast
+
+An example of how to use RailsMailPreview is available from the
+following URL:
+[http://fernyb.net/blog/2013/07/02/preview-email-in-rails/](http://fernyb.net/blog/2013/07/02/preview-email-in-rails/)
+
 ## Development Dependencies
 
 Make sure to install the following gems:
